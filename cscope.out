@@ -1,0 +1,12667 @@
+cscope 15 $HOME/project/FD8173-FD8373-IB8373/trunk/apps/app_cluster/cgi/remotefocusd -q 0000000532 0000092404
+	@src/focusmotor.h
+
+43 #i‚de‡
+_FOCUSMOTOR_H_
+
+
+44 
+	#_FOCUSMOTOR_H_
+
+
+	)
+
+46 
+	~"ty≥def.h
+"
+
+50 
+	mmdmGPIO
+ = 1,
+
+51 
+	mmdmIOEXPAND
+ = 2
+
+52 }
+	tEMŸ‹DriveMëhod
+;
+
+55 
+	#MOTOR_MAGIC
+ 'M'
+
+	)
+
+58 
+	#MOTOR_SET_FORWARD
+ 
+	`_IO
+ (
+MOTOR_MAGIC
+, 0)
+
+	)
+
+60 
+	#MOTOR_SET_BACKWARD
+ 
+	`_IO
+ (
+MOTOR_MAGIC
+, 1)
+
+	)
+
+63 
+	#MOTOR_SET_SPEED
+ 
+	`_IOW
+ (
+MOTOR_MAGIC
+, 2, 
+DWORD
+)
+
+	)
+
+65 
+	#MOTOR_WALK_STEPS
+ 
+	`_IOW
+ (
+MOTOR_MAGIC
+, 3, 
+DWORD
+)
+
+	)
+
+67 
+	#MOTOR_WALK_STEPS_CLR
+ 
+	`_IO
+ (
+MOTOR_MAGIC
+, 4)
+
+	)
+
+70 
+	#MOTOR_TURN_OFF
+ 
+	`_IO
+ (
+MOTOR_MAGIC
+, 5)
+
+	)
+
+73 
+	#MOTOR_WALK_STEPS_BLOCK
+ 
+	`_IOW
+ (
+MOTOR_MAGIC
+, 6, 
+DWORD
+)
+
+	)
+
+76 
+	#MOTOR_SET_MSG_LEVEL
+ 
+	`_IOW
+ (
+MOTOR_MAGIC
+, 11, 
+DWORD
+)
+
+	)
+
+78 
+	#MOTOR_SYS_LOG_LIST
+ 
+	`_IOW
+ (
+MOTOR_MAGIC
+, 12, 
+DWORD
+)
+
+	)
+
+81 
+	#MOTOR_MAXNR
+ 13
+
+	)
+
+	@src/motorinfo_DF010NA0000.h
+
+45 #i‚de‡
+REMOTEFOCUSD_ZOOM_VIRTUAL_START
+
+
+46 
+	#REMOTEFOCUSD_ZOOM_VIRTUAL_START
+ 0
+
+	)
+
+49 #i‚de‡
+REMOTEFOCUSD_ZOOM_VIRTUAL_END
+
+
+50 
+	#REMOTEFOCUSD_ZOOM_VIRTUAL_END
+ 3750
+
+	)
+
+53 #i‚de‡
+REMOTEFOCUSD_FOCUS_VIRTUAL_START
+
+
+54 
+	#REMOTEFOCUSD_FOCUS_VIRTUAL_START
+ 0
+
+	)
+
+57 #i‚de‡
+REMOTEFOCUSD_FOCUS_VIRTUAL_END
+
+
+58 #ifde‡
+_IP8362
+
+
+59 
+	#REMOTEFOCUSD_FOCUS_VIRTUAL_END
+ 5850
+
+61 #i‡(
+deföed
+ 
+_FD8362
+ || 
+_FD8362E
+ || 
+_FD8363
+)
+
+	)
+
+62 
+	#REMOTEFOCUSD_FOCUS_VIRTUAL_END
+ 6000
+
+65 
+
+	)
+
+66 
+	#USLEEP_ONE_SEC
+ 100000
+
+	)
+
+67 #ifde‡
+_IP8362
+
+
+68 
+	#REMOTEFOCUSD_ZOOM_VIRTUAL_ONESTEP
+ 1
+
+70 #i‡(
+deföed
+ 
+_FD8362
+ || 
+_FD8362E
+ || 
+_FD8363
+)
+
+	)
+
+71 
+	#REMOTEFOCUSD_ZOOM_VIRTUAL_ONESTEP
+ 1
+
+73 
+	#REMOTEFOCUSD_FOCUS_VIRTUAL_ONESTEP
+ 1
+
+	)
+
+74 
+	#REMOTEFOCUSD_ZOOM_VIRTUAL_TOTALSTEP
+ 
+REMOTEFOCUSD_ZOOM_VIRTUAL_END
+
+
+	)
+
+75 
+	#REMOTEFOCUSD_FOCUS_VIRTUAL_TOTALSTEP
+ 
+REMOTEFOCUSD_FOCUS_VIRTUAL_END
+
+
+76 
+	#REMOTEFOCUSD_ZOOM_MOTOR_TOTALSTEP
+ 
+REMOTEFOCUSD_ZOOM_VIRTUAL_END
+
+
+77 
+	#REMOTEFOCUSD_FOCUS_MOTOR_TOTALSTEP
+ 
+REMOTEFOCUSD_FOCUS_VIRTUAL_END
+
+
+	)
+
+78 
+	#REMOTEFOCUSD_ZOOM_MOTOR_POSITIONINGSTEP
+ 4434
+
+79 
+	#REMOTEFOCUSD_FOCUS_MOTOR_POSITIONINGSTEP
+ 6100
+
+80 
+	#REMOTEFOCUSD_FIRST_LEVEL_SEARCH_RANGE
+ 1920
+
+	)
+
+81 
+	#REMOTEFOCUSD_SECOND_LEVEL_SEARCH_RANGE
+ 160
+
+	)
+
+82 
+	#REMOTEFOCUSD_THIRD_LEVEL_SEARCH_RANGE
+ 80
+
+	)
+
+83 
+	#REMOTEFOCUSD_FINE_TUNE_SEARCH_STEP
+ 1
+
+	)
+
+84 
+	#REMOTEFOCUSD_SMALL_SEARCH_STEP
+ 60
+
+	)
+
+85 
+	#REMOTEFOCUSD_LARGE_SEARCH_STEP
+ 80
+
+	)
+
+86 
+	#REMOTEFOCUSD_ADJUST_STEP
+ 100
+
+	)
+
+87 
+	#REMOTEFOCUSD_COMPENSATION_SEARCH_RANGE
+ 600
+
+	)
+
+88 
+	#REMOTEFOCUSD_COMPENSATION_SEARCH_STEP
+ 60
+
+	)
+
+89 
+	#REMOTEFOCUSD_RFS_INIT_RANGE
+ 128
+
+90 
+	#REMOTEFOCUSD_RFS_INIT_STEP
+ 16
+
+91 
+	#REMOTEFOCUSD_RFS_RANGE_RATIO
+ 2
+
+	)
+
+92 
+	#REMOTEFOCUSD_RFS_STEP_RATIO
+ 8
+
+	)
+
+93 
+	#REMOTEFOCUSD_RFS_COUNTER_LIMIT
+ 16
+
+	)
+
+94 
+	#REMOTEFOCUSD_FOCUS_SCAN_INIT_STEP
+ 100
+
+	)
+
+95 
+	#REMOTEFOCUSD_FOCUS_SCAN_TERMINATION_COND
+ 1
+
+	)
+
+98 
+	#REMOTEFOCUSD_FOCUS_ONESTEP_TIME
+ 750
+
+99 
+	#REMOTEFOCUSD_ZOOM_ONESTEP_TIME
+ 1000
+
+100 
+	#REMOTEFOCUSD_ONESTEP_SEARCH_TIME
+ 
+USLEEP_ONE_SEC
+*2
+
+101 
+	#REMOTEFOCUSD_OPEN_IRIS_TIME
+ 
+USLEEP_ONE_SEC
+*4/10
+
+102 
+
+	)
+
+103 
+	#REMOTEFOCUSD_FOCUS_POSITION_INTERVAL
+ 400
+
+104 
+	#REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE
+ 15
+
+	)
+
+105 
+	#REMOTEFOCUSD_FOCUS_POSITION_START_TABLE_SIZE
+ 16
+
+	)
+
+106 
+	#REMOTEFOCUSD_FOCUS_VALUE_TABLE_SIZE
+ 
+REMOTEFOCUSD_FOCUS_VIRTUAL_END
+
+
+	)
+
+108 
+	#REMOTEFOCUSD_ZOOM_POSITION_INTERVAL
+ 250
+
+109 
+
+	)
+
+110 
+	#REMOTEFOCUSD_SELECT_TIMEOUT
+ 3000000
+
+	)
+
+	@src/motorinfo_TT02812PB.h
+
+45 #i‚de‡
+REMOTEFOCUSD_ZOOM_VIRTUAL_START
+
+
+46 
+	#REMOTEFOCUSD_ZOOM_VIRTUAL_START
+ 0
+
+	)
+
+49 #i‚de‡
+REMOTEFOCUSD_ZOOM_VIRTUAL_END
+
+
+50 
+	#REMOTEFOCUSD_ZOOM_VIRTUAL_END
+ 1352
+
+	)
+
+53 #i‚de‡
+REMOTEFOCUSD_FOCUS_VIRTUAL_START
+
+
+54 
+	#REMOTEFOCUSD_FOCUS_VIRTUAL_START
+ 0
+
+	)
+
+57 #i‚de‡
+REMOTEFOCUSD_FOCUS_VIRTUAL_END
+
+
+58 
+	#REMOTEFOCUSD_FOCUS_VIRTUAL_END
+ 3318
+
+	)
+
+61 
+	#REMOTEFOCUSD_ZOOM_VIRTUAL_ONESTEP
+ 1
+
+	)
+
+62 
+	#REMOTEFOCUSD_FOCUS_VIRTUAL_ONESTEP
+ 1
+
+	)
+
+63 
+	#REMOTEFOCUSD_ZOOM_VIRTUAL_TOTALSTEP
+ 700
+
+	)
+
+64 
+	#REMOTEFOCUSD_FOCUS_VIRTUAL_TOTALSTEP
+ 1740
+
+	)
+
+65 
+	#REMOTEFOCUSD_ZOOM_MOTOR_TOTALSTEP
+ 700
+
+66 
+	#REMOTEFOCUSD_FOCUS_MOTOR_TOTALSTEP
+ 1740
+
+67 
+	#REMOTEFOCUSD_ZOOM_MOTOR_POSITIONINGSTEP
+ 866
+
+68 
+	#REMOTEFOCUSD_FOCUS_MOTOR_POSITIONINGSTEP
+ 1949
+
+69 
+	#REMOTEFOCUSD_FIRST_LEVEL_SEARCH_RANGE
+ 576
+
+	)
+
+70 
+	#REMOTEFOCUSD_SECOND_LEVEL_SEARCH_RANGE
+ 48
+
+	)
+
+71 
+	#REMOTEFOCUSD_THIRD_LEVEL_SEARCH_RANGE
+ 8
+
+	)
+
+72 
+	#REMOTEFOCUSD_FINE_TUNE_SEARCH_STEP
+ 1
+
+	)
+
+73 
+	#REMOTEFOCUSD_SMALL_SEARCH_STEP
+ 6
+
+	)
+
+74 
+	#REMOTEFOCUSD_LARGE_SEARCH_STEP
+ 24
+
+	)
+
+75 
+	#REMOTEFOCUSD_ADJUST_STEP
+ 54
+
+	)
+
+77 
+	#REMOTEFOCUSD_FOCUS_ONESTEP_TIME
+ 5172
+
+78 
+	#REMOTEFOCUSD_ZOOM_ONESTEP_TIME
+ 6666
+
+79 
+	#REMOTEFOCUSD_ONESTEP_SEARCH_TIME
+ 300000
+
+80 
+	#REMOTEFOCUSD_OPEN_IRIS_TIME
+ 5000000
+
+81 
+
+	)
+
+82 
+	#REMOTEFOCUSD_FOCUS_POSITION_INTERVAL
+ 116
+
+	)
+
+83 
+	#REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE
+ 15
+
+	)
+
+84 
+	#REMOTEFOCUSD_FOCUS_VALUE_TABLE_SIZE
+ 1740
+
+	)
+
+86 
+	#REMOTEFOCUSD_ZOOM_POSITION_INTERVAL
+ 46
+
+87 
+
+	)
+
+88 
+	#REMOTEFOCUSD_SELECT_TIMEOUT
+ 3000000
+
+	)
+
+	@src/motorinfo_YC41AM.h
+
+45 #i‚de‡
+REMOTEFOCUSD_ZOOM_VIRTUAL_START
+
+
+46 
+	#REMOTEFOCUSD_ZOOM_VIRTUAL_START
+ 0
+
+	)
+
+49 #i‚de‡
+REMOTEFOCUSD_ZOOM_VIRTUAL_END
+
+
+50 
+	#REMOTEFOCUSD_ZOOM_VIRTUAL_END
+ 700
+
+	)
+
+53 #i‚de‡
+REMOTEFOCUSD_FOCUS_VIRTUAL_START
+
+
+54 
+	#REMOTEFOCUSD_FOCUS_VIRTUAL_START
+ 0
+
+	)
+
+57 #i‚de‡
+REMOTEFOCUSD_FOCUS_VIRTUAL_END
+
+
+58 
+	#REMOTEFOCUSD_FOCUS_VIRTUAL_END
+ 1740
+
+	)
+
+61 
+	#REMOTEFOCUSD_ZOOM_VIRTUAL_ONESTEP
+ 1
+
+	)
+
+62 
+	#REMOTEFOCUSD_FOCUS_VIRTUAL_ONESTEP
+ 1
+
+	)
+
+63 
+	#REMOTEFOCUSD_ZOOM_VIRTUAL_TOTALSTEP
+ 700
+
+	)
+
+64 
+	#REMOTEFOCUSD_FOCUS_VIRTUAL_TOTALSTEP
+ 1740
+
+	)
+
+65 
+	#REMOTEFOCUSD_ZOOM_MOTOR_TOTALSTEP
+ 700
+
+66 
+	#REMOTEFOCUSD_FOCUS_MOTOR_TOTALSTEP
+ 1740
+
+67 
+	#REMOTEFOCUSD_ZOOM_MOTOR_POSITIONINGSTEP
+ 866
+
+68 
+	#REMOTEFOCUSD_FOCUS_MOTOR_POSITIONINGSTEP
+ 1949
+
+69 
+	#REMOTEFOCUSD_FIRST_LEVEL_SEARCH_RANGE
+ 576
+
+	)
+
+70 
+	#REMOTEFOCUSD_SECOND_LEVEL_SEARCH_RANGE
+ 48
+
+	)
+
+71 
+	#REMOTEFOCUSD_THIRD_LEVEL_SEARCH_RANGE
+ 8
+
+	)
+
+72 
+	#REMOTEFOCUSD_FINE_TUNE_SEARCH_STEP
+ 1
+
+	)
+
+73 
+	#REMOTEFOCUSD_SMALL_SEARCH_STEP
+ 6
+
+	)
+
+74 
+	#REMOTEFOCUSD_LARGE_SEARCH_STEP
+ 24
+
+	)
+
+75 
+	#REMOTEFOCUSD_ADJUST_STEP
+ 54
+
+	)
+
+77 
+	#REMOTEFOCUSD_FOCUS_ONESTEP_TIME
+ 5172
+
+78 
+	#REMOTEFOCUSD_ZOOM_ONESTEP_TIME
+ 6666
+
+79 
+	#REMOTEFOCUSD_ONESTEP_SEARCH_TIME
+ 300000
+
+80 
+	#REMOTEFOCUSD_OPEN_IRIS_TIME
+ 5000000
+
+81 
+
+	)
+
+82 
+	#REMOTEFOCUSD_FOCUS_POSITION_INTERVAL
+ 116
+
+	)
+
+83 
+	#REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE
+ 15
+
+	)
+
+84 
+	#REMOTEFOCUSD_FOCUS_VALUE_TABLE_SIZE
+ 1740
+
+	)
+
+86 
+	#REMOTEFOCUSD_ZOOM_POSITION_INTERVAL
+ 46
+
+87 
+
+	)
+
+88 
+	#REMOTEFOCUSD_SELECT_TIMEOUT
+ 3000000
+
+	)
+
+	@src/remotefocusd.c
+
+45 
+	~"ªmŸefocusd.h
+"
+
+47 
+BOOL
+ 
+	gg_bTîmö©ed
+ = 
+FALSE
+;
+
+48 
+BOOL
+ 
+	gg_bRunThªad
+ = 
+TRUE
+;
+
+49 
+BOOL
+ 
+	gg_bIrisFuŒyO≥nSètus
+ = 
+TRUE
+;
+
+52 vﬁ©ûêc⁄° 
+	grcsid_ªmŸefocusd
+[]
+
+53 "$Id: "
+REMOTEFOCUSD_VERSION_STRING
+",ÑemŸefocusd, "
+REMOTEFOCUSD_UPDATETIME
+" $";
+
+55 
+DWORD
+ 
+	gg_dwèbFocusVÆueTabÀ
+[
+REMOTEFOCUSD_FOCUS_VALUE_TABLE_SIZE
+];
+
+57 #ifde‡
+_TABLE_MAPPING
+
+
+58 
+DWORD
+ 
+	gg_dwèbFocusP™TabÀ
+[
+REMOTEFOCUSD_ZOOM_VIRTUAL_TOTALSTEP
+];
+
+61 #ifde‡
+_FOCUS_DEFAULT
+
+
+62 
+DWORD
+ 
+	gg_dwFocusDeÁu…
+;
+
+66 
+	$RemŸeFocusd_Ußge
+()
+
+68 
+	`¥ötf
+("Remote Focus daemon\n"
+
+77 
+	}
+}
+
+80 
+	$RemŸeFocusd_ShowVîsi⁄
+()
+
+82 
+	`¥ötf
+("RemŸeFocusd Vîsi⁄: %s\n", 
+REMOTEFOCUSD_VERSION_STRING
+);
+
+83 
+	`¥ötf
+("La° Modify D©e: %†\n", 
+REMOTEFOCUSD_UPDATETIME
+);
+
+84 
+	`¥ötf
+("Copyright (c) 2000-2010 Vivotek Inc. AllÑightsÑeserved. \n");
+
+87 
+	}
+}
+
+90 
+	$RemŸeFocusd_C⁄fig
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+iArgc
+, ** 
+pszArgv
+)
+
+92 
+BOOL
+ 
+bIsD´m⁄
+ = 
+FALSE
+;
+
+93 
+iO±
+;
+
+96 (
+iO±
+ = 
+	`gë›t
+(
+iArgc
+, 
+pszArgv
+, "dvh")) != -1)
+
+98 
+iO±
+)
+
+101 
+bIsD´m⁄
+ = 
+TRUE
+;
+
+104 
+	`RemŸeFocusd_ShowVîsi⁄
+();
+
+105 
+	`exô
+(0);
+
+109 
+	`RemŸeFocusd_Ußge
+();
+
+110 
+	`exô
+(0);
+
+114 i‡(
+bIsD´m⁄
+)
+
+116 
+	`REMOTEFOCUSD_DBGPRINT
+("Entering daemon mode...\n");
+
+117 
+	`d´m⁄
+(0,0);
+
+121 
+	}
+}
+
+124 
+	$RemŸeFocusd_Sig«lH™dÀr
+(
+iSigNo
+)
+
+126 i‡–(
+iSigNo
+ =
+SIGTERM
+Ë|| (iSigNÿ=
+SIGINT
+) )
+
+128 
+	`REMOTEFOCUSD_DBGPRINT
+("Receive TERM/INT signal!\n");
+
+129 
+g_bTîmö©ed
+ = 
+TRUE
+;
+
+131 i‡(
+iSigNo
+ =
+SIGPIPE
+)
+
+133 
+	`REMOTEFOCUSD_DBGPRINT
+("Receive SIGPIPE!\n");
+
+137 
+	}
+}
+
+140 
+	$RemŸeFocusd_InôSig«l
+()
+
+142 
+siga˘i⁄
+ 
+tSigA˘
+;
+
+145 
+tSigA˘
+.
+ß_h™dÀr
+ = 
+RemŸeFocusd_Sig«lH™dÀr
+;
+
+146 
+	`sigem±y£t
+(&
+tSigA˘
+.
+ß_mask
+);
+
+147 
+tSigA˘
+.
+ß_Êags
+ = 
+SA_RESTART
+;
+
+148 
+	`siga˘i⁄
+(
+SIGTERM
+, &
+tSigA˘
+, 
+NULL
+);
+
+149 
+	`siga˘i⁄
+(
+SIGINT
+, &
+tSigA˘
+, 
+NULL
+);
+
+150 
+	`siga˘i⁄
+(
+SIGPIPE
+, &
+tSigA˘
+, 
+NULL
+);
+
+153 
+	}
+}
+
+156 
+	$maö
+(
+iArgc
+, ** 
+pszArgv
+)
+
+158 
+TRemŸeFocusdInfo
+ 
+tRemŸeFocusdInfo
+;
+
+159 
+TRemŸeFocusdInfo
+ *
+pThis
+ = &
+tRemŸeFocusdInfo
+;
+
+162 
+	`mem£t
+(
+pThis
+, 0, (
+TRemŸeFocusdInfo
+));
+
+164 
+	`RemŸeFocusd_C⁄fig
+(
+pThis
+, 
+iArgc
+, 
+pszArgv
+);
+
+165 
+	`RemŸeFocusd_InôSig«l
+();
+
+167 i‡(
+	`RemŸeFocusd_Inô
+(
+pThis
+Ë!
+S_OK
+)
+
+169 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_Init failed.\n");
+
+170 
+END
+;
+
+174 
+	`RemŸeFocusd_InfoPro˚ss
+(
+pThis
+);
+
+176 
+END
+:
+
+177 i‡(
+	`RemŸeFocusd_Rñó£
+(
+pThis
+Ë!
+S_OK
+)
+
+179 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_Release failed.\n");
+
+184 
+	}
+}
+
+	@src/remotefocusd.h
+
+43 #i‚de‡
+__REMOTEFOCUSD_H__
+
+
+44 
+	#__REMOTEFOCUSD_H__
+
+
+	)
+
+47 
+	~<°dio.h
+>
+
+48 
+	~<°dlib.h
+>
+
+49 
+	~<sig«l.h
+>
+
+50 
+	~<°rög.h
+>
+
+51 
+	~<uni°d.h
+>
+
+52 
+	~<î∫o.h
+>
+
+53 
+	~<f˙é.h
+>
+
+54 
+	~<£m≠h‹e.h
+>
+
+56 
+	~<sys/ty≥s.h
+>
+
+57 
+	~<sys/°©.h
+>
+
+58 
+	~<sys/io˘l.h
+>
+
+59 
+	~<sys/ùc.h
+>
+
+60 
+	~<sys/shm.h
+>
+
+61 
+	~<sys/sockë.h
+>
+
+62 
+	~<sys/time.h
+>
+
+64 
+	~"comm⁄.h
+"
+
+65 
+	~"osisﬁ©e.h
+"
+
+66 
+	~"fdcgi.h
+"
+
+67 
+	~"mesßge.h
+"
+
+68 
+	~"msgcomm⁄.h
+"
+
+69 
+	~"xml•¨£r.h
+"
+
+71 
+	~"focusmŸ‹.h
+"
+
+73 #ifde‡
+_YC41AM
+
+
+74 
+	~"mŸ‹öfo_YC41AM.h
+"
+
+75 #ñi‡
+deföed
+(
+_DF010NA0000
+)
+
+76 
+	~"mŸ‹öfo_DF010NA0000.h
+"
+
+77 #ñi‡
+deföed
+(
+_TT02812PB
+)
+
+78 
+	~"mŸ‹öfo_TT02812PB.h
+"
+
+79 #ñi‡
+deföed
+(
+_MSVF33X0313IR
+)
+
+80 
+	~"mŸ‹öfo_MSVF33X0313IR.h
+"
+
+81 #ñi‡
+deföed
+(
+_ASP3Z0312LMRP
+)
+
+82 
+	~"mŸ‹öfo_ASP3Z0312LMRP.h
+"
+
+83 #ñi‡
+deföed
+(
+_ABFMOTOR
+)
+
+84 
+	~"mŸ‹öfo_ABFMOTOR.h
+"
+
+87 
+	#REMOTEFOCUSD_VERSION_STRING
+ "1.0.1.0"
+
+	)
+
+88 
+	#REMOTEFOCUSD_UPDATETIME
+ "2013/06/12"
+
+	)
+
+89 
+	#REMOTEFOCUSD_MODULENAME
+ "ªmŸefocusd"
+
+	)
+
+91 
+	#REMOTEFOCUSD_DBGPRINT
+(
+fmt
+, 
+¨gs
+...Ë\
+
+	)
+
+93 
+¥ötf
+("["
+REMOTEFOCUSD_MODULENAME
+"] : " 
+fmt
+, ##
+¨gs
+);\
+
+96 
+	#REMOTEFOCUSD_FDCGI_SOCKET_PATH
+ "/tmp/RemŸeFocus"
+
+	)
+
+97 
+	#REMOTEFOCUSD_FIFO_PATH
+ "/tmp/RemŸeFocusFIFO"
+
+	)
+
+98 
+	#REMOTEFOCUSD_PID_FILE
+ "/v¨/run/ªmŸefocusd.pid"
+
+	)
+
+99 
+	#REMOTEFOCUSD_CAPABILITY_FILE
+ "/ëc/c⁄f.d/c⁄fig_ˇ∑bûôy.xml"
+
+	)
+
+100 
+	#REMOTEFOCUSD_CONFIG_FILE
+ "/ëc/c⁄f.d/ªmŸefocusd/ªmŸefocusd.c⁄f"
+
+	)
+
+101 
+	#REMOTEFOCUSD_FOCUS_LOG_FILE
+ "/ëc/c⁄f.d/ªmŸefocusd/focusw‹kög.log"
+
+	)
+
+102 
+	#REMOTEFOCUSD_ZOOM_LOG_FILE
+ "/ëc/c⁄f.d/ªmŸefocusd/zoomw‹kög.log"
+
+	)
+
+103 
+	#REMOTEFOCUSD_FOCUS_TABLE_MAPPING_FILE
+ "/ëc/c⁄f.d/ªmŸefocusd/∑n_focus.èb"
+
+	)
+
+104 
+	#REMOTEFOCUSD_FOCUS_DEFAULT_FILE
+ "/ëc/c⁄f.d/ªmŸefocusd/focus_deÁu…"
+
+	)
+
+105 
+	#REMOTEFOCUSD_FOCUS_MOTOR_DEVICE_FILE
+ "/dev/focusmŸ‹"
+
+	)
+
+106 
+	#REMOTEFOCUSD_ZOOM_MOTOR_DEVICE_FILE
+ "/dev/zoommŸ‹"
+
+	)
+
+108 
+	#REMOTEFOCUSD_THREAD_PRIORITY
+ 120
+
+	)
+
+110 
+	#REMOTEFOCUSD_MESSAGE_HEADER_LENGTH
+ 4
+
+	)
+
+111 
+	#REMOTEFOCUSD_MESSAGE_NUMBER
+ 10
+
+	)
+
+113 
+	#REMOTEFOCUSD_SHMEM_SEGSIZE
+ 32
+
+	)
+
+114 
+	#REMOTEFOCUSD_SHMEM_FILEPATH
+ "/u§/sbö/ªmŸefocusd"
+
+	)
+
+116 
+	#REMOTEFOCUSD_RESP_200_OK
+ "HTTP/1.1 200 OK\r\n\r\n"
+
+	)
+
+117 
+	#REMOTEFOCUSD_RESP_BAD_REQUEST
+ "HTTP/1.1 400 Bad Reque°\r\n\r\n"
+
+	)
+
+118 
+	#REMOTEFOCUSD_RESP_SERVER_ERROR
+ "HTTP/1.1 500 I¡î«»Sîvî Eº‹\r\n\r\n"
+
+	)
+
+119 
+	#REMOTEFOCUSD_RESP_SERVICE_UNAVAILABLE
+ "HTTP/1.1 503 Sîvi˚ U«vaûabÀ\r\n\r\n"
+
+	)
+
+122 
+	#REMOTEFOCUSD_DEFAULT_AF_BUTTON_PRESSTIME_FOR_FOCUS_SCAN
+ 5
+
+123 
+	#REMOTEFOCUSD_DEFAULT_AF_BUTTON_PRESSTIME_FOR_AUTO_FOCUS
+ 2
+
+124 
+
+	)
+
+126 
+	e_ERemŸeFocusd_C≠abûôy
+
+
+128 
+	mesupNoSuµ‹t
+ = 0,
+
+129 
+	mesupZoomFocus
+ = 1,
+
+130 
+	mesupZoom
+ = 2,
+
+131 
+	mesupFocus
+ = 4,
+
+132 } 
+	tERemŸeFocusd_C≠abûôy
+;
+
+134 
+	e_ERemŸeFocusd_Fun˘i⁄Ty≥
+
+
+136 
+	me·NoSîvi˚
+ = 0,
+
+137 
+	me·Zoom
+,
+
+138 
+	me·Focus
+,
+
+139 
+	me·AutoFocus
+,
+
+140 
+	me·FocusSˇn
+,
+
+141 
+	me·Posôi⁄ög
+,
+
+142 
+	me·GëSètus
+,
+
+143 
+	me·GëP¨am
+,
+
+144 
+	me·St›
+,
+
+145 
+	me·Zoomög
+,
+
+146 
+	me·IrisO≥n
+,
+
+147 
+	me·IrisE«bÀ
+,
+
+148 
+	me·Re£tFocus
+,
+
+149 
+	me·GëFocusDeÁu…
+,
+
+150 
+	me·SëFocusDeÁu…
+
+
+151 } 
+	tERemŸeFocusd_Fun˘i⁄Ty≥
+;
+
+153 
+	e_ERemŸeFocusd_MŸ‹Dúe˘i⁄
+
+
+155 
+	memdF‹w¨d
+ = 0,
+
+156 
+	memdBackw¨d
+,
+
+157 
+	memdDrõ˘
+,
+
+158 } 
+	tERemŸeFocusd_MŸ‹Dúe˘i⁄
+;
+
+160 
+	s_TRemŸeFocusd_MŸ‹CålInfo
+
+
+162 
+ERemŸeFocusd_Fun˘i⁄Ty≥
+ 
+	meFun˘i⁄Ty≥
+;
+
+163 
+ERemŸeFocusd_MŸ‹Dúe˘i⁄
+ 
+	meMŸ‹Dúe˘i⁄
+;
+
+165 
+DWORD
+ 
+	mdwMŸ‹Sãps
+;
+
+166 
+DWORD
+ 
+	mdwMŸ‹Posôi⁄
+;
+
+167 
+DWORD
+ 
+	mdwMŸ‹FocusDeÁu…
+;
+
+169 
+DWORD
+ 
+	mdwMŸ‹Sèπ
+;
+
+170 
+DWORD
+ 
+	mdwMŸ‹End
+;
+
+172 
+BOOL
+ 
+	mbFuŒyO≥√dIris
+;
+
+173 
+BOOL
+ 
+	mbKìpZoomög
+;
+
+175 } 
+	tTRemŸeFocusd_MŸ‹CålInfo
+;
+
+177 
+	s_TRemŸeFocusd_Clõ¡Info
+
+
+179 
+SOCKET
+ 
+	msckClõ¡
+;
+
+181 
+TRemŸeFocusd_MŸ‹CålInfo
+ 
+	mtMŸ‹CålInfoO±
+;
+
+182 } 
+	tTRemŸeFocusd_Clõ¡Info
+;
+
+184 
+	s_TRemŸeFocusd_Sh¨eMemInfo
+
+
+186 #ifde‡
+__FV_EDGE
+
+
+187 
+DWORD
+ 
+	mdwFocusMode
+;
+
+189 
+BOOL
+ 
+	mbFëchE«bÀ
+;
+
+190 
+DWORD
+ 
+	mdwFocusVÆue
+;
+
+192 
+BOOL
+ 
+	mbIrisE«bÀ
+;
+
+193 
+BOOL
+ 
+	mbFuŒyO≥√dIris
+;
+
+194 } 
+	tTRemŸeFocusd_Sh¨eMemInfo
+;
+
+196 
+	s_TRemŸeFocusdInfo
+
+
+198 
+DWORD
+ 
+	mdwMyPid
+;
+
+201 
+HANDLE
+ 
+	mhXMLP¨£r
+;
+
+202 
+fdcgi
+ *
+	m±FdCgi
+;
+
+203 
+	miMaxFd
+;
+
+204 
+	miCGIFd
+;
+
+205 
+	miFIFOFd
+;
+
+206 
+fd_£t
+ 
+	mfds_RódSë
+;
+
+207 
+DWORD
+ 
+	mdwBuâ⁄PªssTime
+;
+
+210 
+DWORD
+ 
+	mdwFocusVÆue
+;
+
+211 
+HANDLE
+ 
+	mhFocusMŸ‹Thªad
+;
+
+212 
+BOOL
+ 
+	mbFocusO≥øti⁄E«bÀ
+;
+
+213 
+DWORD
+ 
+	mdwFocusMŸ‹Posôi⁄
+;
+
+214 
+DWORD
+ 
+	mdwP™FocusPosôi⁄
+;
+
+215 
+TRemŸeFocusd_MŸ‹CålInfo
+ 
+	mtFocusMŸ‹CålInfo
+;
+
+218 
+HANDLE
+ 
+	mhZoomMŸ‹Thªad
+;
+
+219 
+BOOL
+ 
+	mbZoomO≥øti⁄E«bÀ
+;
+
+220 
+ERemŸeFocusd_Fun˘i⁄Ty≥
+ 
+	meNextFuncTy≥
+;
+
+221 
+DWORD
+ 
+	mdwZoomMŸ‹Posôi⁄
+;
+
+222 
+TRemŸeFocusd_MŸ‹CålInfo
+ 
+	mtZoomMŸ‹CålInfo
+;
+
+225 
+TRemŸeFocusd_Sh¨eMemInfo
+* 
+	m±Sh¨eMemInfo
+;
+
+226 
+	miShMemId
+;
+
+229 
+£m_t
+ 
+	m£mFûeMuãx
+;
+
+232 
+	mfdFocusMŸ‹Wakeup
+[2];
+
+233 
+	mfdZoomMŸ‹Wakeup
+[2];
+
+236 
+	miIsSuµ‹tZoom
+;
+
+237 
+	miIsSuµ‹tFocus
+;
+
+238 } 
+	tTRemŸeFocusdInfo
+;
+
+241 
+SCODE
+ 
+RemŸeFocusd_Inô
+(
+TRemŸeFocusdInfo
+ *
+pThis
+);
+
+242 
+SCODE
+ 
+RemŸeFocusd_Rñó£
+(
+TRemŸeFocusdInfo
+ *
+pThis
+);
+
+244 
+SCODE
+ 
+RemŸeFocusd_InôFdCgi
+(
+TRemŸeFocusdInfo
+ *
+pThis
+);
+
+245 
+SCODE
+ 
+RemŸeFocusd_InôFIFO
+(
+TRemŸeFocusdInfo
+ *
+pThis
+);
+
+247 
+SCODE
+ 
+RemŸeFocusd_InfoPro˚ss
+(
+TRemŸeFocusdInfo
+ *
+pThis
+);
+
+249 
+DWORD
+ 
+THREADAPI
+ 
+RemŸeFocusd_FocusMŸ‹Thªad
+(DWORD 
+dwIn°™˚
+);
+
+250 
+DWORD
+ 
+THREADAPI
+ 
+RemŸeFocusd_ZoomMŸ‹Thªad
+(DWORD 
+dwIn°™˚
+);
+
+	@src/remotefocusd_Table.c
+
+43 
+	~"ªmŸefocusd.h
+"
+
+45 #ifde‡
+_FOCUSING_START
+
+
+46 #ifde‡
+_FD8372
+
+
+47 c⁄° 
+DWORD
+ 
+	gg_dwèbFocusögSèπTabÀ
+[
+REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE
+] =
+
+52 #ñi‡
+deföed
+(
+_IP8372
+)
+
+53 c⁄° 
+DWORD
+ 
+	gg_dwèbFocusögSèπTabÀ
+[
+REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE
+] =
+
+58 #ñi‡
+deföed
+(
+_FD8173
+Ë|| deföed(
+_FD8373
+Ë|| deföed(
+_IB8373
+)
+
+59 c⁄° 
+DWORD
+ 
+	gg_dwèbFocusögSèπTabÀ
+[
+REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE
+] =
+
+64 #ñi‡(
+deföed
+ 
+_FD8365
+ || deföed 
+_FD8355
+)
+
+65 c⁄° 
+DWORD
+ 
+	gg_dwèbFocusögSèπTabÀ
+[
+REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE
+] =
+
+71 #ñi‡(
+deföed
+ 
+_IP8365
+ || deföed 
+_IP8355
+)
+
+72 c⁄° 
+DWORD
+ 
+	gg_dwèbFocusögSèπTabÀ
+[
+REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE
+] =
+
+77 #ñi‡(
+deföed
+ 
+_IP8165
+ || deföed 
+_IP8155
+)
+
+78 c⁄° 
+DWORD
+ 
+	gg_dwèbFocusögSèπTabÀ
+[
+REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE
+] =
+
+88 #i‚de‡
+_TABLE_MAPPING
+
+
+89 #ifde‡
+_FD8372
+
+
+90 c⁄° 
+DWORD
+ 
+	gg_dwèbFocusPosôi⁄TabÀ
+[
+REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE
+] =
+
+95 #ñi‡
+deföed
+(
+_IP8372
+)
+
+96 c⁄° 
+DWORD
+ 
+	gg_dwèbFocusPosôi⁄TabÀ
+[
+REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE
+] =
+
+101 #ñi‡(
+deföed
+ 
+_FD8362
+ || 
+_IP8362
+)
+
+102 c⁄° 
+DWORD
+ 
+	gg_dwèbFocusPosôi⁄TabÀ
+[
+REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE
+] =
+
+107 <<<<<<< .
+	gw‹kög
+
+
+108 #ñi‡
+deföed
+(
+_FD8173
+Ë|| deföed(
+_FD8373
+Ë|| deföed(
+_IB8373
+)
+
+109 c⁄° 
+DWORD
+ 
+	gg_dwèbFocusPosôi⁄TabÀ
+[
+REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE
+] =
+
+116 #ñi‡(
+deföed
+ 
+_FD8365
+ || deföed 
+_FD8355
+)
+
+117 c⁄° 
+DWORD
+ 
+g_dwèbFocusPosôi⁄TabÀ
+[
+REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE
+] =
+
+124 #ñi‡(
+deföed
+ 
+_IP8365
+ || deföed 
+_IP8355
+)
+
+125 c⁄° 
+DWORD
+ 
+	gg_dwèbFocusPosôi⁄TabÀ
+[
+REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE
+] =
+
+131 #ñi‡(
+deföed
+ 
+_IP8165
+ || deföed 
+_IP8155
+)
+
+132 c⁄° 
+DWORD
+ 
+	gg_dwèbFocusPosôi⁄TabÀ
+[
+REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE
+] =
+
+138 >>>>>>> .
+	gmîge
+-
+	gright
+.
+	gr155062
+
+
+	@src/remotefocusd_init.c
+
+45 
+	~"ªmŸefocusd.h
+"
+
+47 #ifde‡
+_FOCUS_DEFAULT
+
+
+48 
+DWORD
+ 
+g_dwFocusDeÁu…
+;
+
+52 
+SCODE
+ 
+	$RemŸeFocusd_LﬂdRe£tDeÁu…
+()
+
+54 
+FILE
+ *
+pfFocusDeÁu…
+;
+
+55 
+acP¨am
+[4];
+
+56 
+iTabÀIndex
+ = 0;
+
+58 i‡((
+pfFocusDeÁu…
+ = 
+	`f›í
+(
+REMOTEFOCUSD_FOCUS_DEFAULT_FILE
+, "r")Ë=
+NULL
+)
+
+60 
+	`REMOTEFOCUSD_DBGPRINT
+("fopen failed!\n");
+
+61  
+S_FAIL
+;
+
+65 
+	`fsˇnf
+(
+pfFocusDeÁu…
+, "%s", 
+acP¨am
+);
+
+66 
+g_dwFocusDeÁu…
+ = 
+	`©oi
+(
+acP¨am
+);
+
+69 
+	`f˛o£
+(
+pfFocusDeÁu…
+);
+
+70  
+S_OK
+;
+
+71 
+	}
+}
+
+74 #ifde‡
+_TABLE_MAPPING
+
+
+75 
+DWORD
+ 
+g_dwèbFocusP™TabÀ
+[];
+
+79 
+SCODE
+ 
+	$RemŸeFocusd_LﬂdM≠pögTabÀ
+()
+
+81 
+FILE
+ *
+pfM≠pögTabÀ
+;
+
+82 
+acP¨am
+[4];
+
+83 
+iTabÀIndex
+ = 0;
+
+85 i‡((
+pfM≠pögTabÀ
+ = 
+	`f›í
+(
+REMOTEFOCUSD_FOCUS_TABLE_MAPPING_FILE
+, "r")Ë=
+NULL
+)
+
+87 
+	`REMOTEFOCUSD_DBGPRINT
+("fopen failed!\n");
+
+88  
+S_FAIL
+;
+
+91 
+	`fsˇnf
+(
+pfM≠pögTabÀ
+, "%s", 
+acP¨am
+Ë!
+EOF
+)
+
+93 i‡(
+iTabÀIndex
+ >
+REMOTEFOCUSD_ZOOM_VIRTUAL_TOTALSTEP
+) ;
+
+94 
+g_dwèbFocusP™TabÀ
+[
+iTabÀIndex
+] = 
+	`©oi
+(
+acP¨am
+);
+
+95 
+iTabÀIndex
+++;
+
+98 
+	`f˛o£
+(
+pfM≠pögTabÀ
+);
+
+99  
+S_OK
+;
+
+100 
+	}
+}
+
+104 
+SCODE
+ 
+	$RemŸeFocusd_LﬂdC≠abûôyFûe
+(
+TRemŸeFocusdInfo
+ *
+±Info
+)
+
+106 
+SCODE
+ 
+sRëu∫
+;
+
+107 
+acP¨£Såög
+[2][64];
+
+108 
+iC≠abûôy
+;
+
+109 
+	`¢¥ötf
+(
+acP¨£Såög
+[0], 64, "/root/capability/remotefocus");
+
+118 
+TCfgP¨£M≠
+ 
+acCfgP¨£M≠
+[] = {
+
+119 {
+acP¨£Såög
+[0], 
+côI¡egî
+|
+csmGëbyVÆ
+, (), &
+iC≠abûôy
+, 
+NULL
+},
+
+120 {
+NULL
+, 0, 0, NULL, NULL}
+
+123 
+sRëu∫
+ = 
+	`XMLSP¨£r_RódAŒ
+(
+REMOTEFOCUSD_CAPABILITY_FILE
+, 
+acCfgP¨£M≠
+);
+
+124 i‡(
+sRëu∫
+ !
+S_OK
+)
+
+126 
+	`REMOTEFOCUSD_DBGPRINT
+("XMLÖ¨£∏Áûed, index = %d.\n", 
+sRëu∫
+);
+
+127  
+S_FAIL
+;
+
+131 
+iC≠abûôy
+)
+
+133 
+esupNoSuµ‹t
+:
+
+134 
+±Info
+->
+iIsSuµ‹tZoom
+ = 0;
+
+135 
+±Info
+->
+iIsSuµ‹tFocus
+ = 0;
+
+138 
+esupZoomFocus
+:
+
+139 
+±Info
+->
+iIsSuµ‹tZoom
+ = 1;
+
+140 
+±Info
+->
+iIsSuµ‹tFocus
+ = 1;
+
+143 
+esupZoom
+:
+
+144 
+±Info
+->
+iIsSuµ‹tZoom
+ = 1;
+
+145 
+±Info
+->
+iIsSuµ‹tFocus
+ = 0;
+
+148 
+esupFocus
+:
+
+149 
+±Info
+->
+iIsSuµ‹tZoom
+ = 0;
+
+150 
+±Info
+->
+iIsSuµ‹tFocus
+ = 1;
+
+153 
+±Info
+->
+iIsSuµ‹tZoom
+ = 0;
+
+154 
+±Info
+->
+iIsSuµ‹tFocus
+ = 0;
+
+158 
+	`¥ötf
+("******RemoteFocusd Daemon Configuration******\n");
+
+159 
+	`¥ötf
+("IsSuµ‹tZoom = %d\n", 
+±Info
+->
+iIsSuµ‹tZoom
+);
+
+160 
+	`¥ötf
+("IsSuµ‹tFocu†%d\n", 
+±Info
+->
+iIsSuµ‹tFocus
+);
+
+161 
+	`¥ötf
+("******RemoteFocusd Daemon Configuration******\n");
+
+163  
+S_OK
+;
+
+164 
+	}
+}
+
+167 
+SCODE
+ 
+	$RemŸeFocusd_LﬂdC⁄figFûe
+(
+TRemŸeFocusdInfo
+ *
+pThis
+)
+
+169 
+FILE
+ *
+pfC⁄fig
+;
+
+170 
+acP¨am
+[128];
+
+171 *
+acVÆue
+;
+
+174 i‡((
+pfC⁄fig
+ = 
+	`f›í
+(
+REMOTEFOCUSD_CONFIG_FILE
+, "r")Ë=
+NULL
+)
+
+176 
+	`REMOTEFOCUSD_DBGPRINT
+("fopen failed!\n");
+
+177  
+S_FAIL
+;
+
+180 
+	`fsˇnf
+(
+pfC⁄fig
+, "%s", 
+acP¨am
+Ë!
+EOF
+)
+
+182 
+acVÆue
+ = 
+	`°rchr
+(
+acP¨am
+, '=');
+
+183 *(
+acVÆue
+ ++) = '\0';
+
+185 i‡((
+pThis
+->
+iIsSuµ‹tZoom
+Ë&& 
+	`°∫cmp
+(
+acP¨am
+, "zoom_motor", 10) == 0)
+
+187 
+pThis
+->
+dwZoomMŸ‹Posôi⁄
+ = 
+	`©oi
+(
+acVÆue
+);
+
+189 i‡((
+pThis
+->
+iIsSuµ‹tFocus
+Ë&& 
+	`°∫cmp
+(
+acP¨am
+, "focus_motor", 11) == 0)
+
+191 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ = 
+	`©oi
+(
+acVÆue
+);
+
+195 
+	`f˛o£
+(
+pfC⁄fig
+);
+
+196  
+S_OK
+;
+
+197 
+	}
+}
+
+200 
+	$RemŸeFocusd_GíPidFûe
+()
+
+202 
+FILE
+ *
+pFûe
+;
+
+203 
+a˘emp
+[8];
+
+205 i‡((
+pFûe
+ = 
+	`f›í
+(
+REMOTEFOCUSD_PID_FILE
+, "w")Ë!
+NULL
+)
+
+207 
+	`¢¥ötf
+(
+a˘emp
+, 8, "%d", 
+	`gëpid
+());
+
+208 
+	`Âuts
+(
+a˘emp
+, 
+pFûe
+);
+
+209 
+	`f˛o£
+(
+pFûe
+);
+
+213 
+	}
+}
+
+216 
+	$RemŸeFocusd_Upd©eMaxFd
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+SOCKET
+ 
+sckI≈ut
+)
+
+218 i‡(
+sckI≈ut
+ > 
+pThis
+->
+iMaxFd
+)
+
+220 
+pThis
+->
+iMaxFd
+ = 
+sckI≈ut
+;
+
+224 
+	}
+}
+
+227 
+SCODE
+ 
+	$RemŸeFocusd_InôFdCgi
+(
+TRemŸeFocusdInfo
+ *
+pThis
+)
+
+229 
+iSockëFd
+;
+
+232 i‡(
+	`FDCGI_öô
+(&(
+pThis
+->
+±FdCgi
+), 
+REMOTEFOCUSD_FDCGI_SOCKET_PATH
+Ë!
+S_OK
+)
+
+234 
+	`REMOTEFOCUSD_DBGPRINT
+("FDCGI_init failed.\n");
+
+235  
+S_FAIL
+;
+
+238 
+fdcgi
+ *
+±FdCgi
+ = 
+pThis
+->ptFdCgi;
+
+240 
+iSockëFd
+ = 
+	`FDCGI_GëSockëFd
+(
+±FdCgi
+);
+
+241 
+pThis
+->
+iCGIFd
+ = 
+iSockëFd
+;
+
+242 
+	`FD_SET
+(
+iSockëFd
+, &
+pThis
+->
+fds_RódSë
+);
+
+243 
+	`RemŸeFocusd_Upd©eMaxFd
+(
+pThis
+, 
+iSockëFd
+);
+
+245  
+S_OK
+;
+
+246 
+	}
+}
+
+249 
+SCODE
+ 
+	$RemŸeFocusd_InôFIFO
+(
+TRemŸeFocusdInfo
+ *
+pThis
+)
+
+251 
+iFIFOFd
+;
+
+254 i‡(
+	`ac˚ss
+(
+REMOTEFOCUSD_FIFO_PATH
+, 
+F_OK
+) == 0)
+
+256 
+	`ªmove
+(
+REMOTEFOCUSD_FIFO_PATH
+);
+
+259 i‡(
+	`mkfifo
+(
+REMOTEFOCUSD_FIFO_PATH
+, 0777) != 0)
+
+261 
+	`REMOTEFOCUSD_DBGPRINT
+("FailedÅo create FIFO.\n");
+
+262  
+S_FAIL
+;
+
+265 
+iFIFOFd
+ = 
+	`›í
+(
+REMOTEFOCUSD_FIFO_PATH
+, 
+O_RDWR
+);
+
+266 i‡(
+iFIFOFd
+ == -1)
+
+268 
+	`REMOTEFOCUSD_DBGPRINT
+("FailedÅo open FIFO.\n");
+
+269  
+S_FAIL
+;
+
+272 
+pThis
+->
+iFIFOFd
+ = iFIFOFd;
+
+273 
+	`FD_SET
+(
+iFIFOFd
+, &
+pThis
+->
+fds_RódSë
+);
+
+274 
+	`RemŸeFocusd_Upd©eMaxFd
+(
+pThis
+, 
+iFIFOFd
+);
+
+276  
+S_OK
+;
+
+277 
+	}
+}
+
+280 
+SCODE
+ 
+	$RemŸeFocusd_InôSh¨eMem
+(
+TRemŸeFocusdInfo
+ *
+pThis
+)
+
+282 
+key_t
+ 
+key
+;
+
+286 
+key
+ = 
+	`·ok
+(
+REMOTEFOCUSD_SHMEM_FILEPATH
+, 0);
+
+287 i‡((
+pThis
+->
+iShMemId
+ = 
+	`shmgë
+(
+key
+, 
+REMOTEFOCUSD_SHMEM_SEGSIZE
+, 
+IPC_CREAT
+ | 0666)) < 0)
+
+289 
+	`¥ötf
+("key i†%x,Éºnÿi†\"%s\"\n", 
+key
+, 
+	`°ªº‹
+(
+î∫o
+));
+
+290 
+	`REMOTEFOCUSD_DBGPRINT
+("shmget failed.\n");
+
+291  
+S_FAIL
+;
+
+295 i‡((
+pThis
+->
+±Sh¨eMemInfo
+ =
+
+296 (
+TRemŸeFocusd_Sh¨eMemInfo
+*)
+	`shm©
+(
+pThis
+->
+iShMemId
+, 0, 0)) == (*)(-1))
+
+298 
+	`REMOTEFOCUSD_DBGPRINT
+("shmat failed.\n");
+
+299  
+S_FAIL
+;
+
+302  
+S_OK
+;
+
+303 
+	}
+}
+
+306 
+SCODE
+ 
+	$RemŸeFocusd_InôXMLP¨£r
+(
+TRemŸeFocusdInfo
+ *
+pThis
+)
+
+308 
+HANDLE
+ 
+hXMLP¨£r
+;
+
+311 i‡((
+hXMLP¨£r
+ = 
+	`XML_P¨£rCª©e
+(
+NULL
+)) == NULL)
+
+313 
+	`REMOTEFOCUSD_DBGPRINT
+("XML_ParserCreate failed.\n");
+
+314  
+S_FAIL
+;
+
+316 
+pThis
+->
+hXMLP¨£r
+ = hXMLParser;
+
+318  
+S_OK
+;
+
+319 
+	}
+}
+
+322 
+SCODE
+ 
+	$RemŸeFocusd_InôFocusMŸ‹Thªad
+(
+TRemŸeFocusdInfo
+ *
+pThis
+)
+
+324 
+TOSThªadInôO±i⁄s
+ 
+tOSInôThªadO±
+;
+
+325 
+	`mem£t
+(&
+tOSInôThªadO±
+, 0, (
+TOSThªadInôO±i⁄s
+));
+
+328 
+tOSInôThªadO±
+.
+dwSèckSize
+ = 0;
+
+329 
+tOSInôThªadO±
+.
+dwIn°™˚
+ = (
+DWORD
+)(
+pThis
+);
+
+330 
+tOSInôThªadO±
+.
+dwPri‹ôy
+ = 
+REMOTEFOCUSD_THREAD_PRIORITY
+;
+
+331 
+tOSInôThªadO±
+.
+pThªadProc
+ = 
+RemŸeFocusd_FocusMŸ‹Thªad
+;
+
+332 
+tOSInôThªadO±
+.
+dwFœgs
+ = 
+T_TSLICE
+;
+
+334 i‡(
+	`OSThªad_Inôül
+(&
+pThis
+->
+hFocusMŸ‹Thªad
+, &
+tOSInôThªadO±
+Ë!
+S_OK
+)
+
+336 
+	`REMOTEFOCUSD_DBGPRINT
+("OSThread_Initial failed.\n");
+
+337  
+S_FAIL
+;
+
+339 i‡(
+	`OSThªad_Sèπ
+(
+pThis
+->
+hFocusMŸ‹Thªad
+Ë!
+S_OK
+)
+
+341 
+	`REMOTEFOCUSD_DBGPRINT
+("OSThread_Start failed.\n");
+
+342  
+S_FAIL
+;
+
+345  
+S_OK
+;
+
+346 
+	}
+}
+
+349 
+SCODE
+ 
+	$RemŸeFocusd_InôZoomMŸ‹Thªad
+(
+TRemŸeFocusdInfo
+ *
+pThis
+)
+
+351 
+TOSThªadInôO±i⁄s
+ 
+tOSInôThªadO±
+;
+
+352 
+	`mem£t
+(&
+tOSInôThªadO±
+, 0, (
+TOSThªadInôO±i⁄s
+));
+
+355 
+tOSInôThªadO±
+.
+dwSèckSize
+ = 0;
+
+356 
+tOSInôThªadO±
+.
+dwIn°™˚
+ = (
+DWORD
+)(
+pThis
+);
+
+357 
+tOSInôThªadO±
+.
+dwPri‹ôy
+ = 
+REMOTEFOCUSD_THREAD_PRIORITY
+;
+
+358 
+tOSInôThªadO±
+.
+pThªadProc
+ = 
+RemŸeFocusd_ZoomMŸ‹Thªad
+;
+
+359 
+tOSInôThªadO±
+.
+dwFœgs
+ = 
+T_TSLICE
+;
+
+361 i‡(
+	`OSThªad_Inôül
+(&
+pThis
+->
+hZoomMŸ‹Thªad
+, &
+tOSInôThªadO±
+Ë!
+S_OK
+)
+
+363 
+	`REMOTEFOCUSD_DBGPRINT
+("OSThread_Initial failed.\n");
+
+364  
+S_FAIL
+;
+
+366 i‡(
+	`OSThªad_Sèπ
+(
+pThis
+->
+hZoomMŸ‹Thªad
+Ë!
+S_OK
+)
+
+368 
+	`REMOTEFOCUSD_DBGPRINT
+("OSThread_Start failed.\n");
+
+369  
+S_FAIL
+;
+
+372  
+S_OK
+;
+
+373 
+	}
+}
+
+376 
+SCODE
+ 
+	$RemŸeFocusd_Inô
+(
+TRemŸeFocusdInfo
+ *
+pThis
+)
+
+379 
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+ = 
+FALSE
+;
+
+380 
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+ = 
+FALSE
+;
+
+381 
+pThis
+->
+eNextFuncTy≥
+ = 
+e·NoSîvi˚
+;
+
+383 i‡(
+	`RemŸeFocusd_LﬂdC≠abûôyFûe
+(
+pThis
+Ë!
+S_OK
+)
+
+385 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_LoadCapabilityFile failed.\n");
+
+386  
+S_FAIL
+;
+
+389 i‡(
+	`RemŸeFocusd_LﬂdC⁄figFûe
+(
+pThis
+Ë!
+S_OK
+)
+
+391 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_LoadConfigFile failed.\n");
+
+392  
+S_FAIL
+;
+
+395 i‡(
+	`RemŸeFocusd_InôFdCgi
+(
+pThis
+Ë!
+S_OK
+)
+
+397 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_InitFdCgi failed.\n");
+
+398  
+S_FAIL
+;
+
+401 i‡(
+	`RemŸeFocusd_InôFIFO
+(
+pThis
+Ë!
+S_OK
+)
+
+403 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_InitFIFO failed.\n");
+
+404  
+S_FAIL
+;
+
+407 i‡(
+	`RemŸeFocusd_InôSh¨eMem
+(
+pThis
+Ë!
+S_OK
+)
+
+409 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_InitShareMem failed.\n");
+
+410  
+S_FAIL
+;
+
+413 i‡(
+	`RemŸeFocusd_InôXMLP¨£r
+(
+pThis
+Ë!
+S_OK
+)
+
+415 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_InitXMLParser failed.\n");
+
+416  
+S_FAIL
+;
+
+419 i‡((
+pThis
+->
+iIsSuµ‹tFocus
+Ë&& (
+	`RemŸeFocusd_InôFocusMŸ‹Thªad
+’ThisË!
+S_OK
+))
+
+421 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_InitFocusMotorThread failed.\n");
+
+422  
+S_FAIL
+;
+
+425 i‡((
+pThis
+->
+iIsSuµ‹tZoom
+Ë&& (
+	`RemŸeFocusd_InôZoomMŸ‹Thªad
+’ThisË!
+S_OK
+))
+
+427 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_InitZoomMotorThread failed.\n");
+
+428  
+S_FAIL
+;
+
+433 
+	`£m_öô
+(&
+pThis
+->
+£mFûeMuãx
+, 0, 1);
+
+436 
+	`RemŸeFocusd_GíPidFûe
+();
+
+437 
+pThis
+->
+dwMyPid
+ = 
+	`gëpid
+();
+
+440 
+	`sockë∑ú
+(
+AF_UNIX
+, 
+SOCK_STREAM
+, 0, 
+pThis
+->
+fdFocusMŸ‹Wakeup
+);
+
+441 
+	`sockë∑ú
+(
+AF_UNIX
+, 
+SOCK_STREAM
+, 0, 
+pThis
+->
+fdZoomMŸ‹Wakeup
+);
+
+443 #ifde‡
+_TABLE_MAPPING
+
+
+445 i‡(
+pThis
+->
+iIsSuµ‹tFocus
+)
+
+447 
+	`RemŸeFocusd_LﬂdM≠pögTabÀ
+();
+
+452 #ifde‡
+_FOCUS_DEFAULT
+
+
+453 i‡(
+pThis
+->
+iIsSuµ‹tFocus
+)
+
+455 
+	`RemŸeFocusd_LﬂdRe£tDeÁu…
+();
+
+459  
+S_OK
+;
+
+460 
+	}
+}
+
+463 
+SCODE
+ 
+	$RemŸeFocusd_Rñó£
+(
+TRemŸeFocusdInfo
+ *
+pThis
+)
+
+466 
+	`REMOTEFOCUSD_DBGPRINT
+("ReleaseÑesources...");
+
+469 i‡((
+	`shmdt
+((*)(
+pThis
+->
+±Sh¨eMemInfo
+))) < 0)
+
+471 
+	`REMOTEFOCUSD_DBGPRINT
+("shmdt failed.\n");
+
+472  
+S_FAIL
+;
+
+475 i‡((
+pThis
+->
+iIsSuµ‹tFocus
+Ë&& (
+	`OSThªad_Rñó£
+(&’This->
+hFocusMŸ‹Thªad
+)Ë!
+S_OK
+))
+
+477 
+	`REMOTEFOCUSD_DBGPRINT
+("OSThread_Release failed.\n");
+
+478  
+S_FAIL
+;
+
+481 i‡((
+pThis
+->
+iIsSuµ‹tZoom
+Ë&& (
+	`OSThªad_Rñó£
+(&’This->
+hZoomMŸ‹Thªad
+)Ë!
+S_OK
+))
+
+483 
+	`REMOTEFOCUSD_DBGPRINT
+("OSThread_Release failed.\n");
+
+484  
+S_FAIL
+;
+
+488 
+	`XML_P¨£rFªe
+(
+pThis
+->
+hXMLP¨£r
+);
+
+489 
+	`£m_de°roy
+(&(
+pThis
+->
+£mFûeMuãx
+));
+
+490 
+	`FDCGI_˛o£
+(
+pThis
+->
+±FdCgi
+);
+
+491 
+	`˛o£
+(
+pThis
+->
+iFIFOFd
+);
+
+492 
+	`u∆ök
+(
+REMOTEFOCUSD_PID_FILE
+);
+
+494 
+	`¥ötf
+("OK\n");
+
+495  
+S_OK
+;
+
+496 
+	}
+}
+
+	@src/remotefocusd_process.c
+
+47 
+	~"ªmŸefocusd.h
+"
+
+49 c⁄° 
+DWORD
+ 
+g_dwèbFocusögSèπTabÀ
+[];
+
+50 
+DWORD
+ 
+g_dwèbFocusVÆueTabÀ
+[];
+
+51 
+DWORD
+ 
+g_dwFocusDeÁu…
+;
+
+52 
+BOOL
+ 
+g_bIrisFuŒyO≥nSètus
+;
+
+55 
+	$RemŸeFocusd_CheckLogFûe
+(
+TRemŸeFocusdInfo
+ *
+pThis
+)
+
+57 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±FocusMŸ‹CålInfo
+ = &(
+pThis
+->
+tFocusMŸ‹CålInfo
+);
+
+58 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±ZoomMŸ‹CålInfo
+ = &(
+pThis
+->
+tZoomMŸ‹CålInfo
+);
+
+61 i‡((
+	`ac˚ss
+(
+REMOTEFOCUSD_FOCUS_LOG_FILE
+, 
+F_OK
+) == 0)
+
+62 || (
+	`ac˚ss
+(
+REMOTEFOCUSD_ZOOM_LOG_FILE
+, 
+F_OK
+) == 0))
+
+64 
+	`REMOTEFOCUSD_DBGPRINT
+("PowerÜoss unexpectedly! NeedÖositioning.\n");
+
+66 i‡(
+pThis
+->
+iIsSuµ‹tFocus
+)
+
+68 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·Posôi⁄ög
+;
+
+69 
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+70 i‡(
+	`£nd
+(
+pThis
+->
+fdFocusMŸ‹Wakeup
+[0], &’This->
+bFocusO≥øti⁄E«bÀ
+),
+
+71 (
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+73 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up focus motorÅhread failed.\n");
+
+77 i‡(
+pThis
+->
+iIsSuµ‹tZoom
+)
+
+79 
+±ZoomMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·Posôi⁄ög
+;
+
+80 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Posôi⁄
+ = 
+REMOTEFOCUSD_ZOOM_VIRTUAL_START
+;
+
+81 
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+82 i‡(
+	`£nd
+(
+pThis
+->
+fdZoomMŸ‹Wakeup
+[0], &’This->
+bZoomO≥øti⁄E«bÀ
+),
+
+83 (
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+85 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up zoom motorÅhread failed.\n");
+
+92 
+	}
+}
+
+95 
+	$RemŸeFocusd_RïlyBadReque°Msg
+(
+SOCKET
+ 
+sckClõ¡
+)
+
+97 
+acRïlyMsg
+[128];
+
+100 
+	`•rötf
+(
+acRïlyMsg
+, "HTTP/1.1 400 Bad Request\r\n\r\n");
+
+101 
+	`wrôe
+(
+sckClõ¡
+, 
+acRïlyMsg
+, 
+	`°æí
+(acReplyMsg));
+
+103 
+	`˛o£
+(
+sckClõ¡
+);
+
+105 
+	}
+}
+
+108 
+	$RemŸeFocusd_RïlyOKMesßge
+(
+SOCKET
+ 
+sckClõ¡
+)
+
+110 
+acRïlyMsg
+[1024];
+
+113 
+	`•rötf
+(
+acRïlyMsg
+,
+
+121 
+	`wrôe
+(
+sckClõ¡
+, 
+acRïlyMsg
+, 
+	`°æí
+(acReplyMsg));
+
+123 
+	`˛o£
+(
+sckClõ¡
+);
+
+125 
+	}
+}
+
+128 
+	$RemŸeFocusd_RïlySètus
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+SOCKET
+ 
+sckClõ¡
+)
+
+130 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±FocusMŸ‹CålInfo
+ = &(
+pThis
+->
+tFocusMŸ‹CålInfo
+);
+
+131 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±ZoomMŸ‹CålInfo
+ = &(
+pThis
+->
+tZoomMŸ‹CålInfo
+);
+
+132 
+TRemŸeFocusd_Sh¨eMemInfo
+* 
+±Sh¨eMemInfo
+ = 
+pThis
+->ptShareMemInfo;
+
+133 
+acP¨amSë
+[1024];
+
+134 
+acRïlyMsg
+[1024];
+
+136 i‡(
+pThis
+->
+iIsSuµ‹tFocus
+ &&ÖThis->
+iIsSuµ‹tZoom
+)
+
+139 
+	`•rötf
+(
+acP¨amSë
+,
+
+151 
+REMOTEFOCUSD_ZOOM_VIRTUAL_TOTALSTEP
+,
+
+152 
+REMOTEFOCUSD_FOCUS_VIRTUAL_TOTALSTEP
+,
+
+153 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Sèπ
+,
+
+154 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹End
+,
+
+155 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Sèπ
+,
+
+156 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹End
+,
+
+157 
+pThis
+->
+dwZoomMŸ‹Posôi⁄
+,
+
+158 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+,
+
+159 
+±ZoomMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+,
+
+160 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+,
+
+161 
+g_bIrisFuŒyO≥nSètus
+
+
+164 if(
+pThis
+->
+iIsSuµ‹tFocus
+)
+
+166 
+	`•rötf
+(
+acP¨amSë
+,
+
+173 
+REMOTEFOCUSD_FOCUS_VIRTUAL_TOTALSTEP
+,
+
+174 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Sèπ
+,
+
+175 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹End
+,
+
+176 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+,
+
+177 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+,
+
+178 
+g_bIrisFuŒyO≥nSètus
+
+
+181 if(
+pThis
+->
+iIsSuµ‹tZoom
+)
+
+183 
+	`•rötf
+(
+acP¨amSë
+,
+
+190 
+REMOTEFOCUSD_ZOOM_VIRTUAL_TOTALSTEP
+,
+
+191 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Sèπ
+,
+
+192 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹End
+,
+
+193 
+pThis
+->
+dwZoomMŸ‹Posôi⁄
+,
+
+194 
+±ZoomMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+,
+
+195 
+g_bIrisFuŒyO≥nSètus
+
+
+199 
+	`•rötf
+(
+acRïlyMsg
+,
+
+206 
+	`°æí
+(
+acP¨amSë
+),
+
+207 
+acP¨amSë
+);
+
+209 
+	`wrôe
+(
+sckClõ¡
+, 
+acRïlyMsg
+, 
+	`°æí
+(acReplyMsg));
+
+211 
+	`˛o£
+(
+sckClõ¡
+);
+
+213 
+	}
+}
+
+216 
+	$RemŸeFocusd_RïlyP¨am
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+SOCKET
+ 
+sckClõ¡
+, 
+DWORD
+ 
+dwPosôi⁄
+)
+
+218 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±FocusMŸ‹CålInfo
+ = &(
+pThis
+->
+tFocusMŸ‹CålInfo
+);
+
+219 
+acP¨amSë
+[1024];
+
+220 
+acRïlyMsg
+[1024];
+
+224 
+dwPosôi⁄
+ = (dwPosôi⁄ < 0)? 0 : ((dwPosôi⁄ >
+REMOTEFOCUSD_FOCUS_VIRTUAL_TOTALSTEP
+)?
+
+225 (
+REMOTEFOCUSD_FOCUS_VIRTUAL_TOTALSTEP
+ - 1Ë: 
+dwPosôi⁄
+);
+
+227 
+	`•rötf
+(
+acP¨amSë
+,
+
+230 
+g_dwèbFocusVÆueTabÀ
+[
+dwPosôi⁄
+],
+
+231 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+);
+
+233 
+	`•rötf
+(
+acRïlyMsg
+,
+
+240 
+	`°æí
+(
+acP¨amSë
+),
+
+241 
+acP¨amSë
+);
+
+243 
+	`wrôe
+(
+sckClõ¡
+, 
+acRïlyMsg
+, 
+	`°æí
+(acReplyMsg));
+
+245 
+	`˛o£
+(
+sckClõ¡
+);
+
+247 
+	}
+}
+
+249 #ifde‡
+_FOCUS_DEFAULT
+
+
+250 
+	$RemŸeFocusd_RïlyFocusDeÁu…
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+SOCKET
+ 
+sckClõ¡
+)
+
+252 
+acP¨amSë
+[1024];
+
+253 
+acRïlyMsg
+[1024];
+
+255 
+	`•rötf
+(
+acP¨amSë
+,"ªmŸe_focus_focus_deÁu…='%d'\r\n",
+g_dwFocusDeÁu…
+);
+
+257 
+	`•rötf
+(
+acRïlyMsg
+,
+
+264 
+	`°æí
+(
+acP¨amSë
+),
+
+265 
+acP¨amSë
+);
+
+267 
+	`wrôe
+(
+sckClõ¡
+, 
+acRïlyMsg
+, 
+	`°æí
+(acReplyMsg));
+
+269 
+	`˛o£
+(
+sckClõ¡
+);
+
+271 
+	}
+}
+
+275 
+	$RemŸeFocusd_Pro˚ssPo°Comm™d
+(* 
+pcComm™d
+)
+
+277 
+iIndex
+;
+
+280 i‡(
+pcComm™d
+ =
+NULL
+)
+
+285 
+iIndex
+ = 0; iIndex < 
+	`°æí
+(
+pcComm™d
+); iIndex ++)
+
+287 i‡(
+pcComm™d
+[
+iIndex
+] == '+')
+
+289 
+pcComm™d
+[
+iIndex
+] = ' ';
+
+294 
+	}
+}
+
+297 
+	$RemŸeFocusd_Inf‹mMŸ‹Thªad
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+TRemŸeFocusd_Clõ¡Info
+* 
+±Clõ¡Info
+)
+
+299 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±MŸ‹CålInfoO±
+ = &(
+±Clõ¡Info
+->
+tMŸ‹CålInfoO±
+);
+
+300 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±FocusMŸ‹CålInfo
+ = &(
+pThis
+->
+tFocusMŸ‹CålInfo
+);
+
+301 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±ZoomMŸ‹CålInfo
+ = &(
+pThis
+->
+tZoomMŸ‹CålInfo
+);
+
+304 
+±MŸ‹CålInfoO±
+->
+eFun˘i⁄Ty≥
+)
+
+306 
+e·Focus
+:
+
+307 i‡(
+pThis
+->
+iIsSuµ‹tFocus
+)
+
+309 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Posôi⁄
+ = 
+±MŸ‹CålInfoO±
+->dwMotorPosition;
+
+310 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Sãps
+ = 
+±MŸ‹CålInfoO±
+->dwMotorSteps;
+
+311 
+±FocusMŸ‹CålInfo
+->
+eMŸ‹Dúe˘i⁄
+ = 
+±MŸ‹CålInfoO±
+->eMotorDirection;
+
+312 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+±MŸ‹CålInfoO±
+->eFunctionType;
+
+313 
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+314 i‡(
+	`£nd
+(
+pThis
+->
+fdFocusMŸ‹Wakeup
+[0], &’This->
+bFocusO≥øti⁄E«bÀ
+),
+
+315 (
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+317 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up focusÅhread failed.\n");
+
+321 
+e·Zoom
+:
+
+322 i‡(
+pThis
+->
+iIsSuµ‹tZoom
+)
+
+324 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Posôi⁄
+ = 
+±MŸ‹CålInfoO±
+->dwMotorPosition;
+
+325 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Sãps
+ = 
+±MŸ‹CålInfoO±
+->dwMotorSteps;
+
+326 
+±ZoomMŸ‹CålInfo
+->
+eMŸ‹Dúe˘i⁄
+ = 
+±MŸ‹CålInfoO±
+->eMotorDirection;
+
+327 
+±ZoomMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+±MŸ‹CålInfoO±
+->eFunctionType;
+
+328 
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+329 i‡(
+	`£nd
+(
+pThis
+->
+fdZoomMŸ‹Wakeup
+[0], &’This->
+bZoomO≥øti⁄E«bÀ
+),
+
+330 (
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+332 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up zoom motorÅhread failed.\n");
+
+336 
+e·AutoFocus
+:
+
+337 i‡(
+pThis
+->
+iIsSuµ‹tFocus
+)
+
+340 
+±ZoomMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·St›
+;
+
+341 
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+342 i‡(
+	`£nd
+(
+pThis
+->
+fdZoomMŸ‹Wakeup
+[0], &’This->
+bZoomO≥øti⁄E«bÀ
+),
+
+343 (
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+345 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up zoom motorÅhread failed.\n");
+
+347 i‡(
+g_bIrisFuŒyO≥nSètus
+ =
+TRUE
+)
+
+349 
+±FocusMŸ‹CålInfo
+->
+bFuŒyO≥√dIris
+ = 
+TRUE
+;
+
+353 
+±FocusMŸ‹CålInfo
+->
+bFuŒyO≥√dIris
+ = 
+±MŸ‹CålInfoO±
+->bFullyOpenedIris;
+
+355 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+±MŸ‹CålInfoO±
+->eFunctionType;
+
+356 
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+357 i‡(
+	`£nd
+(
+pThis
+->
+fdFocusMŸ‹Wakeup
+[0], &’This->
+bFocusO≥øti⁄E«bÀ
+),
+
+358 (
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+360 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up focus motorÅhread failed.\n");
+
+364 
+e·FocusSˇn
+:
+
+365 i‡(
+pThis
+->
+iIsSuµ‹tFocus
+)
+
+368 
+±ZoomMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·St›
+;
+
+369 
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+370 i‡(
+	`£nd
+(
+pThis
+->
+fdZoomMŸ‹Wakeup
+[0], &’This->
+bZoomO≥øti⁄E«bÀ
+),
+
+371 (
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+373 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up zoom motorÅhread failed.\n");
+
+376 i‡(
+g_bIrisFuŒyO≥nSètus
+ =
+TRUE
+)
+
+378 
+±FocusMŸ‹CålInfo
+->
+bFuŒyO≥√dIris
+ = 
+TRUE
+;
+
+382 
+±FocusMŸ‹CålInfo
+->
+bFuŒyO≥√dIris
+ = 
+±MŸ‹CålInfoO±
+->bFullyOpenedIris;
+
+384 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+±MŸ‹CålInfoO±
+->eFunctionType;
+
+385 
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+386 i‡(
+	`£nd
+(
+pThis
+->
+fdFocusMŸ‹Wakeup
+[0], &’This->
+bFocusO≥øti⁄E«bÀ
+),
+
+387 (
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+389 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up focus motorÅhread failed.\n");
+
+393 
+e·Posôi⁄ög
+:
+
+394 i‡(
+pThis
+->
+iIsSuµ‹tFocus
+)
+
+396 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+±MŸ‹CålInfoO±
+->eFunctionType;
+
+397 
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+398 i‡(
+	`£nd
+(
+pThis
+->
+fdFocusMŸ‹Wakeup
+[0], &’This->
+bFocusO≥øti⁄E«bÀ
+),
+
+399 (
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+401 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up focus motorÅhread failed.\n");
+
+405 i‡(
+pThis
+->
+iIsSuµ‹tZoom
+)
+
+407 
+±ZoomMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+±MŸ‹CålInfoO±
+->eFunctionType;
+
+408 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Posôi⁄
+ = 
+REMOTEFOCUSD_ZOOM_VIRTUAL_START
+;
+
+409 
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+410 i‡(
+	`£nd
+(
+pThis
+->
+fdZoomMŸ‹Wakeup
+[0], &’This->
+bZoomO≥øti⁄E«bÀ
+),
+
+411 (
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+413 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up zoom motorÅhread failed.\n");
+
+418 
+e·St›
+:
+
+419 i‡(
+pThis
+->
+iIsSuµ‹tFocus
+)
+
+421 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+±MŸ‹CålInfoO±
+->eFunctionType;
+
+422 
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+423 i‡(
+	`£nd
+(
+pThis
+->
+fdFocusMŸ‹Wakeup
+[0], &’This->
+bFocusO≥øti⁄E«bÀ
+),
+
+424 (
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+426 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up focus motorÅhread failed.\n");
+
+430 i‡(
+pThis
+->
+iIsSuµ‹tZoom
+)
+
+432 
+±ZoomMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+±MŸ‹CålInfoO±
+->eFunctionType;
+
+433 
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+434 i‡(
+	`£nd
+(
+pThis
+->
+fdZoomMŸ‹Wakeup
+[0], &’This->
+bZoomO≥øti⁄E«bÀ
+),
+
+435 (
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+437 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up zoom motorÅhread failed.\n");
+
+442 
+e·IrisO≥n
+:
+
+443 i‡(
+pThis
+->
+iIsSuµ‹tFocus
+)
+
+445 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+±MŸ‹CålInfoO±
+->eFunctionType;
+
+446 
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+447 i‡(
+	`£nd
+(
+pThis
+->
+fdFocusMŸ‹Wakeup
+[0], &’This->
+bFocusO≥øti⁄E«bÀ
+),
+
+448 (
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+450 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up focus motorÅhread failed.\n");
+
+452 
+±FocusMŸ‹CålInfo
+->
+bFuŒyO≥√dIris
+ = 
+TRUE
+;
+
+453 
+g_bIrisFuŒyO≥nSètus
+ = 
+TRUE
+;
+
+456 
+e·IrisE«bÀ
+:
+
+457 i‡(
+pThis
+->
+iIsSuµ‹tFocus
+)
+
+459 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+±MŸ‹CålInfoO±
+->eFunctionType;
+
+460 
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+461 i‡(
+	`£nd
+(
+pThis
+->
+fdFocusMŸ‹Wakeup
+[0], &’This->
+bFocusO≥øti⁄E«bÀ
+),
+
+462 (
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+464 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up focus motorÅhread failed.\n");
+
+466 
+±FocusMŸ‹CålInfo
+->
+bFuŒyO≥√dIris
+ = 
+FALSE
+;
+
+467 
+g_bIrisFuŒyO≥nSètus
+ =
+FALSE
+;
+
+470 
+e·Re£tFocus
+:
+
+471 i‡(
+pThis
+->
+iIsSuµ‹tFocus
+)
+
+473 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+±MŸ‹CålInfoO±
+->eFunctionType;
+
+474 
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+475 i‡(
+	`£nd
+(
+pThis
+->
+fdFocusMŸ‹Wakeup
+[0], &’This->
+bFocusO≥øti⁄E«bÀ
+),
+
+476 (
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+478 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up focus motorÅhread failed.\n");
+
+482 
+e·SëFocusDeÁu…
+:
+
+483 i‡(
+pThis
+->
+iIsSuµ‹tFocus
+)
+
+485 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+±MŸ‹CålInfoO±
+->eFunctionType;
+
+486 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹FocusDeÁu…
+ = 
+±MŸ‹CålInfoO±
+->dwMotorFocusDefault;
+
+487 
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+488 i‡(
+	`£nd
+(
+pThis
+->
+fdFocusMŸ‹Wakeup
+[0], &’This->
+bFocusO≥øti⁄E«bÀ
+),
+
+489 (
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+491 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up focus motorÅhread failed.\n");
+
+502 
+	}
+}
+
+505 
+SCODE
+ 
+	$RemŸeFocusd_I¡î¥ëClõ¡Comm™d
+(
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±MŸ‹CålInfoO±
+
+
+506 , * 
+szName
+, * 
+szVÆ
+)
+
+509 i‡(
+	`°∫cmp
+(
+szName
+, "function", 8) == 0)
+
+511 i‡(
+	`°∫cmp
+(
+szVÆ
+, "zoom", 4) == 0)
+
+513 
+±MŸ‹CålInfoO±
+->
+eFun˘i⁄Ty≥
+ = 
+e·Zoom
+;
+
+515 i‡(
+	`°∫cmp
+(
+szVÆ
+, "focus", 5) == 0)
+
+517 
+±MŸ‹CålInfoO±
+->
+eFun˘i⁄Ty≥
+ = 
+e·Focus
+;
+
+519 i‡(
+	`°∫cmp
+(
+szVÆ
+, "auto", 4) == 0)
+
+521 
+±MŸ‹CålInfoO±
+->
+eFun˘i⁄Ty≥
+ = 
+e·AutoFocus
+;
+
+523 i‡(
+	`°∫cmp
+(
+szVÆ
+, "scan", 4) == 0)
+
+525 
+±MŸ‹CålInfoO±
+->
+eFun˘i⁄Ty≥
+ = 
+e·FocusSˇn
+;
+
+527 i‡(
+	`°∫cmp
+(
+szVÆ
+, "positioning", 11) == 0)
+
+529 
+±MŸ‹CålInfoO±
+->
+eFun˘i⁄Ty≥
+ = 
+e·Posôi⁄ög
+;
+
+531 i‡(
+	`°∫cmp
+(
+szVÆ
+, "getstatus", 9) == 0)
+
+533 
+±MŸ‹CålInfoO±
+->
+eFun˘i⁄Ty≥
+ = 
+e·GëSètus
+;
+
+535 i‡(
+	`°∫cmp
+(
+szVÆ
+, "getparam", 8) == 0)
+
+537 
+±MŸ‹CålInfoO±
+->
+eFun˘i⁄Ty≥
+ = 
+e·GëP¨am
+;
+
+539 i‡(
+	`°∫cmp
+(
+szVÆ
+, "stop", 4) == 0)
+
+541 
+±MŸ‹CålInfoO±
+->
+eFun˘i⁄Ty≥
+ = 
+e·St›
+;
+
+543 i‡(
+	`°∫cmp
+(
+szVÆ
+, "irisopen", 8) == 0)
+
+545 
+±MŸ‹CålInfoO±
+->
+eFun˘i⁄Ty≥
+ = 
+e·IrisO≥n
+;
+
+547 i‡(
+	`°∫cmp
+(
+szVÆ
+, "irisenable", 10) == 0)
+
+549 
+±MŸ‹CålInfoO±
+->
+eFun˘i⁄Ty≥
+ = 
+e·IrisE«bÀ
+;
+
+551 #ifde‡
+_FOCUS_DEFAULT
+
+
+552 i‡(
+	`°∫cmp
+(
+szVÆ
+, "resetfocus", 10) == 0)
+
+554 
+±MŸ‹CålInfoO±
+->
+eFun˘i⁄Ty≥
+ = 
+e·Re£tFocus
+;
+
+556 i‡(
+	`°∫cmp
+(
+szVÆ
+, "setfocusdefault", 15) == 0)
+
+558 
+±MŸ‹CålInfoO±
+->
+eFun˘i⁄Ty≥
+ = 
+e·SëFocusDeÁu…
+;
+
+560 i‡(
+	`°∫cmp
+(
+szVÆ
+, "getfocusdefault", 15) == 0)
+
+562 
+±MŸ‹CålInfoO±
+->
+eFun˘i⁄Ty≥
+ = 
+e·GëFocusDeÁu…
+;
+
+567 
+	`REMOTEFOCUSD_DBGPRINT
+("Unknown command.\n");
+
+568  
+S_FAIL
+;
+
+571 i‡(
+	`°∫cmp
+(
+szName
+, "direction", 9) == 0)
+
+573 i‡(
+	`°∫cmp
+(
+szVÆ
+, "forward", 7) == 0)
+
+575 
+±MŸ‹CålInfoO±
+->
+eMŸ‹Dúe˘i⁄
+ = 
+emdF‹w¨d
+;
+
+577 i‡(
+	`°∫cmp
+(
+szVÆ
+, "backward", 8) == 0)
+
+579 
+±MŸ‹CålInfoO±
+->
+eMŸ‹Dúe˘i⁄
+ = 
+emdBackw¨d
+;
+
+581 i‡(
+	`°∫cmp
+(
+szVÆ
+, "direct", 6) == 0)
+
+583 
+±MŸ‹CålInfoO±
+->
+eMŸ‹Dúe˘i⁄
+ = 
+emdDrõ˘
+;
+
+587 
+	`REMOTEFOCUSD_DBGPRINT
+("Unknown command.\n");
+
+588  
+S_FAIL
+;
+
+591 i‡(
+	`°∫cmp
+(
+szName
+, "steps", 5) == 0)
+
+593 i‡(
+	`°æí
+(
+szVÆ
+) != 0)
+
+595 
+±MŸ‹CålInfoO±
+->
+dwMŸ‹Sãps
+ = 
+	`©oi
+(
+szVÆ
+);
+
+599 
+	`REMOTEFOCUSD_DBGPRINT
+("Unknown command.\n");
+
+600  
+S_FAIL
+;
+
+603 i‡(
+	`°∫cmp
+(
+szName
+, "position", 8) == 0)
+
+605 i‡(
+	`°æí
+(
+szVÆ
+) != 0)
+
+607 
+±MŸ‹CålInfoO±
+->
+dwMŸ‹Posôi⁄
+ = 
+	`©oi
+(
+szVÆ
+);
+
+611 
+	`REMOTEFOCUSD_DBGPRINT
+("Unknown command.\n");
+
+612  
+S_FAIL
+;
+
+615 #ifde‡
+_FOCUS_DEFAULT
+
+
+616 i‡(
+	`°∫cmp
+(
+szName
+, "defaultposition", 15) ==0)
+
+618 i‡(
+	`°æí
+(
+szVÆ
+) != 0)
+
+620 
+±MŸ‹CålInfoO±
+->
+dwMŸ‹FocusDeÁu…
+ = 
+	`©oi
+(
+szVÆ
+);
+
+621 i‡(
+±MŸ‹CålInfoO±
+->
+dwMŸ‹FocusDeÁu…
+ >
+REMOTEFOCUSD_FOCUS_VIRTUAL_END
+)
+
+623 
+±MŸ‹CålInfoO±
+->
+dwMŸ‹FocusDeÁu…
+ = 
+REMOTEFOCUSD_FOCUS_VIRTUAL_END
+;
+
+628 
+	`REMOTEFOCUSD_DBGPRINT
+("Unknown command.\n");
+
+629  
+S_FAIL
+;
+
+633 i‡(
+	`°∫cmp
+(
+szName
+, "iris", 4) == 0)
+
+635 
+±MŸ‹CålInfoO±
+->
+bFuŒyO≥√dIris
+ = 
+TRUE
+;
+
+639 
+	`REMOTEFOCUSD_DBGPRINT
+("Unknown command.\n");
+
+640  
+S_FAIL
+;
+
+643  
+S_OK
+;
+
+644 
+	}
+}
+
+647 
+SCODE
+ 
+	$RemŸeFocusd_P¨£Clõ¡Comm™d
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, * 
+pcComm™d
+
+
+648 , 
+TRemŸeFocusd_Clõ¡Info
+ *
+±Clõ¡Info
+)
+
+650 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±MŸ‹CålInfoO±
+ = &(
+±Clõ¡Info
+->
+tMŸ‹CålInfoO±
+);
+
+651 
+BOOL
+ 
+bSt›
+ = 
+FALSE
+;
+
+652 
+szName
+[64], 
+szVÆ
+[64];
+
+653 *
+pcQuîy
+, *
+pcNext
+, *
+pcTmp
+;
+
+654 
+iNameLí
+;
+
+657 i‡((
+pcComm™d
+ =
+NULL
+) || (pcCommand[0] == '\0'))
+
+659 
+	`REMOTEFOCUSD_DBGPRINT
+("Empty query string!\n");
+
+660  
+S_FAIL
+;
+
+664 
+pcQuîy
+ = 
+pcComm™d
+;
+
+666 !
+bSt›
+)
+
+668 
+pcNext
+ = 
+	`°rchr
+(
+pcQuîy
+, '&');
+
+669 i‡(
+pcNext
+ =
+NULL
+)
+
+671 
+bSt›
+ = 
+TRUE
+;
+
+672 
+pcNext
+ = 
+pcQuîy
+ + 
+	`°æí
+(pcQuery);
+
+675 
+pcTmp
+ = 
+	`°rchr
+(
+pcQuîy
+, '=');
+
+676 i‡(
+pcTmp
+ !
+NULL
+)
+
+679 
+iNameLí
+ = 
+pcTmp
+ - 
+pcQuîy
+;
+
+680 
+	`mem˝y
+(
+szName
+, 
+pcQuîy
+, 
+iNameLí
+);
+
+681 
+szName
+[
+iNameLí
+] = '\0';
+
+682 
+pcTmp
+++;
+
+685 
+iNameLí
+ = 
+pcNext
+ - 
+pcTmp
+;
+
+686 
+	`mem˝y
+(
+szVÆ
+, 
+pcTmp
+, 
+iNameLí
+);
+
+687 
+szVÆ
+[
+iNameLí
+] = '\0';
+
+692 
+	`°∫˝y
+(
+szName
+, 
+pcQuîy
+, 
+	`°æí
+(pcQuery) + 1);
+
+693 
+szVÆ
+[0] = '\0';
+
+697 i‡(
+RemŸeFocusd_I¡î¥ëClõ¡Comm™d
+
+
+698 (
+±MŸ‹CålInfoO±
+, 
+szName
+, 
+szVÆ
+Ë!
+S_OK
+)
+
+700 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_InterpretClientCommand failed.\n");
+
+701  
+S_FAIL
+;
+
+704 
+pcQuîy
+ = 
+pcNext
+ + 1;
+
+708 i‡(
+±MŸ‹CålInfoO±
+->
+eFun˘i⁄Ty≥
+ =
+e·NoSîvi˚
+)
+
+710 
+	`REMOTEFOCUSD_DBGPRINT
+("Function isn't specified.\n");
+
+711  
+S_FAIL
+;
+
+715 
+	`REMOTEFOCUSD_DBGPRINT
+("Comm™d såög: %s\n", 
+pcComm™d
+);
+
+717  
+S_OK
+;
+
+718 
+	}
+}
+
+721 
+SCODE
+ 
+	$RemŸeFocusd_FdCgiComm™dH™dÀr
+(
+TRemŸeFocusdInfo
+ *
+pThis
+)
+
+723 * 
+pcComm™d
+ = 
+NULL
+;
+
+724 
+fdcgi
+* 
+±FdCgi
+ = 
+NULL
+;
+
+725 
+TRemŸeFocusd_Clõ¡Info
+ 
+tClõ¡Info
+;
+
+726 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±MŸ‹CålInfoO±
+ = 
+NULL
+;
+
+729 
+±FdCgi
+ = 
+pThis
+->ptFdCgi;
+
+730 
+	`mem£t
+(&
+tClõ¡Info
+, 0, (
+TRemŸeFocusd_Clõ¡Info
+));
+
+732 i‡(
+	`FDCGI_ªad
+(
+±FdCgi
+, &
+pcComm™d
+,
+
+733 &(
+tClõ¡Info
+.
+sckClõ¡
+)Ë!
+S_OK
+)
+
+735 
+	`REMOTEFOCUSD_DBGPRINT
+("Reinitialize FDCgi...\n");
+
+736 
+	`FD_CLR
+(
+pThis
+->
+iCGIFd
+, &’This->
+fds_RódSë
+));
+
+737 
+	`FDCGI_˛o£
+(
+pThis
+->
+±FdCgi
+);
+
+738 i‡(
+	`RemŸeFocusd_InôFdCgi
+(
+pThis
+Ë!
+S_OK
+)
+
+740 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_InitFdCgi failed.\n");
+
+741  
+S_FAIL
+;
+
+744  
+S_OK
+;
+
+747 i‡(
+	`°rcmp
+(
+	`FDCGI_GëMëhod
+(
+±FdCgi
+), "POST") == 0)
+
+749 
+	`RemŸeFocusd_Pro˚ssPo°Comm™d
+(
+pcComm™d
+);
+
+752 i‡(
+RemŸeFocusd_P¨£Clõ¡Comm™d
+
+
+753 (
+pThis
+, 
+pcComm™d
+, &
+tClõ¡Info
+Ë!
+S_OK
+)
+
+755 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_ParseClientCommand failed.\n");
+
+756 
+	`RemŸeFocusd_RïlyBadReque°Msg
+(
+tClõ¡Info
+.
+sckClõ¡
+);
+
+757  
+S_FAIL
+;
+
+761 
+±MŸ‹CålInfoO±
+ = &(
+tClõ¡Info
+.
+tMŸ‹CålInfoO±
+);
+
+762 i‡(
+±MŸ‹CålInfoO±
+->
+eFun˘i⁄Ty≥
+ =
+e·GëSètus
+)
+
+764 
+	`RemŸeFocusd_RïlySètus
+(
+pThis
+, 
+tClõ¡Info
+.
+sckClõ¡
+);
+
+766 i‡(
+±MŸ‹CålInfoO±
+->
+eFun˘i⁄Ty≥
+ =
+e·GëP¨am
+)
+
+768 
+	`RemŸeFocusd_RïlyP¨am
+(
+pThis
+, 
+tClõ¡Info
+.
+sckClõ¡
+,
+
+769 
+±MŸ‹CålInfoO±
+->
+dwMŸ‹Posôi⁄
+);
+
+771 #ifde‡
+_FOCUS_DEFAULT
+
+
+772 i‡(
+±MŸ‹CålInfoO±
+->
+eFun˘i⁄Ty≥
+ =
+e·GëFocusDeÁu…
+)
+
+774 
+	`RemŸeFocusd_RïlyFocusDeÁu…
+(
+pThis
+, 
+tClõ¡Info
+.
+sckClõ¡
+);
+
+779 
+	`RemŸeFocusd_Inf‹mMŸ‹Thªad
+(
+pThis
+, &
+tClõ¡Info
+);
+
+780 
+	`RemŸeFocusd_RïlyOKMesßge
+(
+tClõ¡Info
+.
+sckClõ¡
+);
+
+783  
+S_OK
+;
+
+784 
+	}
+}
+
+787 
+SCODE
+ 
+	$RemŸeFocusd_H™dÀEvítMesßge
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+iMesßgeNum
+, 
+TMesßgeInfo
+ *
+±MsgInfo
+)
+
+789 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±FocusMŸ‹CålInfo
+ = &(
+pThis
+->
+tFocusMŸ‹CålInfo
+);
+
+790 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±ZoomMŸ‹CålInfo
+ = &(
+pThis
+->
+tZoomMŸ‹CålInfo
+);
+
+791 #ifde‡
+_TWO_FUNCTION_AF_BUTTON
+
+
+792 
+DWORD
+ 
+dwAFBuâ⁄PªssTimeF‹FocusSˇn
+ = 
+REMOTEFOCUSD_DEFAULT_AF_BUTTON_PRESSTIME_FOR_FOCUS_SCAN
+;
+
+793 
+DWORD
+ 
+dwAFBuâ⁄PªssTimeF‹AutoFocus
+ = 
+REMOTEFOCUSD_DEFAULT_AF_BUTTON_PRESSTIME_FOR_AUTO_FOCUS
+;
+
+794 #ifde‡
+_AF_BUTTON_PRESS_TIME_FOR_FOCUS_SCAN
+
+
+795 
+dwAFBuâ⁄PªssTimeF‹FocusSˇn
+ = 
+_AF_BUTTON_PRESS_TIME_FOR_FOCUS_SCAN
+;
+
+797 #ifde‡
+_AF_BUTTON_PRESS_TIME_FOR_AUTO_FOCUS
+
+
+798 
+dwAFBuâ⁄PªssTimeF‹AutoFocus
+ = 
+_AF_BUTTON_PRESS_TIME_FOR_AUTO_FOCUS
+;
+
+802 
+timevÆ
+ 
+tvBuâ⁄TimeVÆue
+;
+
+803 
+DWORD
+ 
+dwBuâ⁄Rñó£Time
+;
+
+805 
+±MsgInfo
+[0].
+iTy≥
+)
+
+807 
+emtAutoFocus
+:
+
+808 i‡(
+±MsgInfo
+[0].
+aiVÆue
+[0] =
+emvTriggî
+)
+
+810 
+	`gëtimeofday
+(&
+tvBuâ⁄TimeVÆue
+, 
+NULL
+);
+
+811 
+pThis
+->
+dwBuâ⁄PªssTime
+ = (
+DWORD
+)((
+tvBuâ⁄TimeVÆue
+.
+tv_u£c
+ / 1000Ë+ (tvBuâ⁄TimeVÆue.
+tv_£c
+ * 1000));
+
+813 if(
+±MsgInfo
+[0].
+aiVÆue
+[0] =
+emvN‹mÆ
+)
+
+815 
+	`gëtimeofday
+(&
+tvBuâ⁄TimeVÆue
+, 
+NULL
+);
+
+816 
+dwBuâ⁄Rñó£Time
+ = (
+DWORD
+)((
+tvBuâ⁄TimeVÆue
+.
+tv_u£c
+ / 1000Ë+ (tvBuâ⁄TimeVÆue.
+tv_£c
+ * 1000));
+
+818 #ifde‡
+_TWO_FUNCTION_AF_BUTTON
+
+
+820 i‡((
+pThis
+->
+iIsSuµ‹tFocus
+Ë&& ((
+dwBuâ⁄Rñó£Time
+ -ÖThis->
+dwBuâ⁄PªssTime
+Ë> 
+dwAFBuâ⁄PªssTimeF‹FocusSˇn
+ * 1000))
+
+822 
+	`REMOTEFOCUSD_DBGPRINT
+("Pªs†AF buâ⁄ ovî %ld sec⁄ds. Pîf‹m focu†sˇn...\n", ()
+dwAFBuâ⁄PªssTimeF‹FocusSˇn
+);
+
+823 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·FocusSˇn
+;
+
+824 
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+825 i‡(
+	`£nd
+(
+pThis
+->
+fdFocusMŸ‹Wakeup
+[0], &’This->
+bFocusO≥øti⁄E«bÀ
+),
+
+826 (
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+828 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up focus motorÅhread failed.\n");
+
+831 i‡((
+pThis
+->
+iIsSuµ‹tFocus
+Ë&& ((
+dwBuâ⁄Rñó£Time
+ -ÖThis->
+dwBuâ⁄PªssTime
+Ë> 
+dwAFBuâ⁄PªssTimeF‹AutoFocus
+ * 1000))
+
+833 
+	`REMOTEFOCUSD_DBGPRINT
+("Pªs†AF buâ⁄ ovî %ld sec⁄ds. Pîf‹máutÿfocus...\n", ()
+dwAFBuâ⁄PªssTimeF‹AutoFocus
+);
+
+834 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·AutoFocus
+;
+
+835 
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+836 i‡(
+	`£nd
+(
+pThis
+->
+fdFocusMŸ‹Wakeup
+[0], &’This->
+bFocusO≥øti⁄E«bÀ
+),
+
+837 (
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+839 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up focus motorÅhread failed.\n");
+
+843 i‡((
+pThis
+->
+iIsSuµ‹tZoom
+Ë&& ((
+dwBuâ⁄Rñó£Time
+ -ÖThis->
+dwBuâ⁄PªssTime
+) > 2000))
+
+845 
+	`REMOTEFOCUSD_DBGPRINT
+("Move zoom motorÅo wide side...\n");
+
+847 
+pThis
+->
+eNextFuncTy≥
+ = 
+e·FocusSˇn
+;
+
+848 
+±ZoomMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·Zoom
+;
+
+849 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Posôi⁄
+ = 0;
+
+850 
+±ZoomMŸ‹CålInfo
+->
+eMŸ‹Dúe˘i⁄
+ = 
+emdDrõ˘
+;
+
+851 
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+852 i‡(
+	`£nd
+(
+pThis
+->
+fdZoomMŸ‹Wakeup
+[0], &’This->
+bZoomO≥øti⁄E«bÀ
+),
+
+853 (
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+855 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up zoom motorÅhread failed.\n");
+
+860 if(
+±MsgInfo
+[0].
+aiVÆue
+[0] =
+emvFÆlög
+)
+
+862 i‡(
+pThis
+->
+iIsSuµ‹tFocus
+)
+
+864 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·Posôi⁄ög
+;
+
+865 
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+866 i‡(
+	`£nd
+(
+pThis
+->
+fdFocusMŸ‹Wakeup
+[0], &’This->
+bFocusO≥øti⁄E«bÀ
+),
+
+867 (
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+869 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up focus motorÅhread failed.\n");
+
+873 i‡(
+pThis
+->
+iIsSuµ‹tZoom
+)
+
+875 
+±ZoomMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·Posôi⁄ög
+;
+
+876 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Posôi⁄
+ = 
+REMOTEFOCUSD_ZOOM_VIRTUAL_START
+;
+
+877 
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+878 i‡(
+	`£nd
+(
+pThis
+->
+fdZoomMŸ‹Wakeup
+[0], &’This->
+bZoomO≥øti⁄E«bÀ
+),
+
+879 (
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+881 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up zoom motorÅhread failed.\n");
+
+887 
+	`REMOTEFOCUSD_DBGPRINT
+("Unknown command.\n");
+
+888  
+S_FAIL
+;
+
+893 
+emtZoomIn
+:
+
+894 i‡(
+pThis
+->
+iIsSuµ‹tZoom
+)
+
+896 i‡(
+±MsgInfo
+[0].
+aiVÆue
+[0] =
+emvTriggî
+)
+
+898 
+	`REMOTEFOCUSD_DBGPRINT
+("Zoom in...\n");
+
+899 
+	`gëtimeofday
+(&
+tvBuâ⁄TimeVÆue
+, 
+NULL
+);
+
+900 
+pThis
+->
+dwBuâ⁄PªssTime
+ = (
+DWORD
+)((
+tvBuâ⁄TimeVÆue
+.
+tv_u£c
+ / 1000Ë+ (tvBuâ⁄TimeVÆue.
+tv_£c
+ * 1000));
+
+901 i‡(
+±ZoomMŸ‹CålInfo
+->
+bKìpZoomög
+ =
+FALSE
+)
+
+903 
+±ZoomMŸ‹CålInfo
+->
+bKìpZoomög
+
+TRUE
+;
+
+904 
+±ZoomMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·Zoom
+;
+
+905 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Sãps
+ = 1;
+
+906 
+±ZoomMŸ‹CålInfo
+->
+eMŸ‹Dúe˘i⁄
+ = 
+emdF‹w¨d
+;
+
+907 
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+908 i‡(
+	`£nd
+(
+pThis
+->
+fdZoomMŸ‹Wakeup
+[0], &’This->
+bZoomO≥øti⁄E«bÀ
+),
+
+909 (
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+911 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up zoom motorÅhread failed.\n");
+
+915 if(
+±MsgInfo
+[0].
+aiVÆue
+[0] =
+emvN‹mÆ
+)
+
+917 
+	`REMOTEFOCUSD_DBGPRINT
+("Zoom in stop!\n");
+
+918 
+±ZoomMŸ‹CålInfo
+->
+bKìpZoomög
+
+FALSE
+;
+
+923 
+emtZoomOut
+:
+
+924 i‡(
+pThis
+->
+iIsSuµ‹tZoom
+)
+
+926 i‡(
+±MsgInfo
+[0].
+aiVÆue
+[0] =
+emvTriggî
+)
+
+928 
+	`REMOTEFOCUSD_DBGPRINT
+("Zoom out...\n");
+
+929 
+	`gëtimeofday
+(&
+tvBuâ⁄TimeVÆue
+, 
+NULL
+);
+
+930 
+pThis
+->
+dwBuâ⁄PªssTime
+ = (
+DWORD
+)((
+tvBuâ⁄TimeVÆue
+.
+tv_u£c
+ / 1000Ë+ (tvBuâ⁄TimeVÆue.
+tv_£c
+ * 1000));
+
+931 i‡(
+±ZoomMŸ‹CålInfo
+->
+bKìpZoomög
+ =
+FALSE
+)
+
+933 
+±ZoomMŸ‹CålInfo
+->
+bKìpZoomög
+
+TRUE
+;
+
+934 
+±ZoomMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·Zoom
+;
+
+935 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Sãps
+ = 1;
+
+936 
+±ZoomMŸ‹CålInfo
+->
+eMŸ‹Dúe˘i⁄
+ = 
+emdBackw¨d
+;
+
+937 
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+938 i‡(
+	`£nd
+(
+pThis
+->
+fdZoomMŸ‹Wakeup
+[0], &’This->
+bZoomO≥øti⁄E«bÀ
+),
+
+939 (
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+941 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up zoom motorÅhread failed.\n");
+
+945 if(
+±MsgInfo
+[0].
+aiVÆue
+[0] =
+emvN‹mÆ
+)
+
+947 
+	`REMOTEFOCUSD_DBGPRINT
+("Zoom out stop!\n");
+
+948 
+±ZoomMŸ‹CålInfo
+->
+bKìpZoomög
+
+FALSE
+;
+
+954 
+	`REMOTEFOCUSD_DBGPRINT
+("Unknown command.\n");
+
+955  
+S_FAIL
+;
+
+959  
+S_OK
+;
+
+960 
+	}
+}
+
+963 
+SCODE
+ 
+	$RemŸeFocusd_P¨£FIFOCmd
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, *
+pcBuf„r
+, 
+iBuffLí
+, 
+iTy≥
+)
+
+965 
+TMesßgeInfo
+ 
+©MsgInfo
+[
+REMOTEFOCUSD_MESSAGE_NUMBER
+];
+
+966 
+TMesßgeTime
+ 
+tMsgTime
+;
+
+967 
+iNumbî
+;
+
+968 
+iRë
+;
+
+971 
+iNumbî
+ = 
+REMOTEFOCUSD_MESSAGE_NUMBER
+;
+
+972 
+iTy≥
+)
+
+974 
+mtEvít
+:
+
+975 
+iRë
+ = 
+	`Mesßge_P¨£_Evít
+(
+pThis
+->
+hXMLP¨£r
+, 
+pcBuf„r
+, 
+iBuffLí
+, &
+iNumbî
+, 
+©MsgInfo
+, &
+tMsgTime
+);
+
+976 i‡(
+iRë
+ !
+S_OK
+)
+
+978 
+	`REMOTEFOCUSD_DBGPRINT
+("Message_Parse_Event failed.\n");
+
+979  
+S_FAIL
+;
+
+982 i‡(
+	`RemŸeFocusd_H™dÀEvítMesßge
+(
+pThis
+, 
+iNumbî
+, 
+©MsgInfo
+Ë!
+S_OK
+)
+
+984 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_HandleEventMessage failed.\n");
+
+985  
+S_FAIL
+;
+
+994  
+S_OK
+;
+
+995 
+	}
+}
+
+998 
+SCODE
+ 
+	$RemŸeFocusd_CheckMesßge
+(
+iMsgTy≥
+, 
+iMsgLígth
+)
+
+1001 i‡((
+iMsgTy≥
+ !
+mtEvít
+Ë|| (
+iMsgLígth
+ <= 0))
+
+1003 
+	`REMOTEFOCUSD_DBGPRINT
+("Unknown command.\n");
+
+1004  
+S_FAIL
+;
+
+1007  
+S_OK
+;
+
+1008 
+	}
+}
+
+1011 
+SCODE
+ 
+	$RemŸeFocusd_FIFOComm™dH™dÀr
+(
+TRemŸeFocusdInfo
+ *
+pThis
+)
+
+1013 
+szCmd
+[1024];
+
+1014 
+DWORD
+ 
+dwLígth
+;
+
+1015 
+iTy≥
+, 
+iOff£t
+, 
+iMsgLígth
+;
+
+1016 
+iRë
+;
+
+1019 
+	`mem£t
+(
+szCmd
+, 0, (szCmd));
+
+1022 
+iRë
+ = 
+	`ªad
+(
+pThis
+->
+iFIFOFd
+, 
+szCmd
+, 
+REMOTEFOCUSD_MESSAGE_HEADER_LENGTH
+);
+
+1023 i‡(
+iRë
+ < 
+REMOTEFOCUSD_MESSAGE_HEADER_LENGTH
+)
+
+1025 
+	`REMOTEFOCUSD_DBGPRINT
+("FailedÅoÑead FIFO.\n");
+
+1026  
+S_FAIL_READ
+;
+
+1028 
+iTy≥
+ = *
+szCmd
+;
+
+1029 
+iMsgLígth
+ = *(
+szCmd
+ + 1);
+
+1031 i‡(
+	`RemŸeFocusd_CheckMesßge
+(
+iTy≥
+, 
+iMsgLígth
+Ë!
+S_OK
+)
+
+1033 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_CheckMessage failed.\n");
+
+1034  
+S_FAIL
+;
+
+1037 i‡(
+	`Mesßge_GëTy≥Lígth
+(
+szCmd
+, 
+REMOTEFOCUSD_MESSAGE_HEADER_LENGTH
+,
+
+1038 &
+iTy≥
+, &
+iOff£t
+, &
+dwLígth
+Ë!
+S_OK
+)
+
+1040 
+	`REMOTEFOCUSD_DBGPRINT
+("Message_GetTypeLength failed.\n");
+
+1041  
+S_FAIL
+;
+
+1044 
+iRë
+ = 
+	`ªad
+(
+pThis
+->
+iFIFOFd
+, 
+szCmd
+ + 
+REMOTEFOCUSD_MESSAGE_HEADER_LENGTH
+,
+
+1045 
+dwLígth
+ - (
+REMOTEFOCUSD_MESSAGE_HEADER_LENGTH
+ - 
+iOff£t
+));
+
+1046 i‡(
+iRë
+ < 0)
+
+1048 
+	`REMOTEFOCUSD_DBGPRINT
+("FailedÅoÑead FIFO.\n");
+
+1049  
+S_FAIL_READ
+;
+
+1051 
+	`REMOTEFOCUSD_DBGPRINT
+("Re˚ivêFIFO comm™d: %s\n", 
+szCmd
+ + 
+iOff£t
+);
+
+1053 i‡(
+	`RemŸeFocusd_P¨£FIFOCmd
+(
+pThis
+, 
+szCmd
+ + 
+iOff£t
+, 
+dwLígth
+, 
+iTy≥
+Ë!
+S_OK
+)
+
+1055 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_ParseFIFOCmd failed.\n");
+
+1056  
+S_FAIL
+;
+
+1059  
+S_OK
+;
+
+1060 
+	}
+}
+
+1063 
+SCODE
+ 
+	$RemŸeFocusd_Sñe˘H™dÀr
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+fd_£t
+ 
+fds_Ród
+)
+
+1066 i‡(
+	`FD_ISSET
+(
+pThis
+->
+iCGIFd
+, &
+fds_Ród
+))
+
+1068 i‡(
+	`RemŸeFocusd_FdCgiComm™dH™dÀr
+(
+pThis
+Ë!
+S_OK
+)
+
+1070 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_FdCgiCommandHandler failed.\n");
+
+1071  
+S_FAIL
+;
+
+1074 i‡(
+	`FD_ISSET
+(
+pThis
+->
+iFIFOFd
+, &
+fds_Ród
+))
+
+1076 i‡(
+	`RemŸeFocusd_FIFOComm™dH™dÀr
+(
+pThis
+Ë=
+S_FAIL_READ
+)
+
+1078 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_FIFOCommandHandler failed.\n");
+
+1079 
+	`REMOTEFOCUSD_DBGPRINT
+("Reinitialize FIFO...\n");
+
+1080 
+	`FD_CLR
+(
+pThis
+->
+iFIFOFd
+, &pThis->
+fds_RódSë
+);
+
+1081 
+	`˛o£
+(
+pThis
+->
+iFIFOFd
+);
+
+1082 i‡(
+	`RemŸeFocusd_InôFIFO
+(
+pThis
+Ë!
+S_OK
+)
+
+1084 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_InitFIFO failed.\n");
+
+1087  
+S_FAIL
+;
+
+1091  
+S_OK
+;
+
+1092 
+	}
+}
+
+1095 
+SCODE
+ 
+	$RemŸeFocusd_InfoPro˚ss
+(
+TRemŸeFocusdInfo
+ *
+pThis
+)
+
+1097 
+fd_£t
+ 
+fds_Ród
+;
+
+1098 
+timevÆ
+ 
+tvTimeOut
+;
+
+1099 
+iSñe˘
+;
+
+1101 
+BOOL
+ 
+g_bTîmö©ed
+;
+
+1102 
+BOOL
+ 
+g_bRunThªad
+;
+
+1106 
+	`RemŸeFocusd_CheckLogFûe
+(
+pThis
+);
+
+1108 !
+g_bTîmö©ed
+)
+
+1110 i‡(!
+g_bRunThªad
+)
+
+1112 
+	`REMOTEFOCUSD_DBGPRINT
+("MotorÅhreadÉnds unexpectedly!\n");
+
+1113  
+S_FAIL
+;
+
+1117 
+fds_Ród
+ = 
+pThis
+->
+fds_RódSë
+;
+
+1118 
+tvTimeOut
+.
+tv_£c
+ = 
+REMOTEFOCUSD_SELECT_TIMEOUT
+ / 1000000;
+
+1119 
+tvTimeOut
+.
+tv_u£c
+ = 
+REMOTEFOCUSD_SELECT_TIMEOUT
+ % 1000000;
+
+1121 
+iSñe˘
+ = 
+	`£À˘
+(
+pThis
+->
+iMaxFd
+ + 1, &
+fds_Ród
+, 
+NULL
+, NULL, &
+tvTimeOut
+);
+
+1122 i‡(
+iSñe˘
+ < 0)
+
+1124 i‡(
+î∫o
+ !
+EINTR
+)
+
+1126 
+	`REMOTEFOCUSD_DBGPRINT
+("select failed.\n");
+
+1129 i‡(
+iSñe˘
+ > 0)
+
+1131 i‡(
+	`RemŸeFocusd_Sñe˘H™dÀr
+(
+pThis
+, 
+fds_Ród
+Ë!
+S_OK
+)
+
+1133 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_SelectHandler failed.\n");
+
+1138 
+	`REMOTEFOCUSD_DBGPRINT
+("selectÅimeout\n");
+
+1143 
+g_bRunThªad
+ = 
+FALSE
+;
+
+1145  
+S_OK
+;
+
+1146 
+	}
+}
+
+	@src/remotefocusd_thread.c
+
+46 
+	~"ªmŸefocusd.h
+"
+
+50 
+DWORD
+ 
+g_dwèbFocusVÆueTabÀ
+[];
+
+51 
+BOOL
+ 
+g_bIrisFuŒyO≥nSètus
+;
+
+53 #ifde‡
+_TABLE_MAPPING
+
+
+54 c⁄° 
+DWORD
+ 
+g_dwèbFocusP™TabÀ
+[];
+
+56 c⁄° 
+DWORD
+ 
+g_dwèbFocusPosôi⁄TabÀ
+[];
+
+59 #ifde‡
+_FOCUS_DEFAULT
+
+
+60 
+DWORD
+ 
+g_dwFocusDeÁu…
+;
+
+63 #ifde‡
+_FOCUSING_START
+
+
+64 c⁄° 
+DWORD
+ 
+g_dwèbFocusögSèπTabÀ
+[];
+
+67 
+	#IRISOPEN
+ 
+TRUE
+
+
+	)
+
+68 
+	#IRISENABLE
+ 
+FALSE
+
+
+	)
+
+71 
+	$RemŸeFocusd_E«bÀFëch
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+BOOL
+ 
+bO≥øti⁄On
+)
+
+73 
+TRemŸeFocusd_Sh¨eMemInfo
+* 
+±Sh¨eMemInfo
+ = 
+pThis
+->ptShareMemInfo;
+
+76 
+±Sh¨eMemInfo
+->
+bFëchE«bÀ
+ = 
+bO≥øti⁄On
+;
+
+78 
+	}
+}
+
+81 
+	$RemŸeFocusd_FëchFocusVÆue
+(
+TRemŸeFocusdInfo
+ *
+pThis
+)
+
+83 
+TRemŸeFocusd_Sh¨eMemInfo
+* 
+±Sh¨eMemInfo
+ = 
+pThis
+->ptShareMemInfo;
+
+86 
+pThis
+->
+dwFocusVÆue
+ = 
+±Sh¨eMemInfo
+->dwFocusValue;
+
+88 
+	}
+}
+
+91 
+	$RemŸeFocusd_SëIris
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+BOOL
+ 
+bIrisSètus
+)
+
+93 i‡(!(
+pThis
+->
+iIsSuµ‹tFocus
+)) ;
+
+95 
+TRemŸeFocusd_Sh¨eMemInfo
+* 
+±Sh¨eMemInfo
+ = 
+pThis
+->ptShareMemInfo;
+
+96 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±FocusMŸ‹CålInfo
+ = &(
+pThis
+->
+tFocusMŸ‹CålInfo
+);
+
+98 
+±Sh¨eMemInfo
+->
+bFuŒyO≥√dIris
+ = 
+bIrisSètus
+;
+
+99 
+±Sh¨eMemInfo
+->
+bIrisE«bÀ
+ = 
+TRUE
+;
+
+102 
+±Sh¨eMemInfo
+->
+bFuŒyO≥√dIris
+ =
+TRUE
+ &&ÖtSh¨eMemInfo->
+bIrisE«bÀ
+ == TRUE)
+
+103 
+	`u¶ìp
+(
+REMOTEFOCUSD_OPEN_IRIS_TIME
+);
+
+106 
+	}
+}
+
+109 
+SCODE
+ 
+	$RemŸeFocusd_SaveC⁄figFûe
+(
+TRemŸeFocusdInfo
+ *
+pThis
+)
+
+111 
+FILE
+ *
+pfC⁄fig
+;
+
+114 
+	`£m_waô
+(&
+pThis
+->
+£mFûeMuãx
+);
+
+116 i‡((
+pfC⁄fig
+ = 
+	`f›í
+(
+REMOTEFOCUSD_CONFIG_FILE
+, "w")Ë=
+NULL
+)
+
+118 
+	`REMOTEFOCUSD_DBGPRINT
+("fopen failed!\n");
+
+119  
+S_FAIL
+;
+
+121 i‡(
+pThis
+->
+iIsSuµ‹tZoom
+)
+
+123 
+	`Ârötf
+(
+pfC⁄fig
+, "zoom_mŸ‹=%d\n", 
+pThis
+->
+dwZoomMŸ‹Posôi⁄
+);
+
+126 i‡(
+pThis
+->
+iIsSuµ‹tFocus
+)
+
+128 
+	`Ârötf
+(
+pfC⁄fig
+, "focus_mŸ‹=%d\n", 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+);
+
+130 
+	`f˛o£
+(
+pfC⁄fig
+);
+
+132 
+	`£m_po°
+(&
+pThis
+->
+£mFûeMuãx
+);
+
+133  
+S_OK
+;
+
+134 
+	}
+}
+
+136 #ifde‡
+_FOCUS_DEFAULT
+
+
+137 
+SCODE
+ 
+	$RemŸeFocusd_SaveFocusDeÁu…C⁄fig
+(
+TRemŸeFocusdInfo
+ *
+pThis
+)
+
+139 
+FILE
+ *
+pfC⁄fig
+;
+
+141 
+	`£m_waô
+(&
+pThis
+->
+£mFûeMuãx
+);
+
+143 i‡((
+pfC⁄fig
+ = 
+	`f›í
+(
+REMOTEFOCUSD_FOCUS_DEFAULT_FILE
+, "w")Ë=
+NULL
+)
+
+145 
+	`REMOTEFOCUSD_DBGPRINT
+("fopen failed!\n");
+
+146  
+S_FAIL
+;
+
+148 
+	`Ârötf
+(
+pfC⁄fig
+, "%d\n", 
+g_dwFocusDeÁu…
+);
+
+149 
+	`f˛o£
+(
+pfC⁄fig
+);
+
+151 
+	`£m_po°
+(&
+pThis
+->
+£mFûeMuãx
+);
+
+152  
+S_OK
+;
+
+153 
+	}
+}
+
+157 
+	$RemŸeFocusd_ZoomCª©eLogFûe
+()
+
+159 
+fdLogFûe
+;
+
+160 
+mode_t
+ 
+mode
+ = 
+S_IRUSR
+ | 
+S_IWUSR
+ | 
+S_IRGRP
+ | 
+S_IROTH
+;
+
+163 
+fdLogFûe
+ = 
+	`›í
+(
+REMOTEFOCUSD_ZOOM_LOG_FILE
+, 
+O_WRONLY
+ | 
+O_CREAT
+ | 
+O_TRUNC
+, 
+mode
+);
+
+165 i‡(
+fdLogFûe
+ < 0)
+
+167 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_ZoomCreateLogFile failed!\n");
+
+171 
+	`˛o£
+(
+fdLogFûe
+);
+
+172 
+	`sync
+();
+
+175 
+	}
+}
+
+178 
+	$RemŸeFocusd_ZoomDñëeLogFûe
+()
+
+181 i‡(
+	`ªmove
+(
+REMOTEFOCUSD_ZOOM_LOG_FILE
+) < 0)
+
+183 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_ZoomDeleteLogFile failed!\n");
+
+186 
+	`sync
+();
+
+189 
+	}
+}
+
+192 
+	$RemŸeFocusd_FocusCª©eLogFûe
+()
+
+194 
+fdLogFûe
+;
+
+195 
+mode_t
+ 
+mode
+ = 
+S_IRUSR
+ | 
+S_IWUSR
+ | 
+S_IRGRP
+ | 
+S_IROTH
+;
+
+198 
+fdLogFûe
+ = 
+	`›í
+(
+REMOTEFOCUSD_FOCUS_LOG_FILE
+, 
+O_WRONLY
+ | 
+O_CREAT
+ | 
+O_TRUNC
+, 
+mode
+);
+
+200 i‡(
+fdLogFûe
+ < 0)
+
+202 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_ZoomCreateLogFile failed!\n");
+
+206 
+	`˛o£
+(
+fdLogFûe
+);
+
+207 
+	`sync
+();
+
+210 
+	}
+}
+
+213 
+	$RemŸeFocusd_FocusDñëeLogFûe
+()
+
+216 i‡(
+	`ªmove
+(
+REMOTEFOCUSD_FOCUS_LOG_FILE
+) < 0)
+
+218 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_ZoomDeleteLogFile failed!\n");
+
+221 
+	`sync
+();
+
+224 
+	}
+}
+
+227 
+	$RemŸeFocusd_CÆcuœãP™FocusPosôi⁄
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+DWORD
+ 
+dwZoomPosôi⁄
+)
+
+229 i‡(!(
+pThis
+->
+iIsSuµ‹tFocus
+)) ;
+
+231 #ifde‡
+_TABLE_MAPPING
+
+
+233 i‡(
+dwZoomPosôi⁄
+ <= 0)
+
+235 
+pThis
+->
+dwP™FocusPosôi⁄
+ = 
+g_dwèbFocusP™TabÀ
+[0];
+
+237 i‡(
+dwZoomPosôi⁄
+ > 
+REMOTEFOCUSD_ZOOM_VIRTUAL_TOTALSTEP
+)
+
+239 
+pThis
+->
+dwP™FocusPosôi⁄
+ = 
+g_dwèbFocusP™TabÀ
+[
+REMOTEFOCUSD_ZOOM_VIRTUAL_TOTALSTEP
+ - 1];
+
+243 
+pThis
+->
+dwP™FocusPosôi⁄
+ = 
+g_dwèbFocusP™TabÀ
+[
+dwZoomPosôi⁄
+ - 1];
+
+247 
+DWORD
+ 
+dwI¡îvÆ
+;
+
+248 
+DWORD
+ 
+dwTabÀIndex
+;
+
+249 
+DWORD
+ 
+dwI¡îvÆIndex
+;
+
+250 
+DWORD
+ 
+dwI¡îvÆLowîBound
+;
+
+252 
+dwTabÀIndex
+ = 
+dwZoomPosôi⁄
+ / 
+REMOTEFOCUSD_ZOOM_POSITION_INTERVAL
+;
+
+253 i‡(
+dwTabÀIndex
+ < (
+REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE
+ - 1))
+
+255 
+dwI¡îvÆLowîBound
+ = 
+g_dwèbFocusPosôi⁄TabÀ
+[
+dwTabÀIndex
+];
+
+256 
+dwI¡îvÆ
+ = (
+DWORD
+)
+	`abs
+(()
+g_dwèbFocusPosôi⁄TabÀ
+[
+dwTabÀIndex
+] - ()g_dwtabFocusPositionTable[dwTableIndex + 1]);
+
+258 
+dwI¡îvÆIndex
+ = 
+dwZoomPosôi⁄
+ % 
+REMOTEFOCUSD_ZOOM_POSITION_INTERVAL
+;
+
+260 
+pThis
+->
+dwP™FocusPosôi⁄
+ = 
+dwI¡îvÆLowîBound
+ + ((
+DWORD
+)
+
+261 (((()
+dwI¡îvÆ
+)
+
+262 / 
+REMOTEFOCUSD_ZOOM_POSITION_INTERVAL
+Ë* (()
+dwI¡îvÆIndex
+)));
+
+266 
+pThis
+->
+dwP™FocusPosôi⁄
+ = 
+g_dwèbFocusPosôi⁄TabÀ
+[
+REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE
+ - 1];
+
+271 
+	}
+}
+
+274 #ifde‡
+_FOCUSING_START
+
+
+275 
+	$RemŸeFocusd_CÆcuœãFocusögSèπ
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+DWORD
+ 
+dwZoomPosôi⁄
+)
+
+277 i‡(!(
+pThis
+->
+iIsSuµ‹tFocus
+)) ;
+
+279 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±FocusMŸ‹CålInfo
+ = &(
+pThis
+->
+tFocusMŸ‹CålInfo
+);
+
+281 
+DWORD
+ 
+dwI¡îvÆ
+;
+
+282 
+DWORD
+ 
+dwTabÀIndex
+;
+
+283 
+DWORD
+ 
+dwI¡îvÆIndex
+;
+
+284 
+DWORD
+ 
+dwI¡îvÆLowîBound
+;
+
+287 
+dwTabÀIndex
+ = 
+dwZoomPosôi⁄
+ / 
+REMOTEFOCUSD_ZOOM_POSITION_INTERVAL
+;
+
+288 i‡(
+dwTabÀIndex
+ < (
+REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE
+ - 1))
+
+290 
+dwI¡îvÆLowîBound
+ = 
+g_dwèbFocusögSèπTabÀ
+[
+dwTabÀIndex
+];
+
+291 
+dwI¡îvÆ
+ = (
+DWORD
+)
+	`abs
+(()
+g_dwèbFocusögSèπTabÀ
+[
+dwTabÀIndex
+] - ()g_dwtabFocusingStartTable[dwTableIndex + 1]);
+
+293 
+dwI¡îvÆIndex
+ = 
+dwZoomPosôi⁄
+ % 
+REMOTEFOCUSD_ZOOM_POSITION_INTERVAL
+;
+
+295 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Sèπ
+ = 
+dwI¡îvÆLowîBound
+ + ((
+DWORD
+)
+
+296 (((()
+dwI¡îvÆ
+)
+
+297 / 
+REMOTEFOCUSD_ZOOM_POSITION_INTERVAL
+Ë* (()
+dwI¡îvÆIndex
+)));
+
+301 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Sèπ
+ = 
+g_dwèbFocusögSèπTabÀ
+[
+REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE
+ - 1];
+
+305 
+	}
+}
+
+309 
+	$RemŸeFocusd_Adju°Focus
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+DWORD
+ 
+dwZoomPosôi⁄
+)
+
+311 i‡(!(
+pThis
+->
+iIsSuµ‹tFocus
+)) ;
+
+313 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±FocusMŸ‹CålInfo
+ = &(
+pThis
+->
+tFocusMŸ‹CålInfo
+);
+
+315 
+	`RemŸeFocusd_CÆcuœãP™FocusPosôi⁄
+(
+pThis
+, 
+dwZoomPosôi⁄
+);
+
+317 #ifde‡
+_FOCUSING_START
+
+
+319 
+	`RemŸeFocusd_CÆcuœãFocusögSèπ
+(
+pThis
+, 
+dwZoomPosôi⁄
+);
+
+322 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Posôi⁄
+ = 
+pThis
+->
+dwP™FocusPosôi⁄
+;
+
+323 
+±FocusMŸ‹CålInfo
+->
+eMŸ‹Dúe˘i⁄
+ = 
+emdDrõ˘
+;
+
+324 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·Focus
+;
+
+325 
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+326 i‡(
+	`£nd
+(
+pThis
+->
+fdFocusMŸ‹Wakeup
+[0], &’This->
+bFocusO≥øti⁄E«bÀ
+),
+
+327 (
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+329 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up focusÅhread failed.\n");
+
+333 
+	}
+}
+
+336 
+	$RemŸeFocusd_Pîf‹mNextFun˘i⁄
+(
+TRemŸeFocusdInfo
+ *
+pThis
+)
+
+338 i‡(!(
+pThis
+->
+iIsSuµ‹tFocus
+)) ;
+
+340 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±FocusMŸ‹CålInfo
+ = &(
+pThis
+->
+tFocusMŸ‹CålInfo
+);
+
+343 i‡(
+pThis
+->
+eNextFuncTy≥
+ =
+e·AutoFocus
+)
+
+345 
+	`REMOTEFOCUSD_DBGPRINT
+("Startáuto focus...\n");
+
+346 
+±FocusMŸ‹CålInfo
+->
+bFuŒyO≥√dIris
+ = 
+TRUE
+;
+
+347 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+pThis
+->
+eNextFuncTy≥
+;
+
+349 i‡(
+pThis
+->
+eNextFuncTy≥
+ =
+e·FocusSˇn
+)
+
+351 
+	`REMOTEFOCUSD_DBGPRINT
+("Start focus scan...\n");
+
+352 
+±FocusMŸ‹CålInfo
+->
+bFuŒyO≥√dIris
+ = 
+TRUE
+;
+
+353 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+pThis
+->
+eNextFuncTy≥
+;
+
+356 
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+357 i‡(
+	`£nd
+(
+pThis
+->
+fdFocusMŸ‹Wakeup
+[0], &’This->
+bFocusO≥øti⁄E«bÀ
+),
+
+358 (
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+360 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up focus motorÅhread failed.\n");
+
+364 
+	}
+}
+
+367 
+	$RemŸeFocusd_ZoomSãpH™dÀr
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+fdMŸ‹Devi˚
+, 
+DWORD
+ 
+dwWÆkSãp
+, 
+BOOL
+ 
+bIsF‹w¨d
+)
+
+369 i‡(!(
+pThis
+->
+iIsSuµ‹tZoom
+)) ;
+
+371 
+iRë
+;
+
+372 
+DWORD
+ 
+dwExåaVútuÆSãps
+;
+
+373 
+DWORD
+ 
+dwRemaöögSãps
+;
+
+376 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS_CLR
+);
+
+377 
+	`REMOTEFOCUSD_DBGPRINT
+("Remaöög zoom sãps: %d\n", 
+iRë
+);
+
+378 i‡(
+iRë
+ > 0)
+
+380 
+dwExåaVútuÆSãps
+ = 
+dwWÆkSãp
+ - (
+iRë
+ / 
+REMOTEFOCUSD_ZOOM_VIRTUAL_ONESTEP
+);
+
+381 i‡(
+bIsF‹w¨d
+)
+
+383 
+pThis
+->
+dwZoomMŸ‹Posôi⁄
+ +
+dwExåaVútuÆSãps
+;
+
+387 
+pThis
+->
+dwZoomMŸ‹Posôi⁄
+ -
+dwExåaVútuÆSãps
+;
+
+390 
+dwRemaöögSãps
+ = 
+iRë
+ % 
+REMOTEFOCUSD_ZOOM_VIRTUAL_ONESTEP
+;
+
+391 i‡(
+dwRemaöögSãps
+ != 0)
+
+393 #ifde‡
+_BLOCKING_MODE
+
+
+394 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS_BLOCK
+, 
+dwRemaöögSãps
+);
+
+396 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS
+, 
+dwRemaöögSãps
+);
+
+397 
+	`u¶ìp
+(
+REMOTEFOCUSD_ZOOM_ONESTEP_TIME
+);
+
+403 
+	}
+}
+
+406 
+SCODE
+ 
+	$RemŸeFocusd_MoveZoomMŸ‹
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+fdMŸ‹Devi˚
+, 
+DWORD
+ 
+dwPosôi⁄
+)
+
+408 i‡(!(
+pThis
+->
+iIsSuµ‹tZoom
+)Ë 
+S_FAIL
+;
+
+410 
+iRë
+, 
+iAdju°Sãp
+;
+
+411 
+DWORD
+ 
+dwWÆkSãp
+, 
+dwCålTy≥
+;
+
+416 
+dwPosôi⁄
+ = (dwPosôi⁄ > 65535)? 
+REMOTEFOCUSD_ZOOM_VIRTUAL_START
+ : ((dwPosôi⁄ > 
+REMOTEFOCUSD_ZOOM_VIRTUAL_END
+)?
+
+417 
+REMOTEFOCUSD_ZOOM_VIRTUAL_END
+ : 
+dwPosôi⁄
+);
+
+420 
+	`RemŸeFocusd_Adju°Focus
+(
+pThis
+, 
+dwPosôi⁄
+);
+
+422 i‡(
+dwPosôi⁄
+ >
+pThis
+->
+dwZoomMŸ‹Posôi⁄
+)
+
+424 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_SET_FORWARD
+);
+
+425 
+dwWÆkSãp
+ = 
+dwPosôi⁄
+ - 
+pThis
+->
+dwZoomMŸ‹Posôi⁄
+;
+
+427 #ifde‡
+_BLOCKING_MODE
+
+
+428 
+pThis
+->
+dwZoomMŸ‹Posôi⁄
+ +
+dwWÆkSãp
+;
+
+429 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS_BLOCK
+,
+
+430 
+dwWÆkSãp
+ * 
+REMOTEFOCUSD_ZOOM_VIRTUAL_ONESTEP
+);
+
+432 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS
+,
+
+433 
+dwWÆkSãp
+ * 
+REMOTEFOCUSD_ZOOM_VIRTUAL_ONESTEP
+);
+
+435 (
+dwWÆkSãp
+ --) != 0)
+
+437 
+	`u¶ìp
+(
+REMOTEFOCUSD_ZOOM_ONESTEP_TIME
+);
+
+438 
+pThis
+->
+dwZoomMŸ‹Posôi⁄
+ ++;
+
+440 i‡(
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+)
+
+442 
+	`REMOTEFOCUSD_DBGPRINT
+("Operation interrupted!\n");
+
+443 
+	`RemŸeFocusd_ZoomSãpH™dÀr
+(
+pThis
+, 
+fdMŸ‹Devi˚
+, 
+dwWÆkSãp
+, 
+TRUE
+);
+
+445  
+S_FAIL
+;
+
+452 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_SET_BACKWARD
+);
+
+453 
+dwWÆkSãp
+ = 
+pThis
+->
+dwZoomMŸ‹Posôi⁄
+ - 
+dwPosôi⁄
+;
+
+454 #ifde‡
+_BLOCKING_MODE
+
+
+455 
+pThis
+->
+dwZoomMŸ‹Posôi⁄
+ -
+dwWÆkSãp
+;
+
+456 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS_BLOCK
+,
+
+457 
+dwWÆkSãp
+ * 
+REMOTEFOCUSD_ZOOM_VIRTUAL_ONESTEP
+);
+
+459 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS
+,
+
+460 
+dwWÆkSãp
+ * 
+REMOTEFOCUSD_ZOOM_VIRTUAL_ONESTEP
+);
+
+461 (
+dwWÆkSãp
+ --) != 0)
+
+463 
+	`u¶ìp
+(
+REMOTEFOCUSD_ZOOM_ONESTEP_TIME
+);
+
+464 
+pThis
+->
+dwZoomMŸ‹Posôi⁄
+ --;
+
+466 i‡(
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+)
+
+468 
+	`REMOTEFOCUSD_DBGPRINT
+("Operation interrupted!\n");
+
+469 
+	`RemŸeFocusd_ZoomSãpH™dÀr
+(
+pThis
+, 
+fdMŸ‹Devi˚
+, 
+dwWÆkSãp
+, 
+FALSE
+);
+
+471  
+S_FAIL
+;
+
+480 #ifde‡
+_DIFFERENT_ZOOM_FOCUS_ADJUST_STEP
+
+
+481 
+iAdju°Sãp
+ = 
+REMOTEFOCUSD_ZOOM_ADJUST_STEP
+;
+
+483 
+iAdju°Sãp
+ = 
+REMOTEFOCUSD_ADJUST_STEP
+;
+
+486 #i‚de‡
+_BLOCKING_MODE
+
+
+487 
+dwCålTy≥
+ = 
+MOTOR_WALK_STEPS
+;
+
+489 
+dwCålTy≥
+ = 
+MOTOR_WALK_STEPS_BLOCK
+;
+
+491 i‡(
+dwPosôi⁄
+ >
+iAdju°Sãp
+)
+
+493 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+dwCålTy≥
+, 
+iAdju°Sãp
+ * 
+REMOTEFOCUSD_ZOOM_VIRTUAL_ONESTEP
+);
+
+494 #i‚de‡
+_BLOCKING_MODE
+
+
+495 
+	`u¶ìp
+(
+iAdju°Sãp
+ * 
+REMOTEFOCUSD_ZOOM_ONESTEP_TIME
+);
+
+497 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_SET_FORWARD
+);
+
+498 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+dwCålTy≥
+, 
+iAdju°Sãp
+ * 
+REMOTEFOCUSD_ZOOM_VIRTUAL_ONESTEP
+);
+
+500 #i‚de‡
+_BLOCKING_MODE
+
+
+501 
+	`u¶ìp
+(
+iAdju°Sãp
+ * 
+REMOTEFOCUSD_ZOOM_ONESTEP_TIME
+);
+
+506  
+S_OK
+;
+
+507 
+	}
+}
+
+510 
+	$RemŸeFocusd_O≥øãZoomMŸ‹
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+fdMŸ‹Devi˚
+)
+
+512 i‡(!(
+pThis
+->
+iIsSuµ‹tZoom
+)) ;
+
+514 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±ZoomMŸ‹CålInfo
+ = &(
+pThis
+->
+tZoomMŸ‹CålInfo
+);
+
+517 i‡(
+±ZoomMŸ‹CålInfo
+->
+eMŸ‹Dúe˘i⁄
+ =
+emdDrõ˘
+)
+
+519 i‡(
+	`RemŸeFocusd_MoveZoomMŸ‹
+(
+pThis
+, 
+fdMŸ‹Devi˚
+, 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Posôi⁄
+Ë!
+S_OK
+)
+
+527 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Sãps
+ = (ptZoomMotorCtrlInfo->dwMotorSteps < 0)?
+
+528 0 : ((
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Sãps
+ > 30)? 30 :ÖtZoomMotorCtrlInfo->dwMotorSteps);
+
+530 i‡(
+±ZoomMŸ‹CålInfo
+->
+eMŸ‹Dúe˘i⁄
+ =
+emdF‹w¨d
+)
+
+532 i‡(
+	`RemŸeFocusd_MoveZoomMŸ‹
+(
+pThis
+, 
+fdMŸ‹Devi˚
+,
+
+533 
+pThis
+->
+dwZoomMŸ‹Posôi⁄
+ + 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Sãps
+Ë!
+S_OK
+)
+
+538 i‡(
+±ZoomMŸ‹CålInfo
+->
+eMŸ‹Dúe˘i⁄
+ =
+emdBackw¨d
+)
+
+540 i‡(
+	`RemŸeFocusd_MoveZoomMŸ‹
+(
+pThis
+, 
+fdMŸ‹Devi˚
+,
+
+541 
+pThis
+->
+dwZoomMŸ‹Posôi⁄
+ - 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Sãps
+Ë!
+S_OK
+)
+
+548 i‡(
+pThis
+->
+eNextFuncTy≥
+ !
+e·NoSîvi˚
+)
+
+550 
+	`RemŸeFocusd_Pîf‹mNextFun˘i⁄
+(
+pThis
+);
+
+551 
+pThis
+->
+eNextFuncTy≥
+ = 
+e·NoSîvi˚
+;
+
+555 
+±ZoomMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·NoSîvi˚
+;
+
+557 
+	}
+}
+
+560 
+	$RemŸeFocusd_FocusSãpH™dÀr
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+fdMŸ‹Devi˚
+, 
+DWORD
+ 
+dwWÆkSãp
+, 
+BOOL
+ 
+bIsF‹w¨d
+)
+
+562 i‡(!(
+pThis
+->
+iIsSuµ‹tFocus
+)) ;
+
+564 
+iRë
+;
+
+565 
+DWORD
+ 
+dwExåaVútuÆSãps
+;
+
+566 
+DWORD
+ 
+dwRemaöögSãps
+;
+
+569 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS_CLR
+);
+
+570 
+	`REMOTEFOCUSD_DBGPRINT
+("Remaöög focu†°ïs: %d\n", 
+iRë
+);
+
+571 i‡(
+iRë
+ > 0)
+
+573 
+dwExåaVútuÆSãps
+ = 
+dwWÆkSãp
+ - (
+iRë
+ / 
+REMOTEFOCUSD_FOCUS_VIRTUAL_ONESTEP
+);
+
+574 i‡(
+bIsF‹w¨d
+)
+
+576 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ +
+dwExåaVútuÆSãps
+;
+
+580 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ -
+dwExåaVútuÆSãps
+;
+
+583 
+dwRemaöögSãps
+ = 
+iRë
+ % 
+REMOTEFOCUSD_FOCUS_VIRTUAL_ONESTEP
+;
+
+584 i‡(
+dwRemaöögSãps
+ != 0)
+
+586 #ifde‡
+_BLOCKING_MODE
+
+
+587 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS_BLOCK
+, 
+dwRemaöögSãps
+);
+
+589 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS
+, 
+dwRemaöögSãps
+);
+
+590 
+	`u¶ìp
+(
+REMOTEFOCUSD_FOCUS_ONESTEP_TIME
+);
+
+596 
+	}
+}
+
+599 
+SCODE
+ 
+	$RemŸeFocusd_MoveFocusMŸ‹
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+fdMŸ‹Devi˚
+, 
+DWORD
+ 
+dwPosôi⁄
+)
+
+601 i‡(!(
+pThis
+->
+iIsSuµ‹tFocus
+)Ë 
+S_FAIL
+;
+
+603 
+iRë
+, 
+iAdju°Sãp
+;
+
+604 
+DWORD
+ 
+dwWÆkSãp
+, 
+dwCålTy≥
+;
+
+609 
+dwPosôi⁄
+ = (dwPosôi⁄ > 65535)? 
+REMOTEFOCUSD_FOCUS_VIRTUAL_START
+ : ((dwPosôi⁄ > 
+REMOTEFOCUSD_FOCUS_VIRTUAL_END
+)?
+
+610 
+REMOTEFOCUSD_FOCUS_VIRTUAL_END
+ : 
+dwPosôi⁄
+);
+
+613 i‡(
+dwPosôi⁄
+ >
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+)
+
+615 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_SET_FORWARD
+);
+
+616 
+dwWÆkSãp
+ = 
+dwPosôi⁄
+ - 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+;
+
+618 #ifde‡
+_BLOCKING_MODE
+
+
+619 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ +
+dwWÆkSãp
+;
+
+620 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS_BLOCK
+,
+
+621 
+dwWÆkSãp
+ * 
+REMOTEFOCUSD_FOCUS_VIRTUAL_ONESTEP
+);
+
+623 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS
+,
+
+624 
+dwWÆkSãp
+ * 
+REMOTEFOCUSD_FOCUS_VIRTUAL_ONESTEP
+);
+
+626 (
+dwWÆkSãp
+ --) != 0)
+
+628 
+	`u¶ìp
+(
+REMOTEFOCUSD_FOCUS_ONESTEP_TIME
+);
+
+629 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ ++;
+
+631 i‡(
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+)
+
+633 
+	`REMOTEFOCUSD_DBGPRINT
+("Operation interrupted!\n");
+
+634 
+	`RemŸeFocusd_FocusSãpH™dÀr
+(
+pThis
+, 
+fdMŸ‹Devi˚
+, 
+dwWÆkSãp
+, 
+TRUE
+);
+
+636  
+S_FAIL
+;
+
+643 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_SET_BACKWARD
+);
+
+644 
+dwWÆkSãp
+ = 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ - 
+dwPosôi⁄
+;
+
+646 #ifde‡
+_BLOCKING_MODE
+
+
+647 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ -
+dwWÆkSãp
+;
+
+648 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS_BLOCK
+,
+
+649 
+dwWÆkSãp
+ * 
+REMOTEFOCUSD_FOCUS_VIRTUAL_ONESTEP
+);
+
+651 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS
+,
+
+652 
+dwWÆkSãp
+ * 
+REMOTEFOCUSD_FOCUS_VIRTUAL_ONESTEP
+);
+
+653 (
+dwWÆkSãp
+ --) != 0)
+
+655 
+	`u¶ìp
+(
+REMOTEFOCUSD_FOCUS_ONESTEP_TIME
+);
+
+656 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ --;
+
+658 i‡(
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+)
+
+660 
+	`REMOTEFOCUSD_DBGPRINT
+("Operation interrupted!\n");
+
+661 
+	`RemŸeFocusd_FocusSãpH™dÀr
+(
+pThis
+, 
+fdMŸ‹Devi˚
+, 
+dwWÆkSãp
+, 
+FALSE
+);
+
+663  
+S_FAIL
+;
+
+671 #ifde‡
+_DIFFERENT_ZOOM_FOCUS_ADJUST_STEP
+
+
+672 
+iAdju°Sãp
+ = 
+REMOTEFOCUSD_FOCUS_ADJUST_STEP
+;
+
+674 
+iAdju°Sãp
+ = 
+REMOTEFOCUSD_ADJUST_STEP
+;
+
+677 #i‚de‡
+_BLOCKING_MODE
+
+
+678 
+dwCålTy≥
+ = 
+MOTOR_WALK_STEPS
+;
+
+680 
+dwCålTy≥
+ = 
+MOTOR_WALK_STEPS_BLOCK
+;
+
+682 i‡(
+dwPosôi⁄
+ >
+iAdju°Sãp
+)
+
+684 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+dwCålTy≥
+, 
+iAdju°Sãp
+ * 
+REMOTEFOCUSD_FOCUS_VIRTUAL_ONESTEP
+);
+
+685 #i‚de‡
+_BLOCKING_MODE
+
+
+686 
+	`u¶ìp
+(
+iAdju°Sãp
+ * 
+REMOTEFOCUSD_FOCUS_ONESTEP_TIME
+);
+
+689 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_SET_FORWARD
+);
+
+690 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+dwCålTy≥
+, 
+iAdju°Sãp
+ * 
+REMOTEFOCUSD_FOCUS_VIRTUAL_ONESTEP
+);
+
+691 #i‚de‡
+_BLOCKING_MODE
+
+
+692 
+	`u¶ìp
+(
+iAdju°Sãp
+ * 
+REMOTEFOCUSD_FOCUS_ONESTEP_TIME
+);
+
+697  
+S_OK
+;
+
+698 
+	}
+}
+
+701 
+	$RemŸeFocusd_O≥øãFocusMŸ‹
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+fdMŸ‹Devi˚
+)
+
+703 i‡(!(
+pThis
+->
+iIsSuµ‹tFocus
+)) ;
+
+705 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±FocusMŸ‹CålInfo
+ = &(
+pThis
+->
+tFocusMŸ‹CålInfo
+);
+
+708 i‡(
+±FocusMŸ‹CålInfo
+->
+eMŸ‹Dúe˘i⁄
+ =
+emdDrõ˘
+)
+
+710 i‡(
+	`RemŸeFocusd_MoveFocusMŸ‹
+(
+pThis
+, 
+fdMŸ‹Devi˚
+, 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Posôi⁄
+Ë!
+S_OK
+)
+
+718 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Sãps
+ = (ptFocusMotorCtrlInfo->dwMotorSteps < 0)?
+
+719 0 : ((
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Sãps
+ > 30)? 30 :ÖtFocusMotorCtrlInfo->dwMotorSteps);
+
+721 i‡(
+±FocusMŸ‹CålInfo
+->
+eMŸ‹Dúe˘i⁄
+ =
+emdF‹w¨d
+)
+
+723 i‡(
+	`RemŸeFocusd_MoveFocusMŸ‹
+(
+pThis
+, 
+fdMŸ‹Devi˚
+,
+
+724 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ + 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Sãps
+Ë!
+S_OK
+)
+
+729 i‡(
+±FocusMŸ‹CålInfo
+->
+eMŸ‹Dúe˘i⁄
+ =
+emdBackw¨d
+)
+
+731 i‡(
+	`RemŸeFocusd_MoveFocusMŸ‹
+(
+pThis
+, 
+fdMŸ‹Devi˚
+,
+
+732 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ - 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Sãps
+Ë!
+S_OK
+)
+
+739 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·NoSîvi˚
+;
+
+741 
+	}
+}
+
+744 
+SCODE
+ 
+	$RemŸeFocusd_SãpBySãpSórch
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+fdMŸ‹Devi˚
+,
+
+745 
+DWORD
+ 
+dwSèπ
+, DWORD 
+dwSórchR™ge
+, DWORD 
+dwSåide
+)
+
+747 i‡(!(
+pThis
+->
+iIsSuµ‹tFocus
+)Ë 
+S_FAIL
+;
+
+749 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±FocusMŸ‹CålInfo
+ = &(
+pThis
+->
+tFocusMŸ‹CålInfo
+);
+
+750 
+iRë
+;
+
+751 
+DWORD
+ 
+dwPosôi⁄
+;
+
+752 
+DWORD
+ 
+dwBe°Posôi⁄
+;
+
+753 
+DWORD
+ 
+dwBe°Focus
+;
+
+754 
+DWORD
+ 
+dwWÆkSãp
+;
+
+755 
+DWORD
+ 
+dwCålTy≥
+;
+
+760 i‡(
+	`RemŸeFocusd_MoveFocusMŸ‹
+(
+pThis
+, 
+fdMŸ‹Devi˚
+, 
+dwSèπ
+Ë!
+S_OK
+)
+
+762 
+	`RemŸeFocusd_E«bÀFëch
+(
+pThis
+, 
+FALSE
+);
+
+763  
+S_FAIL
+;
+
+767 
+	`RemŸeFocusd_E«bÀFëch
+(
+pThis
+, 
+TRUE
+);
+
+768 
+	`u¶ìp
+(1000000);
+
+769 
+	`RemŸeFocusd_FëchFocusVÆue
+(
+pThis
+);
+
+770 
+g_dwèbFocusVÆueTabÀ
+[0] = 
+pThis
+->
+dwFocusVÆue
+;
+
+771 
+dwBe°Focus
+ = 
+pThis
+->
+dwFocusVÆue
+;
+
+772 
+dwBe°Posôi⁄
+ = 0;
+
+773 
+	`REMOTEFOCUSD_DBGPRINT
+("Inôü»Focu†VÆue: %d.\n", 
+pThis
+->
+dwFocusVÆue
+);
+
+776 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_SET_FORWARD
+);
+
+777 
+dwPosôi⁄
+ = 
+dwSåide
+ ; dwPosôi⁄ <
+dwSórchR™ge
+ ; dwPosition += dwStride)
+
+779 i‡(
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+)
+
+781 
+	`REMOTEFOCUSD_DBGPRINT
+("Operation interrupted!\n");
+
+782 
+	`RemŸeFocusd_E«bÀFëch
+(
+pThis
+, 
+FALSE
+);
+
+783  
+S_FAIL
+;
+
+785 #ifde‡
+_BLOCKING_MODE
+
+
+786 
+dwCålTy≥
+ = 
+MOTOR_WALK_STEPS_BLOCK
+;
+
+788 
+dwCålTy≥
+ = 
+MOTOR_WALK_STEPS
+;
+
+790 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+dwCålTy≥
+, 
+REMOTEFOCUSD_FOCUS_VIRTUAL_ONESTEP
+ * 
+dwSåide
+);
+
+793 
+	`u¶ìp
+(
+REMOTEFOCUSD_ONESTEP_SEARCH_TIME
+);
+
+795 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ +
+dwSåide
+;
+
+797 
+	`RemŸeFocusd_FëchFocusVÆue
+(
+pThis
+);
+
+798 
+	`REMOTEFOCUSD_DBGPRINT
+("Sãp: %d, Focu†VÆue: %d.\n", 
+dwPosôi⁄
+, 
+pThis
+->
+dwFocusVÆue
+);
+
+800 i‡(
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ =
+e·FocusSˇn
+)
+
+802 
+g_dwèbFocusVÆueTabÀ
+[
+dwPosôi⁄
+] = 
+pThis
+->
+dwFocusVÆue
+;
+
+805 i‡(
+pThis
+->
+dwFocusVÆue
+ > 
+dwBe°Focus
+)
+
+807 
+dwBe°Focus
+ = 
+pThis
+->
+dwFocusVÆue
+;
+
+808 
+dwBe°Posôi⁄
+ = 
+dwPosôi⁄
+;
+
+813 
+dwWÆkSãp
+ = 
+dwSórchR™ge
+ - 
+dwBe°Posôi⁄
+;
+
+814 i‡(
+	`RemŸeFocusd_MoveFocusMŸ‹
+(
+pThis
+, 
+fdMŸ‹Devi˚
+,
+
+815 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ - 
+dwWÆkSãp
+Ë!
+S_OK
+)
+
+817 
+	`RemŸeFocusd_E«bÀFëch
+(
+pThis
+, 
+FALSE
+);
+
+818  
+S_FAIL
+;
+
+821 
+	`REMOTEFOCUSD_DBGPRINT
+("Be° focus: %d, MŸ‹Öosôi⁄: %d.\n", 
+dwBe°Focus
+, 
+dwBe°Posôi⁄
+);
+
+822 
+	`RemŸeFocusd_E«bÀFëch
+(
+pThis
+, 
+FALSE
+);
+
+824  
+S_OK
+;
+
+825 
+	}
+}
+
+828 
+	$RemŸeFocusd_Pîf‹mAutoFocus
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+fdMŸ‹Devi˚
+)
+
+830 i‡(!(
+pThis
+->
+iIsSuµ‹tFocus
+)) ;
+
+832 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±FocusMŸ‹CålInfo
+ = &(
+pThis
+->
+tFocusMŸ‹CålInfo
+);
+
+833 
+DWORD
+ 
+dwWÆkSãp
+;
+
+834 
+DWORD
+ 
+dwSórchSèπ
+ = 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Sèπ
+;
+
+835 
+DWORD
+ 
+dwVÆidR™ge
+ = 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹End
+ -ÖtFocusMŸ‹CålInfo->
+dwMŸ‹Sèπ
+;
+
+836 
+BOOL
+ 
+bNìdClo£Iris
+ = 
+FALSE
+;
+
+838 if(
+±FocusMŸ‹CålInfo
+->
+bFuŒyO≥√dIris
+)
+
+840 
+	`RemŸeFocusd_SëIris
+(
+pThis
+, 
+IRISOPEN
+);
+
+841 
+bNìdClo£Iris
+ =
+TRUE
+;
+
+844 i‡(
+dwVÆidR™ge
+ > 
+REMOTEFOCUSD_FIRST_LEVEL_SEARCH_RANGE
+)
+
+846 
+dwWÆkSãp
+ = 
+REMOTEFOCUSD_FIRST_LEVEL_SEARCH_RANGE
+ >> 1;
+
+847 i‡(
+pThis
+->
+dwP™FocusPosôi⁄
+ < ((
+REMOTEFOCUSD_FIRST_LEVEL_SEARCH_RANGE
+ >> 1Ë+ 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Sèπ
+))
+
+849 
+dwWÆkSãp
+ = 
+pThis
+->
+dwP™FocusPosôi⁄
+ - 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Sèπ
+;
+
+851 
+dwSórchSèπ
+ = 
+pThis
+->
+dwP™FocusPosôi⁄
+ - 
+dwWÆkSãp
+;
+
+852 
+dwVÆidR™ge
+ = 
+REMOTEFOCUSD_FIRST_LEVEL_SEARCH_RANGE
+;
+
+854 i‡((
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹End
+ - 
+pThis
+->
+dwP™FocusPosôi⁄
+)
+
+855 < (
+REMOTEFOCUSD_FIRST_LEVEL_SEARCH_RANGE
+ >> 1))
+
+857 
+dwWÆkSãp
+ = 
+REMOTEFOCUSD_FIRST_LEVEL_SEARCH_RANGE
+
+
+858 - (
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹End
+ - 
+pThis
+->
+dwP™FocusPosôi⁄
+);
+
+860 
+dwSórchSèπ
+ = 
+pThis
+->
+dwP™FocusPosôi⁄
+ - 
+dwWÆkSãp
+;
+
+861 
+dwVÆidR™ge
+ = 
+REMOTEFOCUSD_FIRST_LEVEL_SEARCH_RANGE
+;
+
+865 
+dwSórchSèπ
+ = 
+pThis
+->
+dwP™FocusPosôi⁄
+ - 
+dwWÆkSãp
+;
+
+866 
+dwVÆidR™ge
+ = 
+REMOTEFOCUSD_FIRST_LEVEL_SEARCH_RANGE
+;
+
+870 
+	`REMOTEFOCUSD_DBGPRINT
+("Start first-level searching...\n");
+
+871 i‡(
+	`RemŸeFocusd_SãpBySãpSórch
+(
+pThis
+, 
+fdMŸ‹Devi˚
+, 
+dwSórchSèπ
+, 
+dwVÆidR™ge
+, 
+REMOTEFOCUSD_LARGE_SEARCH_STEP
+Ë!
+S_OK
+)
+
+874 if(
+g_bIrisFuŒyO≥nSètus
+ =
+FALSE
+ && 
+bNìdClo£Iris
+ =
+TRUE
+)
+
+876 
+	`RemŸeFocusd_SëIris
+(
+pThis
+, 
+IRISENABLE
+);
+
+882 
+dwWÆkSãp
+ = 
+REMOTEFOCUSD_SECOND_LEVEL_SEARCH_RANGE
+ >> 1;
+
+883 i‡(
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ < ((
+REMOTEFOCUSD_SECOND_LEVEL_SEARCH_RANGE
+ >> 1Ë+ 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Sèπ
+))
+
+885 
+dwWÆkSãp
+ = 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ - 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Sèπ
+;
+
+888 i‡((
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹End
+ - 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+)
+
+889 < (
+REMOTEFOCUSD_SECOND_LEVEL_SEARCH_RANGE
+ >> 1))
+
+891 
+dwWÆkSãp
+ = 
+REMOTEFOCUSD_SECOND_LEVEL_SEARCH_RANGE
+
+
+892 - (
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹End
+ - 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+);
+
+895 
+	`REMOTEFOCUSD_DBGPRINT
+("Start second-level searching...\n");
+
+896 i‡(
+	`RemŸeFocusd_SãpBySãpSórch
+(
+pThis
+, 
+fdMŸ‹Devi˚
+,ÖThis->
+dwFocusMŸ‹Posôi⁄
+ - 
+dwWÆkSãp
+, 
+REMOTEFOCUSD_SECOND_LEVEL_SEARCH_RANGE
+, 
+REMOTEFOCUSD_SMALL_SEARCH_STEP
+Ë!
+S_OK
+)
+
+899 if(
+g_bIrisFuŒyO≥nSètus
+ =
+FALSE
+ && 
+bNìdClo£Iris
+ =
+TRUE
+)
+
+901 
+	`RemŸeFocusd_SëIris
+(
+pThis
+, 
+IRISENABLE
+);
+
+906 #ifde‡
+_SUPPORT_FINE_TUNING
+
+
+907 
+dwWÆkSãp
+ = 
+REMOTEFOCUSD_THIRD_LEVEL_SEARCH_RANGE
+ >> 1;
+
+908 i‡(
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ < ((
+REMOTEFOCUSD_THIRD_LEVEL_SEARCH_RANGE
+ >> 1Ë+ 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Sèπ
+))
+
+910 
+dwWÆkSãp
+ = 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ - 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Sèπ
+;
+
+913 i‡((
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹End
+ - 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+)
+
+914 < (
+REMOTEFOCUSD_THIRD_LEVEL_SEARCH_RANGE
+ >> 1))
+
+916 
+dwWÆkSãp
+ = 
+REMOTEFOCUSD_THIRD_LEVEL_SEARCH_RANGE
+
+
+917 - (
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹End
+ - 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+);
+
+920 
+	`REMOTEFOCUSD_DBGPRINT
+("Start Third-level searching...\n");
+
+921 i‡(
+	`RemŸeFocusd_SãpBySãpSórch
+(
+pThis
+, 
+fdMŸ‹Devi˚
+,ÖThis->
+dwFocusMŸ‹Posôi⁄
+ - 
+dwWÆkSãp
+, 
+REMOTEFOCUSD_THIRD_LEVEL_SEARCH_RANGE
+, 
+REMOTEFOCUSD_FINE_TUNE_SEARCH_STEP
+Ë!
+S_OK
+)
+
+924 if(
+g_bIrisFuŒyO≥nSètus
+ =
+FALSE
+ && 
+bNìdClo£Iris
+ =
+TRUE
+)
+
+926 
+	`RemŸeFocusd_SëIris
+(
+pThis
+, 
+IRISENABLE
+);
+
+932 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·NoSîvi˚
+;
+
+934 if(
+g_bIrisFuŒyO≥nSètus
+ =
+FALSE
+ && 
+bNìdClo£Iris
+ =
+TRUE
+)
+
+936 
+	`RemŸeFocusd_SëIris
+(
+pThis
+, 
+IRISENABLE
+);
+
+940 
+	}
+}
+
+943 
+	$RemŸeFocusd_Pîf‹mFocusSˇn
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+fdMŸ‹Devi˚
+)
+
+945 i‡(!(
+pThis
+->
+iIsSuµ‹tFocus
+)) ;
+
+947 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±FocusMŸ‹CålInfo
+ = &(
+pThis
+->
+tFocusMŸ‹CålInfo
+);
+
+948 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±ZoomMŸ‹CålInfo
+ = &(
+pThis
+->
+tZoomMŸ‹CålInfo
+);
+
+949 
+BOOL
+ 
+bNìdClo£Iris
+ = 
+FALSE
+;
+
+951 if(
+±FocusMŸ‹CålInfo
+->
+bFuŒyO≥√dIris
+)
+
+953 
+	`RemŸeFocusd_SëIris
+(
+pThis
+, 
+IRISOPEN
+);
+
+954 
+bNìdClo£Iris
+ = 
+TRUE
+;
+
+958 
+	`mem£t
+(
+g_dwèbFocusVÆueTabÀ
+, 0, (
+DWORD
+Ë* 
+REMOTEFOCUSD_FOCUS_VALUE_TABLE_SIZE
+);
+
+962 
+DWORD
+ 
+dwBackupZoomPosôi⁄
+ = 
+pThis
+->
+dwZoomMŸ‹Posôi⁄
+;
+
+963 
+DWORD
+ 
+dwWÆkSãp
+;
+
+964 
+DWORD
+ 
+dwSórchSèπ
+;
+
+965 
+DWORD
+ 
+dwVÆidR™ge
+;
+
+966 
+DWORD
+ 
+dwCålTy≥
+;
+
+967 
+DWORD
+ 
+dwFocusMŸ‹Pos
+;
+
+969 i‡((
+pThis
+->
+iIsSuµ‹tZoom
+))
+
+972 
+±ZoomMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·Posôi⁄ög
+;
+
+973 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Posôi⁄
+ = 
+dwBackupZoomPosôi⁄
+;
+
+974 
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+975 i‡(
+	`£nd
+(
+pThis
+->
+fdZoomMŸ‹Wakeup
+[0], &’This->
+bZoomO≥øti⁄E«bÀ
+),
+
+976 (
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+978 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up zoom motorÅhread failed.\n");
+
+983 #ifde‡
+_FOCUS_CALIBRATION_REVERS
+
+
+984 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_SET_FORWARD
+);
+
+985 
+dwFocusMŸ‹Pos
+ = 
+REMOTEFOCUSD_FOCUS_VIRTUAL_END
+;
+
+987 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_SET_BACKWARD
+);
+
+988 
+dwFocusMŸ‹Pos
+ = 0;
+
+991 #ifde‡
+_BLOCKING_MODE
+
+
+992 
+dwCålTy≥
+ = 
+MOTOR_WALK_STEPS_BLOCK
+;
+
+994 
+dwCålTy≥
+ = 
+MOTOR_WALK_STEPS
+;
+
+997 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+dwCålTy≥
+, 
+REMOTEFOCUSD_FOCUS_MOTOR_POSITIONINGSTEP
+);
+
+999 #ifde‡
+_BLOCKING_MODE
+
+
+1000 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ = 
+dwFocusMŸ‹Pos
+;
+
+1002 
+dwWÆkSãp
+ = 
+REMOTEFOCUSD_FOCUS_MOTOR_POSITIONINGSTEP
+ / 
+REMOTEFOCUSD_FOCUS_VIRTUAL_ONESTEP
+;
+
+1003 (
+dwWÆkSãp
+ --) != 0)
+
+1005 
+	`u¶ìp
+(
+REMOTEFOCUSD_FOCUS_ONESTEP_TIME
+);
+
+1006 i‡(
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ != 0)
+
+1007 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ --;
+
+1009 i‡(
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+)
+
+1011 
+	`REMOTEFOCUSD_DBGPRINT
+("Operation interrupted!\n");
+
+1013  
+S_FAIL
+;
+
+1018 
+	`REMOTEFOCUSD_DBGPRINT
+("Start searching...\n");
+
+1019 
+dwSórchSèπ
+ = 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Sèπ
+;
+
+1020 
+dwVÆidR™ge
+ = 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹End
+ -ÖtFocusMŸ‹CålInfo->
+dwMŸ‹Sèπ
+;
+
+1021 i‡(
+	`RemŸeFocusd_SãpBySãpSórch
+(
+pThis
+, 
+fdMŸ‹Devi˚
+, 
+dwSórchSèπ
+, 
+dwVÆidR™ge
+, 
+REMOTEFOCUSD_SMALL_SEARCH_STEP
+Ë!
+S_OK
+)
+
+1024 if(
+g_bIrisFuŒyO≥nSètus
+ =
+FALSE
+ && 
+bNìdClo£Iris
+ =
+TRUE
+)
+
+1026 
+	`RemŸeFocusd_SëIris
+(
+pThis
+, 
+IRISENABLE
+);
+
+1031 #ifde‡
+_SUPPORT_FINE_TUNING
+
+
+1033 
+dwWÆkSãp
+ = 
+REMOTEFOCUSD_THIRD_LEVEL_SEARCH_RANGE
+ >> 1;
+
+1034 i‡(
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ < ((
+REMOTEFOCUSD_THIRD_LEVEL_SEARCH_RANGE
+ >> 1Ë+ 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Sèπ
+))
+
+1036 
+dwWÆkSãp
+ = 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ - 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Sèπ
+;
+
+1039 i‡((
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹End
+ - 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+)
+
+1040 < (
+REMOTEFOCUSD_THIRD_LEVEL_SEARCH_RANGE
+ >> 1))
+
+1042 
+dwWÆkSãp
+ = 
+REMOTEFOCUSD_THIRD_LEVEL_SEARCH_RANGE
+
+
+1043 - (
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹End
+ - 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+);
+
+1046 
+	`REMOTEFOCUSD_DBGPRINT
+("Start FineÅune searching...\n");
+
+1047 i‡(
+	`RemŸeFocusd_SãpBySãpSórch
+(
+pThis
+, 
+fdMŸ‹Devi˚
+,ÖThis->
+dwFocusMŸ‹Posôi⁄
+ - 
+dwWÆkSãp
+, 
+REMOTEFOCUSD_THIRD_LEVEL_SEARCH_RANGE
+, 
+REMOTEFOCUSD_FINE_TUNE_SEARCH_STEP
+Ë!
+S_OK
+)
+
+1050 if(
+g_bIrisFuŒyO≥nSètus
+ =
+FALSE
+ && 
+bNìdClo£Iris
+ =
+TRUE
+)
+
+1052 
+	`RemŸeFocusd_SëIris
+(
+pThis
+, 
+IRISENABLE
+);
+
+1058 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·NoSîvi˚
+;
+
+1061 if(
+g_bIrisFuŒyO≥nSètus
+ =
+FALSE
+ && 
+bNìdClo£Iris
+ =
+TRUE
+)
+
+1063 
+	`RemŸeFocusd_SëIris
+(
+pThis
+, 
+IRISENABLE
+);
+
+1067 
+	}
+}
+
+1070 
+	$RemŸeFocusd_FocusMŸ‹Posôi⁄ög
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+fdMŸ‹Devi˚
+)
+
+1072 i‡(!(
+pThis
+->
+iIsSuµ‹tFocus
+)) ;
+
+1074 
+iRë
+;
+
+1075 
+DWORD
+ 
+dwFocusPos
+;
+
+1077 #ifde‡
+_FOCUS_CALIBRATION_REVERS
+
+
+1078 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_SET_FORWARD
+);
+
+1079 
+dwFocusPos
+ = 
+REMOTEFOCUSD_FOCUS_VIRTUAL_END
+;
+
+1081 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_SET_BACKWARD
+);
+
+1082 
+dwFocusPos
+ = 0;
+
+1085 #ifde‡
+_BLOCKING_MODE
+
+
+1086 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS_BLOCK
+, 
+REMOTEFOCUSD_FOCUS_MOTOR_POSITIONINGSTEP
+);
+
+1088 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS
+, 
+REMOTEFOCUSD_FOCUS_MOTOR_POSITIONINGSTEP
+);
+
+1089 
+	`u¶ìp
+((
+REMOTEFOCUSD_FOCUS_ONESTEP_TIME
+ / 
+REMOTEFOCUSD_FOCUS_VIRTUAL_ONESTEP
+Ë* 
+REMOTEFOCUSD_FOCUS_MOTOR_POSITIONINGSTEP
+);
+
+1091 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ = 
+dwFocusPos
+;
+
+1093 
+	`RemŸeFocusd_Posôi⁄ögAutoFocus
+(
+pThis
+);;
+
+1096 
+	}
+}
+
+1098 
+	$RemŸeFocusd_Posôi⁄ögAutoFocus
+(
+TRemŸeFocusdInfo
+ *
+pThis
+)
+
+1100 i‡(!(
+pThis
+->
+iIsSuµ‹tFocus
+)) ;
+
+1102 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±ZoomMŸ‹CålInfo
+ = &(
+pThis
+->
+tZoomMŸ‹CålInfo
+);
+
+1103 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±FocusMŸ‹CålInfo
+ = &(
+pThis
+->
+tFocusMŸ‹CålInfo
+);
+
+1104 
+DWORD
+ 
+dwZoomPosôi⁄
+ = 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Posôi⁄
+;
+
+1106 i‡(
+pThis
+->
+iIsSuµ‹tZoom
+)
+
+1108 #ifde‡
+_FOCUSING_START
+
+
+1111 
+	`RemŸeFocusd_CÆcuœãFocusögSèπ
+(
+pThis
+, 
+dwZoomPosôi⁄
+);
+
+1114 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·AutoFocus
+;
+
+1115 
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+1116 i‡(
+	`£nd
+(
+pThis
+->
+fdFocusMŸ‹Wakeup
+[0], &’This->
+bFocusO≥øti⁄E«bÀ
+),
+
+1117 (
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+1119 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up focusÅhread failed.\n");
+
+1123 
+	}
+}
+
+1126 #ifde‡
+_FOCUS_DEFAULT
+
+
+1127 
+	$RemŸeFocusd_FocusMŸ‹Re£t
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+fdMŸ‹Devi˚
+)
+
+1129 i‡(!(
+pThis
+->
+iIsSuµ‹tFocus
+)) ;
+
+1131 
+iRë
+;
+
+1132 
+DWORD
+ 
+dwFocusPos
+;
+
+1133 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±ZoomMŸ‹CålInfo
+ = &(
+pThis
+->
+tZoomMŸ‹CålInfo
+);
+
+1134 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±FocusMŸ‹CålInfo
+ = &(
+pThis
+->
+tFocusMŸ‹CålInfo
+);
+
+1137 #ifde‡
+_FOCUS_CALIBRATION_REVERS
+
+
+1138 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_SET_FORWARD
+);
+
+1139 
+dwFocusPos
+ = 
+REMOTEFOCUSD_FOCUS_VIRTUAL_END
+;
+
+1141 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_SET_BACKWARD
+);
+
+1142 
+dwFocusPos
+ = 0;
+
+1145 #ifde‡
+_BLOCKING_MODE
+
+
+1146 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS_BLOCK
+, 
+REMOTEFOCUSD_FOCUS_MOTOR_POSITIONINGSTEP
+);
+
+1148 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS
+, 
+REMOTEFOCUSD_FOCUS_MOTOR_POSITIONINGSTEP
+);
+
+1149 
+	`u¶ìp
+((
+REMOTEFOCUSD_FOCUS_ONESTEP_TIME
+ / 
+REMOTEFOCUSD_FOCUS_VIRTUAL_ONESTEP
+Ë* 
+REMOTEFOCUSD_FOCUS_MOTOR_POSITIONINGSTEP
+);
+
+1151 
+pThis
+->
+dwFocusMŸ‹Posôi⁄
+ = 
+dwFocusPos
+;
+
+1154 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Posôi⁄
+ = 
+g_dwFocusDeÁu…
+ ;
+
+1155 
+±FocusMŸ‹CålInfo
+->
+eMŸ‹Dúe˘i⁄
+ = 
+emdDrõ˘
+;
+
+1156 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·Focus
+;
+
+1157 
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+1158 i‡(
+	`£nd
+(
+pThis
+->
+fdFocusMŸ‹Wakeup
+[0], &’This->
+bFocusO≥øti⁄E«bÀ
+),
+
+1159 (
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+1161 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up focusÅhread failed.\n");
+
+1165 
+	}
+}
+
+1169 
+	$RemŸeFocusd_ZoomMŸ‹Posôi⁄ög
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+fdMŸ‹Devi˚
+)
+
+1171 i‡(!(
+pThis
+->
+iIsSuµ‹tZoom
+)) ;
+
+1173 
+iRë
+;
+
+1174 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±ZoomMŸ‹CålInfo
+ = &(
+pThis
+->
+tZoomMŸ‹CålInfo
+);
+
+1177 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_SET_BACKWARD
+);
+
+1178 #ifde‡
+_BLOCKING_MODE
+
+
+1179 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS_BLOCK
+, 
+REMOTEFOCUSD_ZOOM_MOTOR_POSITIONINGSTEP
+);
+
+1181 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS
+, 
+REMOTEFOCUSD_ZOOM_MOTOR_POSITIONINGSTEP
+);
+
+1182 
+	`u¶ìp
+((
+REMOTEFOCUSD_ZOOM_ONESTEP_TIME
+ / 
+REMOTEFOCUSD_ZOOM_VIRTUAL_ONESTEP
+Ë* 
+REMOTEFOCUSD_ZOOM_MOTOR_POSITIONINGSTEP
+);
+
+1187 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_SET_FORWARD
+);
+
+1188 #ifde‡
+_BLOCKING_MODE
+
+
+1189 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS_BLOCK
+,
+
+1190 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Posôi⁄
+ * 
+REMOTEFOCUSD_ZOOM_VIRTUAL_ONESTEP
+);
+
+1192 
+iRë
+ = 
+	`io˘l
+(
+fdMŸ‹Devi˚
+, 
+MOTOR_WALK_STEPS
+,
+
+1193 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Posôi⁄
+ * 
+REMOTEFOCUSD_ZOOM_VIRTUAL_ONESTEP
+);
+
+1194 
+	`u¶ìp
+(
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Posôi⁄
+ * 
+REMOTEFOCUSD_ZOOM_ONESTEP_TIME
+);
+
+1196 
+pThis
+->
+dwZoomMŸ‹Posôi⁄
+ = 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Posôi⁄
+;
+
+1198 
+±ZoomMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·NoSîvi˚
+;
+
+1200 
+	}
+}
+
+1203 
+	$RemŸeFocusd_FocusMissi⁄Di•©chî
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+fdMŸ‹Devi˚
+)
+
+1205 i‡(!(
+pThis
+->
+iIsSuµ‹tFocus
+)) ;
+
+1207 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±FocusMŸ‹CålInfo
+ = &(
+pThis
+->
+tFocusMŸ‹CålInfo
+);
+
+1210 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+)
+
+1212 
+e·Focus
+:
+
+1213 
+	`RemŸeFocusd_FocusCª©eLogFûe
+();
+
+1215 
+	`RemŸeFocusd_O≥øãFocusMŸ‹
+(
+pThis
+, 
+fdMŸ‹Devi˚
+);
+
+1216 i‡(
+	`RemŸeFocusd_SaveC⁄figFûe
+(
+pThis
+Ë!
+S_OK
+)
+
+1218 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_SaveConfigFile failed.\n");
+
+1221 
+	`RemŸeFocusd_FocusDñëeLogFûe
+();
+
+1224 
+e·AutoFocus
+:
+
+1225 
+	`RemŸeFocusd_FocusCª©eLogFûe
+();
+
+1227 
+	`RemŸeFocusd_Pîf‹mAutoFocus
+(
+pThis
+, 
+fdMŸ‹Devi˚
+);
+
+1228 i‡(
+	`RemŸeFocusd_SaveC⁄figFûe
+(
+pThis
+Ë!
+S_OK
+)
+
+1230 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_SaveConfigFile failed.\n");
+
+1233 
+	`RemŸeFocusd_FocusDñëeLogFûe
+();
+
+1236 
+e·FocusSˇn
+:
+
+1237 
+	`RemŸeFocusd_FocusCª©eLogFûe
+();
+
+1239 
+	`RemŸeFocusd_Pîf‹mFocusSˇn
+(
+pThis
+, 
+fdMŸ‹Devi˚
+);
+
+1240 i‡(
+	`RemŸeFocusd_SaveC⁄figFûe
+(
+pThis
+Ë!
+S_OK
+)
+
+1242 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_SaveConfigFile failed.\n");
+
+1245 
+	`RemŸeFocusd_FocusDñëeLogFûe
+();
+
+1248 
+e·Posôi⁄ög
+:
+
+1249 
+	`RemŸeFocusd_FocusCª©eLogFûe
+();
+
+1251 
+	`RemŸeFocusd_FocusMŸ‹Posôi⁄ög
+(
+pThis
+, 
+fdMŸ‹Devi˚
+);
+
+1252 i‡(
+	`RemŸeFocusd_SaveC⁄figFûe
+(
+pThis
+Ë!
+S_OK
+)
+
+1254 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_SaveConfigFile failed.\n");
+
+1257 
+	`RemŸeFocusd_FocusDñëeLogFûe
+();
+
+1260 
+e·St›
+:
+
+1261 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·NoSîvi˚
+;
+
+1263 
+e·IrisO≥n
+:
+
+1264 
+	`RemŸeFocusd_SëIris
+(
+pThis
+, 
+IRISOPEN
+);
+
+1265 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·NoSîvi˚
+;
+
+1267 
+e·IrisE«bÀ
+:
+
+1268 
+	`RemŸeFocusd_SëIris
+(
+pThis
+, 
+IRISENABLE
+);
+
+1269 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·NoSîvi˚
+;
+
+1271 #ifde‡
+_FOCUS_DEFAULT
+
+
+1272 
+e·Re£tFocus
+:
+
+1273 
+	`RemŸeFocusd_FocusCª©eLogFûe
+();
+
+1275 
+	`RemŸeFocusd_FocusMŸ‹Re£t
+(
+pThis
+, 
+fdMŸ‹Devi˚
+);
+
+1276 i‡(
+	`RemŸeFocusd_SaveC⁄figFûe
+(
+pThis
+Ë!
+S_OK
+)
+
+1278 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_SaveConfigFile failed.\n");
+
+1281 
+	`RemŸeFocusd_FocusDñëeLogFûe
+();
+
+1284 
+e·SëFocusDeÁu…
+:
+
+1285 
+g_dwFocusDeÁu…
+ = 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹FocusDeÁu…
+;
+
+1286 
+	`¥ötf
+("g_dwFocusDeÁu… =%d\n",
+g_dwFocusDeÁu…
+);
+
+1287 
+	`RemŸeFocusd_SaveFocusDeÁu…C⁄fig
+(
+pThis
+);
+
+1288 
+±FocusMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·NoSîvi˚
+;
+
+1297 
+	}
+}
+
+1300 
+DWORD
+ 
+THREADAPI
+ 
+	$RemŸeFocusd_FocusMŸ‹Thªad
+(
+DWORD
+ 
+dwIn°™˚
+)
+
+1302 
+TRemŸeFocusdInfo
+ *
+pThis
+ = (TRemŸeFocusdInfo*Ë
+dwIn°™˚
+;
+
+1303 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±FocusMŸ‹CålInfo
+ = &(
+pThis
+->
+tFocusMŸ‹CålInfo
+);
+
+1305 i‡(!(
+pThis
+->
+iIsSuµ‹tFocus
+))  0;
+
+1307 #i‚de‡
+_FOCUSING_START
+
+
+1308 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹Sèπ
+ = 
+REMOTEFOCUSD_FOCUS_VIRTUAL_START
+;
+
+1311 
+±FocusMŸ‹CålInfo
+->
+dwMŸ‹End
+ = 
+REMOTEFOCUSD_FOCUS_VIRTUAL_END
+;
+
+1312 
+fdFocusMŸ‹Devi˚
+;
+
+1313 
+iSñe˘
+;
+
+1314 
+fd_£t
+ 
+fdRódSë
+;
+
+1315 
+timevÆ
+ 
+tvTimeOut
+;
+
+1316 
+BOOL
+ 
+bRódBuf
+;
+
+1318 
+BOOL
+ 
+g_bRunThªad
+;
+
+1321 
+fdFocusMŸ‹Devi˚
+ = 
+	`›í
+(
+REMOTEFOCUSD_FOCUS_MOTOR_DEVICE_FILE
+, 
+O_WRONLY
+);
+
+1322 i‡(
+fdFocusMŸ‹Devi˚
+ < 0)
+
+1324 
+	`REMOTEFOCUSD_DBGPRINT
+("FailedÅo open device\n");
+
+1325 
+g_bRunThªad
+ = 
+FALSE
+;
+
+1330 #i‚de‡
+_CURRENT_CTRL
+
+
+1331 
+	`io˘l
+(
+fdFocusMŸ‹Devi˚
+, 
+MOTOR_TURN_OFF
+);
+
+1334 
+g_bRunThªad
+)
+
+1337 
+	`FD_ZERO
+(&
+fdRódSë
+);
+
+1338 
+	`FD_SET
+(
+pThis
+->
+fdFocusMŸ‹Wakeup
+[1], &
+fdRódSë
+);
+
+1339 
+tvTimeOut
+.
+tv_£c
+ = 
+REMOTEFOCUSD_SELECT_TIMEOUT
+ / 1000000;
+
+1340 
+tvTimeOut
+.
+tv_u£c
+ = 
+REMOTEFOCUSD_SELECT_TIMEOUT
+ % 1000000;
+
+1342 
+iSñe˘
+ = 
+	`£À˘
+(
+pThis
+->
+fdFocusMŸ‹Wakeup
+[1] + 1, &
+fdRódSë
+, 
+NULL
+, NULL, &
+tvTimeOut
+);
+
+1343 i‡(
+iSñe˘
+ < 0)
+
+1345 i‡(
+î∫o
+ !
+EINTR
+)
+
+1347 
+	`REMOTEFOCUSD_DBGPRINT
+("select failed.\n");
+
+1350 i‡(
+iSñe˘
+ > 0)
+
+1352 
+	`ªad
+(
+pThis
+->
+fdFocusMŸ‹Wakeup
+[1], &
+bRódBuf
+, (bReadBuf));
+
+1354 i‡(
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+)
+
+1356 
+pThis
+->
+bFocusO≥øti⁄E«bÀ
+ = 
+FALSE
+;
+
+1357 
+	`RemŸeFocusd_FocusMissi⁄Di•©chî
+(
+pThis
+, 
+fdFocusMŸ‹Devi˚
+);
+
+1360 #i‚de‡
+_CURRENT_CTRL
+
+
+1361 
+	`io˘l
+(
+fdFocusMŸ‹Devi˚
+, 
+MOTOR_TURN_OFF
+);
+
+1367 
+	`REMOTEFOCUSD_DBGPRINT
+("selectÅimeout\n");
+
+1371 
+	`˛o£
+(
+fdFocusMŸ‹Devi˚
+);
+
+1372 
+g_bRunThªad
+ = 
+FALSE
+;
+
+1374 
+	}
+}
+
+1377 
+	$RemŸeFocusd_ZoomMissi⁄Di•©chî
+(
+TRemŸeFocusdInfo
+ *
+pThis
+, 
+fdMŸ‹Devi˚
+)
+
+1379 i‡(!(
+pThis
+->
+iIsSuµ‹tZoom
+)) ;
+
+1380 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±ZoomMŸ‹CålInfo
+ = &(
+pThis
+->
+tZoomMŸ‹CålInfo
+);
+
+1381 
+timevÆ
+ 
+tvBuâ⁄TimeVÆue
+;
+
+1382 
+DWORD
+ 
+dwBuâ⁄Rñó£Time
+;
+
+1384 
+±ZoomMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+)
+
+1386 
+e·Zoom
+:
+
+1387 
+	`RemŸeFocusd_ZoomCª©eLogFûe
+();
+
+1389 
+	`RemŸeFocusd_O≥øãZoomMŸ‹
+(
+pThis
+, 
+fdMŸ‹Devi˚
+);
+
+1390 i‡(
+	`RemŸeFocusd_SaveC⁄figFûe
+(
+pThis
+Ë!
+S_OK
+)
+
+1392 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_SaveConfigFile failed.\n");
+
+1395 
+	`RemŸeFocusd_ZoomDñëeLogFûe
+();
+
+1398 i‡(
+pThis
+->
+tZoomMŸ‹CålInfo
+.
+bKìpZoomög
+)
+
+1401 
+	`gëtimeofday
+(&
+tvBuâ⁄TimeVÆue
+, 
+NULL
+);
+
+1402 
+dwBuâ⁄Rñó£Time
+ = (
+DWORD
+)((
+tvBuâ⁄TimeVÆue
+.
+tv_u£c
+ / 1000Ë+ (tvBuâ⁄TimeVÆue.
+tv_£c
+ * 1000));
+
+1403 i‡((
+dwBuâ⁄Rñó£Time
+ - 
+pThis
+->
+dwBuâ⁄PªssTime
+) > 1000)
+
+1405 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Sãps
+ = (
+REMOTEFOCUSD_ZOOM_MOTOR_TOTALSTEP
+/10);
+
+1409 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Sãps
+ = 1;
+
+1411 
+±ZoomMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·Zoom
+;
+
+1412 
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+ = 
+TRUE
+;
+
+1413 i‡(
+	`£nd
+(
+pThis
+->
+fdZoomMŸ‹Wakeup
+[0], &’This->
+bZoomO≥øti⁄E«bÀ
+),
+
+1414 (
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+), 
+MSG_DONTWAIT
+) < 0)
+
+1416 
+	`REMOTEFOCUSD_DBGPRINT
+("Waking up zoom motorÅhread failed.\n");
+
+1422 
+e·Posôi⁄ög
+:
+
+1423 
+	`RemŸeFocusd_ZoomCª©eLogFûe
+();
+
+1425 
+	`RemŸeFocusd_ZoomMŸ‹Posôi⁄ög
+(
+pThis
+, 
+fdMŸ‹Devi˚
+);
+
+1426 i‡(
+	`RemŸeFocusd_SaveC⁄figFûe
+(
+pThis
+Ë!
+S_OK
+)
+
+1428 
+	`REMOTEFOCUSD_DBGPRINT
+("RemoteFocusd_SaveConfigFile failed.\n");
+
+1431 
+	`RemŸeFocusd_ZoomDñëeLogFûe
+();
+
+1434 
+e·St›
+:
+
+1435 
+±ZoomMŸ‹CålInfo
+->
+eFun˘i⁄Ty≥
+ = 
+e·NoSîvi˚
+;
+
+1444 
+	}
+}
+
+1447 
+DWORD
+ 
+THREADAPI
+ 
+	$RemŸeFocusd_ZoomMŸ‹Thªad
+(
+DWORD
+ 
+dwIn°™˚
+)
+
+1449 
+TRemŸeFocusdInfo
+ *
+pThis
+ = (TRemŸeFocusdInfo*Ë
+dwIn°™˚
+;
+
+1450 i‡(!(
+pThis
+->
+iIsSuµ‹tZoom
+))  0;
+
+1452 
+TRemŸeFocusd_MŸ‹CålInfo
+* 
+±ZoomMŸ‹CålInfo
+ = &(
+pThis
+->
+tZoomMŸ‹CålInfo
+);
+
+1453 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹Sèπ
+ = 
+REMOTEFOCUSD_ZOOM_VIRTUAL_START
+;
+
+1454 
+±ZoomMŸ‹CålInfo
+->
+dwMŸ‹End
+ = 
+REMOTEFOCUSD_ZOOM_VIRTUAL_END
+;
+
+1456 
+fdZoomMŸ‹Devi˚
+;
+
+1458 
+iSñe˘
+;
+
+1459 
+fd_£t
+ 
+fdRódSë
+;
+
+1460 
+timevÆ
+ 
+tvTimeOut
+;
+
+1461 
+BOOL
+ 
+bRódBuf
+;
+
+1463 
+BOOL
+ 
+g_bRunThªad
+;
+
+1466 
+fdZoomMŸ‹Devi˚
+ = 
+	`›í
+(
+REMOTEFOCUSD_ZOOM_MOTOR_DEVICE_FILE
+, 
+O_WRONLY
+);
+
+1467 i‡(
+fdZoomMŸ‹Devi˚
+ < 0)
+
+1469 
+	`REMOTEFOCUSD_DBGPRINT
+("FailedÅo open device\n");
+
+1470 
+g_bRunThªad
+ = 
+FALSE
+;
+
+1475 #i‚de‡
+_CURRENT_CTRL
+
+
+1476 
+	`io˘l
+(
+fdZoomMŸ‹Devi˚
+, 
+MOTOR_TURN_OFF
+);
+
+1479 
+	`RemŸeFocusd_CÆcuœãP™FocusPosôi⁄
+(
+pThis
+,ÖThis->
+dwZoomMŸ‹Posôi⁄
+);
+
+1481 #ifde‡
+_FOCUSING_START
+
+
+1482 
+	`RemŸeFocusd_CÆcuœãFocusögSèπ
+(
+pThis
+,ÖThis->
+dwZoomMŸ‹Posôi⁄
+);
+
+1485 
+g_bRunThªad
+)
+
+1488 
+	`FD_ZERO
+(&
+fdRódSë
+);
+
+1489 
+	`FD_SET
+(
+pThis
+->
+fdZoomMŸ‹Wakeup
+[1], &
+fdRódSë
+);
+
+1490 
+tvTimeOut
+.
+tv_£c
+ = 
+REMOTEFOCUSD_SELECT_TIMEOUT
+ / 1000000;
+
+1491 
+tvTimeOut
+.
+tv_u£c
+ = 
+REMOTEFOCUSD_SELECT_TIMEOUT
+ % 1000000;
+
+1493 
+iSñe˘
+ = 
+	`£À˘
+(
+pThis
+->
+fdZoomMŸ‹Wakeup
+[1] + 1, &
+fdRódSë
+, 
+NULL
+, NULL, &
+tvTimeOut
+);
+
+1494 i‡(
+iSñe˘
+ < 0)
+
+1496 i‡(
+î∫o
+ !
+EINTR
+)
+
+1498 
+	`REMOTEFOCUSD_DBGPRINT
+("select failed.\n");
+
+1501 i‡(
+iSñe˘
+ > 0)
+
+1503 
+	`ªad
+(
+pThis
+->
+fdZoomMŸ‹Wakeup
+[1], &
+bRódBuf
+, (bReadBuf));
+
+1505 i‡(
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+)
+
+1507 
+pThis
+->
+bZoomO≥øti⁄E«bÀ
+ = 
+FALSE
+;
+
+1508 
+	`RemŸeFocusd_ZoomMissi⁄Di•©chî
+(
+pThis
+, 
+fdZoomMŸ‹Devi˚
+);
+
+1511 #i‚de‡
+_CURRENT_CTRL
+
+
+1512 
+	`io˘l
+(
+fdZoomMŸ‹Devi˚
+, 
+MOTOR_TURN_OFF
+);
+
+1518 
+	`REMOTEFOCUSD_DBGPRINT
+("selectÅimeout\n");
+
+1522 
+	`˛o£
+(
+fdZoomMŸ‹Devi˚
+);
+
+1523 
+g_bRunThªad
+ = 
+FALSE
+;
+
+1525 
+	}
+}
+
+	@
+1
+.
+0
+10
+234
+src/focusmotor.h
+src/motorinfo_DF010NA0000.h
+src/motorinfo_TT02812PB.h
+src/motorinfo_YC41AM.h
+src/remotefocusd.c
+src/remotefocusd.h
+src/remotefocusd_Table.c
+src/remotefocusd_init.c
+src/remotefocusd_process.c
+src/remotefocusd_thread.c

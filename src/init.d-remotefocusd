@@ -1,0 +1,56 @@
+#!/bin/sh
+# /etc/init.d/remotefocusd: start remotefocusd
+# config file: 
+
+PATH=/sbin:/bin:/usr/bin
+
+prog="remotefocusd"
+binpath="/usr/sbin/remotefocusd"
+args="-d"
+pidfile="/var/run/remotefocusd.pid"
+
+test -x $binpath || exit 0
+
+restoreCheck(){
+	status=`cat /mnt/flash/.RemotefocusStatus`
+	if [ ${status} = "restore" ] || [ ! -e /mnt/flash/.RemotefocusStatus ]; then
+			fifocmd -p /tmp/RemoteFocusFIFO  -e "<message><autofocus>falling</autofocus></message>" 
+			rm /mnt/flash/.RemotefocusStatus
+			echo "normal" >> /mnt/flash/.RemotefocusStatus
+	fi
+}
+
+start(){
+	echo -n "Starting $prog: "
+	start-stop-daemon --start --quiet -n $prog --exec $binpath -- $args
+	restoreCheck
+	echo "."
+}
+
+stop(){
+	echo -n "Stopping $prog: "
+	kill -15 `cat $pidfile`
+	echo "."
+}
+
+# See how we were called.
+case "$1" in
+    start)
+	start
+	;;
+    stop)
+	stop
+	;;
+    restart)
+	stop
+	sleep 1
+	start
+	;;
+    reload)
+	;;
+    *)
+	echo "Usage: $0 {start|stop|restart}"
+	exit 1
+esac
+
+exit 0

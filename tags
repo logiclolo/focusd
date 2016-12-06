@@ -1,0 +1,377 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUILD_CONF	config.mk	/^BUILD_CONF	= armlinux_release$/;"	m	language:Make
+CFLAGS	config.mk	/^CFLAGS		= -O0 -Wall$/;"	m	language:Make
+CFLAGS	config.mk	/^CFLAGS		= -O3 -Wall -g$/;"	m	language:Make
+CFLAGS	config.mk	/^CFLAGS	 	= $/;"	m	language:Make
+CFLAGS	config.mk	/^CFLAGS	 	= -O3 -Wall$/;"	m	language:Make
+CFLAGS	config.mk	/^CFLAGS	 	= \/O2 -D_NDEBUG$/;"	m	language:Make
+EMotorDriveMethod	src/focusmotor.h	/^}EMotorDriveMethod;$/;"	t	language:C++	typeref:enum:__anon1
+ERemoteFocusd_Capability	src/remotefocusd.h	/^} ERemoteFocusd_Capability;$/;"	t	language:C++	typeref:enum:_ERemoteFocusd_Capability
+ERemoteFocusd_FunctionType	src/remotefocusd.h	/^} ERemoteFocusd_FunctionType;$/;"	t	language:C++	typeref:enum:_ERemoteFocusd_FunctionType
+ERemoteFocusd_MotorDirection	src/remotefocusd.h	/^} ERemoteFocusd_MotorDirection;$/;"	t	language:C++	typeref:enum:_ERemoteFocusd_MotorDirection
+INCDIR	config.mk	/^INCDIR	 	= $/;"	m	language:Make
+INSTALLED_APP	makefile	/^INSTALLED_APP := $(host_package_bin_dir)\/$(MODNAME).$(EXESUFFIX)$/;"	m	language:Make
+IRISENABLE	src/remotefocusd_thread.c	68;"	d	language:C	file:
+IRISOPEN	src/remotefocusd_thread.c	67;"	d	language:C	file:
+LIBS	config.mk	/^LIBS 		= $(common_lib) $(osisolate_lib) $(expat_lib) $(xmlsparser_lib) $(message_lib) $(fdipc_lib) $(fdcgi_lib)$/;"	m	language:Make
+LIBS	config.mk	/^LIBS 		= common$/;"	m	language:Make
+LINKFLAGS	config.mk	/^LINKFLAGS	= -lpthread$/;"	m	language:Make
+MOTOR_MAGIC	src/focusmotor.h	55;"	d	language:C++
+MOTOR_MAXNR	src/focusmotor.h	81;"	d	language:C++
+MOTOR_SET_BACKWARD	src/focusmotor.h	60;"	d	language:C++
+MOTOR_SET_FORWARD	src/focusmotor.h	58;"	d	language:C++
+MOTOR_SET_MSG_LEVEL	src/focusmotor.h	76;"	d	language:C++
+MOTOR_SET_SPEED	src/focusmotor.h	63;"	d	language:C++
+MOTOR_SYS_LOG_LIST	src/focusmotor.h	78;"	d	language:C++
+MOTOR_TURN_OFF	src/focusmotor.h	70;"	d	language:C++
+MOTOR_WALK_STEPS	src/focusmotor.h	65;"	d	language:C++
+MOTOR_WALK_STEPS_BLOCK	src/focusmotor.h	73;"	d	language:C++
+MOTOR_WALK_STEPS_CLR	src/focusmotor.h	67;"	d	language:C++
+NEW_APP	makefile	/^NEW_APP := $(host_package_bin_dir)\/remotefocusd$/;"	m	language:Make
+PLATFORM	config.mk	/^PLATFORM 	= _LINUX$/;"	m	language:Make
+PLATFORM	config.mk	/^PLATFORM 	= _WIN32_$/;"	m	language:Make
+REMOTEFOCUSD_ADJUST_STEP	src/motorinfo_DF010NA0000.h	86;"	d	language:C++
+REMOTEFOCUSD_ADJUST_STEP	src/motorinfo_TT02812PB.h	75;"	d	language:C++
+REMOTEFOCUSD_ADJUST_STEP	src/motorinfo_YC41AM.h	75;"	d	language:C++
+REMOTEFOCUSD_CAPABILITY_FILE	src/remotefocusd.h	99;"	d	language:C++
+REMOTEFOCUSD_COMPENSATION_SEARCH_RANGE	src/motorinfo_DF010NA0000.h	87;"	d	language:C++
+REMOTEFOCUSD_COMPENSATION_SEARCH_STEP	src/motorinfo_DF010NA0000.h	88;"	d	language:C++
+REMOTEFOCUSD_CONFIG_FILE	src/remotefocusd.h	100;"	d	language:C++
+REMOTEFOCUSD_DBGPRINT	src/remotefocusd.h	91;"	d	language:C++
+REMOTEFOCUSD_DEFAULT_AF_BUTTON_PRESSTIME_FOR_AUTO_FOCUS	src/remotefocusd.h	123;"	d	language:C++
+REMOTEFOCUSD_DEFAULT_AF_BUTTON_PRESSTIME_FOR_FOCUS_SCAN	src/remotefocusd.h	122;"	d	language:C++
+REMOTEFOCUSD_FDCGI_SOCKET_PATH	src/remotefocusd.h	96;"	d	language:C++
+REMOTEFOCUSD_FIFO_PATH	src/remotefocusd.h	97;"	d	language:C++
+REMOTEFOCUSD_FINE_TUNE_SEARCH_STEP	src/motorinfo_DF010NA0000.h	83;"	d	language:C++
+REMOTEFOCUSD_FINE_TUNE_SEARCH_STEP	src/motorinfo_TT02812PB.h	72;"	d	language:C++
+REMOTEFOCUSD_FINE_TUNE_SEARCH_STEP	src/motorinfo_YC41AM.h	72;"	d	language:C++
+REMOTEFOCUSD_FIRST_LEVEL_SEARCH_RANGE	src/motorinfo_DF010NA0000.h	80;"	d	language:C++
+REMOTEFOCUSD_FIRST_LEVEL_SEARCH_RANGE	src/motorinfo_TT02812PB.h	69;"	d	language:C++
+REMOTEFOCUSD_FIRST_LEVEL_SEARCH_RANGE	src/motorinfo_YC41AM.h	69;"	d	language:C++
+REMOTEFOCUSD_FOCUS_DEFAULT_FILE	src/remotefocusd.h	104;"	d	language:C++
+REMOTEFOCUSD_FOCUS_LOG_FILE	src/remotefocusd.h	101;"	d	language:C++
+REMOTEFOCUSD_FOCUS_MOTOR_DEVICE_FILE	src/remotefocusd.h	105;"	d	language:C++
+REMOTEFOCUSD_FOCUS_MOTOR_POSITIONINGSTEP	src/motorinfo_DF010NA0000.h	79;"	d	language:C++
+REMOTEFOCUSD_FOCUS_MOTOR_POSITIONINGSTEP	src/motorinfo_TT02812PB.h	68;"	d	language:C++
+REMOTEFOCUSD_FOCUS_MOTOR_POSITIONINGSTEP	src/motorinfo_YC41AM.h	68;"	d	language:C++
+REMOTEFOCUSD_FOCUS_MOTOR_TOTALSTEP	src/motorinfo_DF010NA0000.h	77;"	d	language:C++
+REMOTEFOCUSD_FOCUS_MOTOR_TOTALSTEP	src/motorinfo_TT02812PB.h	66;"	d	language:C++
+REMOTEFOCUSD_FOCUS_MOTOR_TOTALSTEP	src/motorinfo_YC41AM.h	66;"	d	language:C++
+REMOTEFOCUSD_FOCUS_ONESTEP_TIME	src/motorinfo_DF010NA0000.h	98;"	d	language:C++
+REMOTEFOCUSD_FOCUS_ONESTEP_TIME	src/motorinfo_TT02812PB.h	77;"	d	language:C++
+REMOTEFOCUSD_FOCUS_ONESTEP_TIME	src/motorinfo_YC41AM.h	77;"	d	language:C++
+REMOTEFOCUSD_FOCUS_POSITION_INTERVAL	src/motorinfo_DF010NA0000.h	103;"	d	language:C++
+REMOTEFOCUSD_FOCUS_POSITION_INTERVAL	src/motorinfo_TT02812PB.h	82;"	d	language:C++
+REMOTEFOCUSD_FOCUS_POSITION_INTERVAL	src/motorinfo_YC41AM.h	82;"	d	language:C++
+REMOTEFOCUSD_FOCUS_POSITION_START_TABLE_SIZE	src/motorinfo_DF010NA0000.h	105;"	d	language:C++
+REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE	src/motorinfo_DF010NA0000.h	104;"	d	language:C++
+REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE	src/motorinfo_TT02812PB.h	83;"	d	language:C++
+REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE	src/motorinfo_YC41AM.h	83;"	d	language:C++
+REMOTEFOCUSD_FOCUS_SCAN_INIT_STEP	src/motorinfo_DF010NA0000.h	94;"	d	language:C++
+REMOTEFOCUSD_FOCUS_SCAN_TERMINATION_COND	src/motorinfo_DF010NA0000.h	95;"	d	language:C++
+REMOTEFOCUSD_FOCUS_TABLE_MAPPING_FILE	src/remotefocusd.h	103;"	d	language:C++
+REMOTEFOCUSD_FOCUS_VALUE_TABLE_SIZE	src/motorinfo_DF010NA0000.h	106;"	d	language:C++
+REMOTEFOCUSD_FOCUS_VALUE_TABLE_SIZE	src/motorinfo_TT02812PB.h	84;"	d	language:C++
+REMOTEFOCUSD_FOCUS_VALUE_TABLE_SIZE	src/motorinfo_YC41AM.h	84;"	d	language:C++
+REMOTEFOCUSD_FOCUS_VIRTUAL_END	src/motorinfo_DF010NA0000.h	59;"	d	language:C++
+REMOTEFOCUSD_FOCUS_VIRTUAL_END	src/motorinfo_DF010NA0000.h	62;"	d	language:C++
+REMOTEFOCUSD_FOCUS_VIRTUAL_END	src/motorinfo_TT02812PB.h	58;"	d	language:C++
+REMOTEFOCUSD_FOCUS_VIRTUAL_END	src/motorinfo_YC41AM.h	58;"	d	language:C++
+REMOTEFOCUSD_FOCUS_VIRTUAL_ONESTEP	src/motorinfo_DF010NA0000.h	73;"	d	language:C++
+REMOTEFOCUSD_FOCUS_VIRTUAL_ONESTEP	src/motorinfo_TT02812PB.h	62;"	d	language:C++
+REMOTEFOCUSD_FOCUS_VIRTUAL_ONESTEP	src/motorinfo_YC41AM.h	62;"	d	language:C++
+REMOTEFOCUSD_FOCUS_VIRTUAL_START	src/motorinfo_DF010NA0000.h	54;"	d	language:C++
+REMOTEFOCUSD_FOCUS_VIRTUAL_START	src/motorinfo_TT02812PB.h	54;"	d	language:C++
+REMOTEFOCUSD_FOCUS_VIRTUAL_START	src/motorinfo_YC41AM.h	54;"	d	language:C++
+REMOTEFOCUSD_FOCUS_VIRTUAL_TOTALSTEP	src/motorinfo_DF010NA0000.h	75;"	d	language:C++
+REMOTEFOCUSD_FOCUS_VIRTUAL_TOTALSTEP	src/motorinfo_TT02812PB.h	64;"	d	language:C++
+REMOTEFOCUSD_FOCUS_VIRTUAL_TOTALSTEP	src/motorinfo_YC41AM.h	64;"	d	language:C++
+REMOTEFOCUSD_LARGE_SEARCH_STEP	src/motorinfo_DF010NA0000.h	85;"	d	language:C++
+REMOTEFOCUSD_LARGE_SEARCH_STEP	src/motorinfo_TT02812PB.h	74;"	d	language:C++
+REMOTEFOCUSD_LARGE_SEARCH_STEP	src/motorinfo_YC41AM.h	74;"	d	language:C++
+REMOTEFOCUSD_MESSAGE_HEADER_LENGTH	src/remotefocusd.h	110;"	d	language:C++
+REMOTEFOCUSD_MESSAGE_NUMBER	src/remotefocusd.h	111;"	d	language:C++
+REMOTEFOCUSD_MODULENAME	src/remotefocusd.h	89;"	d	language:C++
+REMOTEFOCUSD_ONESTEP_SEARCH_TIME	src/motorinfo_DF010NA0000.h	100;"	d	language:C++
+REMOTEFOCUSD_ONESTEP_SEARCH_TIME	src/motorinfo_TT02812PB.h	79;"	d	language:C++
+REMOTEFOCUSD_ONESTEP_SEARCH_TIME	src/motorinfo_YC41AM.h	79;"	d	language:C++
+REMOTEFOCUSD_OPEN_IRIS_TIME	src/motorinfo_DF010NA0000.h	101;"	d	language:C++
+REMOTEFOCUSD_OPEN_IRIS_TIME	src/motorinfo_TT02812PB.h	80;"	d	language:C++
+REMOTEFOCUSD_OPEN_IRIS_TIME	src/motorinfo_YC41AM.h	80;"	d	language:C++
+REMOTEFOCUSD_PID_FILE	src/remotefocusd.h	98;"	d	language:C++
+REMOTEFOCUSD_RESP_200_OK	src/remotefocusd.h	116;"	d	language:C++
+REMOTEFOCUSD_RESP_BAD_REQUEST	src/remotefocusd.h	117;"	d	language:C++
+REMOTEFOCUSD_RESP_SERVER_ERROR	src/remotefocusd.h	118;"	d	language:C++
+REMOTEFOCUSD_RESP_SERVICE_UNAVAILABLE	src/remotefocusd.h	119;"	d	language:C++
+REMOTEFOCUSD_RFS_COUNTER_LIMIT	src/motorinfo_DF010NA0000.h	93;"	d	language:C++
+REMOTEFOCUSD_RFS_INIT_RANGE	src/motorinfo_DF010NA0000.h	89;"	d	language:C++
+REMOTEFOCUSD_RFS_INIT_STEP	src/motorinfo_DF010NA0000.h	90;"	d	language:C++
+REMOTEFOCUSD_RFS_RANGE_RATIO	src/motorinfo_DF010NA0000.h	91;"	d	language:C++
+REMOTEFOCUSD_RFS_STEP_RATIO	src/motorinfo_DF010NA0000.h	92;"	d	language:C++
+REMOTEFOCUSD_SECOND_LEVEL_SEARCH_RANGE	src/motorinfo_DF010NA0000.h	81;"	d	language:C++
+REMOTEFOCUSD_SECOND_LEVEL_SEARCH_RANGE	src/motorinfo_TT02812PB.h	70;"	d	language:C++
+REMOTEFOCUSD_SECOND_LEVEL_SEARCH_RANGE	src/motorinfo_YC41AM.h	70;"	d	language:C++
+REMOTEFOCUSD_SELECT_TIMEOUT	src/motorinfo_DF010NA0000.h	110;"	d	language:C++
+REMOTEFOCUSD_SELECT_TIMEOUT	src/motorinfo_TT02812PB.h	88;"	d	language:C++
+REMOTEFOCUSD_SELECT_TIMEOUT	src/motorinfo_YC41AM.h	88;"	d	language:C++
+REMOTEFOCUSD_SHMEM_FILEPATH	src/remotefocusd.h	114;"	d	language:C++
+REMOTEFOCUSD_SHMEM_SEGSIZE	src/remotefocusd.h	113;"	d	language:C++
+REMOTEFOCUSD_SMALL_SEARCH_STEP	src/motorinfo_DF010NA0000.h	84;"	d	language:C++
+REMOTEFOCUSD_SMALL_SEARCH_STEP	src/motorinfo_TT02812PB.h	73;"	d	language:C++
+REMOTEFOCUSD_SMALL_SEARCH_STEP	src/motorinfo_YC41AM.h	73;"	d	language:C++
+REMOTEFOCUSD_THIRD_LEVEL_SEARCH_RANGE	src/motorinfo_DF010NA0000.h	82;"	d	language:C++
+REMOTEFOCUSD_THIRD_LEVEL_SEARCH_RANGE	src/motorinfo_TT02812PB.h	71;"	d	language:C++
+REMOTEFOCUSD_THIRD_LEVEL_SEARCH_RANGE	src/motorinfo_YC41AM.h	71;"	d	language:C++
+REMOTEFOCUSD_THREAD_PRIORITY	src/remotefocusd.h	108;"	d	language:C++
+REMOTEFOCUSD_UPDATETIME	src/remotefocusd.h	88;"	d	language:C++
+REMOTEFOCUSD_VERSION_STRING	src/remotefocusd.h	87;"	d	language:C++
+REMOTEFOCUSD_ZOOM_LOG_FILE	src/remotefocusd.h	102;"	d	language:C++
+REMOTEFOCUSD_ZOOM_MOTOR_DEVICE_FILE	src/remotefocusd.h	106;"	d	language:C++
+REMOTEFOCUSD_ZOOM_MOTOR_POSITIONINGSTEP	src/motorinfo_DF010NA0000.h	78;"	d	language:C++
+REMOTEFOCUSD_ZOOM_MOTOR_POSITIONINGSTEP	src/motorinfo_TT02812PB.h	67;"	d	language:C++
+REMOTEFOCUSD_ZOOM_MOTOR_POSITIONINGSTEP	src/motorinfo_YC41AM.h	67;"	d	language:C++
+REMOTEFOCUSD_ZOOM_MOTOR_TOTALSTEP	src/motorinfo_DF010NA0000.h	76;"	d	language:C++
+REMOTEFOCUSD_ZOOM_MOTOR_TOTALSTEP	src/motorinfo_TT02812PB.h	65;"	d	language:C++
+REMOTEFOCUSD_ZOOM_MOTOR_TOTALSTEP	src/motorinfo_YC41AM.h	65;"	d	language:C++
+REMOTEFOCUSD_ZOOM_ONESTEP_TIME	src/motorinfo_DF010NA0000.h	99;"	d	language:C++
+REMOTEFOCUSD_ZOOM_ONESTEP_TIME	src/motorinfo_TT02812PB.h	78;"	d	language:C++
+REMOTEFOCUSD_ZOOM_ONESTEP_TIME	src/motorinfo_YC41AM.h	78;"	d	language:C++
+REMOTEFOCUSD_ZOOM_POSITION_INTERVAL	src/motorinfo_DF010NA0000.h	108;"	d	language:C++
+REMOTEFOCUSD_ZOOM_POSITION_INTERVAL	src/motorinfo_TT02812PB.h	86;"	d	language:C++
+REMOTEFOCUSD_ZOOM_POSITION_INTERVAL	src/motorinfo_YC41AM.h	86;"	d	language:C++
+REMOTEFOCUSD_ZOOM_VIRTUAL_END	src/motorinfo_DF010NA0000.h	50;"	d	language:C++
+REMOTEFOCUSD_ZOOM_VIRTUAL_END	src/motorinfo_TT02812PB.h	50;"	d	language:C++
+REMOTEFOCUSD_ZOOM_VIRTUAL_END	src/motorinfo_YC41AM.h	50;"	d	language:C++
+REMOTEFOCUSD_ZOOM_VIRTUAL_ONESTEP	src/motorinfo_DF010NA0000.h	68;"	d	language:C++
+REMOTEFOCUSD_ZOOM_VIRTUAL_ONESTEP	src/motorinfo_DF010NA0000.h	71;"	d	language:C++
+REMOTEFOCUSD_ZOOM_VIRTUAL_ONESTEP	src/motorinfo_TT02812PB.h	61;"	d	language:C++
+REMOTEFOCUSD_ZOOM_VIRTUAL_ONESTEP	src/motorinfo_YC41AM.h	61;"	d	language:C++
+REMOTEFOCUSD_ZOOM_VIRTUAL_START	src/motorinfo_DF010NA0000.h	46;"	d	language:C++
+REMOTEFOCUSD_ZOOM_VIRTUAL_START	src/motorinfo_TT02812PB.h	46;"	d	language:C++
+REMOTEFOCUSD_ZOOM_VIRTUAL_START	src/motorinfo_YC41AM.h	46;"	d	language:C++
+REMOTEFOCUSD_ZOOM_VIRTUAL_TOTALSTEP	src/motorinfo_DF010NA0000.h	74;"	d	language:C++
+REMOTEFOCUSD_ZOOM_VIRTUAL_TOTALSTEP	src/motorinfo_TT02812PB.h	63;"	d	language:C++
+REMOTEFOCUSD_ZOOM_VIRTUAL_TOTALSTEP	src/motorinfo_YC41AM.h	63;"	d	language:C++
+RemoteFocusd_AdjustFocus	src/remotefocusd_thread.c	/^void RemoteFocusd_AdjustFocus(TRemoteFocusdInfo *pThis, DWORD dwZoomPosition)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, DWORD dwZoomPosition)
+RemoteFocusd_CalculateFocusingStart	src/remotefocusd_thread.c	/^void RemoteFocusd_CalculateFocusingStart(TRemoteFocusdInfo *pThis, DWORD dwZoomPosition)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, DWORD dwZoomPosition)
+RemoteFocusd_CalculatePanFocusPosition	src/remotefocusd_thread.c	/^void RemoteFocusd_CalculatePanFocusPosition(TRemoteFocusdInfo *pThis, DWORD dwZoomPosition)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, DWORD dwZoomPosition)
+RemoteFocusd_CheckLogFile	src/remotefocusd_process.c	/^void RemoteFocusd_CheckLogFile(TRemoteFocusdInfo *pThis)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_CheckMessage	src/remotefocusd_process.c	/^SCODE RemoteFocusd_CheckMessage(int iMsgType, int iMsgLength)$/;"	f	language:C	signature:(int iMsgType, int iMsgLength)
+RemoteFocusd_Config	src/remotefocusd.c	/^void RemoteFocusd_Config(TRemoteFocusdInfo *pThis, int iArgc, char** pszArgv)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, int iArgc, char** pszArgv)
+RemoteFocusd_EnableFetch	src/remotefocusd_thread.c	/^void RemoteFocusd_EnableFetch(TRemoteFocusdInfo *pThis, BOOL bOperationOn)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, BOOL bOperationOn)
+RemoteFocusd_FIFOCommandHandler	src/remotefocusd_process.c	/^SCODE RemoteFocusd_FIFOCommandHandler(TRemoteFocusdInfo *pThis)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_FdCgiCommandHandler	src/remotefocusd_process.c	/^SCODE RemoteFocusd_FdCgiCommandHandler(TRemoteFocusdInfo *pThis)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_FetchFocusValue	src/remotefocusd_thread.c	/^void RemoteFocusd_FetchFocusValue(TRemoteFocusdInfo *pThis)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_FocusCreateLogFile	src/remotefocusd_thread.c	/^void RemoteFocusd_FocusCreateLogFile(void)$/;"	f	language:C	signature:(void)
+RemoteFocusd_FocusDeleteLogFile	src/remotefocusd_thread.c	/^void RemoteFocusd_FocusDeleteLogFile(void)$/;"	f	language:C	signature:(void)
+RemoteFocusd_FocusMissionDispatcher	src/remotefocusd_thread.c	/^void RemoteFocusd_FocusMissionDispatcher(TRemoteFocusdInfo *pThis, int fdMotorDevice)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, int fdMotorDevice)
+RemoteFocusd_FocusMotorPositioning	src/remotefocusd_thread.c	/^void RemoteFocusd_FocusMotorPositioning(TRemoteFocusdInfo *pThis, int fdMotorDevice)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, int fdMotorDevice)
+RemoteFocusd_FocusMotorReset	src/remotefocusd_thread.c	/^void RemoteFocusd_FocusMotorReset(TRemoteFocusdInfo *pThis, int fdMotorDevice)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, int fdMotorDevice)
+RemoteFocusd_FocusMotorThread	src/remotefocusd.h	/^DWORD THREADAPI RemoteFocusd_FocusMotorThread(DWORD dwInstance);$/;"	p	language:C++	signature:(DWORD dwInstance)
+RemoteFocusd_FocusMotorThread	src/remotefocusd_thread.c	/^DWORD THREADAPI RemoteFocusd_FocusMotorThread(DWORD dwInstance)$/;"	f	language:C	signature:(DWORD dwInstance)
+RemoteFocusd_FocusStepHandler	src/remotefocusd_thread.c	/^void RemoteFocusd_FocusStepHandler(TRemoteFocusdInfo *pThis, int fdMotorDevice, DWORD dwWalkStep, BOOL bIsForward)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, int fdMotorDevice, DWORD dwWalkStep, BOOL bIsForward)
+RemoteFocusd_GenPidFile	src/remotefocusd_init.c	/^void RemoteFocusd_GenPidFile()$/;"	f	language:C
+RemoteFocusd_HandleEventMessage	src/remotefocusd_process.c	/^SCODE RemoteFocusd_HandleEventMessage(TRemoteFocusdInfo *pThis, int iMessageNum, TMessageInfo *ptMsgInfo)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, int iMessageNum, TMessageInfo *ptMsgInfo)
+RemoteFocusd_InfoProcess	src/remotefocusd.h	/^SCODE RemoteFocusd_InfoProcess(TRemoteFocusdInfo *pThis);$/;"	p	language:C++	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_InfoProcess	src/remotefocusd_process.c	/^SCODE RemoteFocusd_InfoProcess(TRemoteFocusdInfo *pThis)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_InformMotorThread	src/remotefocusd_process.c	/^void RemoteFocusd_InformMotorThread(TRemoteFocusdInfo *pThis, TRemoteFocusd_ClientInfo* ptClientInfo)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, TRemoteFocusd_ClientInfo* ptClientInfo)
+RemoteFocusd_Init	src/remotefocusd.h	/^SCODE RemoteFocusd_Init(TRemoteFocusdInfo *pThis);$/;"	p	language:C++	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_Init	src/remotefocusd_init.c	/^SCODE RemoteFocusd_Init(TRemoteFocusdInfo *pThis)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_InitFIFO	src/remotefocusd.h	/^SCODE RemoteFocusd_InitFIFO(TRemoteFocusdInfo *pThis);$/;"	p	language:C++	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_InitFIFO	src/remotefocusd_init.c	/^SCODE RemoteFocusd_InitFIFO(TRemoteFocusdInfo *pThis)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_InitFdCgi	src/remotefocusd.h	/^SCODE RemoteFocusd_InitFdCgi(TRemoteFocusdInfo *pThis);$/;"	p	language:C++	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_InitFdCgi	src/remotefocusd_init.c	/^SCODE RemoteFocusd_InitFdCgi(TRemoteFocusdInfo *pThis)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_InitFocusMotorThread	src/remotefocusd_init.c	/^SCODE RemoteFocusd_InitFocusMotorThread(TRemoteFocusdInfo *pThis)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_InitShareMem	src/remotefocusd_init.c	/^SCODE RemoteFocusd_InitShareMem(TRemoteFocusdInfo *pThis)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_InitSignal	src/remotefocusd.c	/^void RemoteFocusd_InitSignal()$/;"	f	language:C
+RemoteFocusd_InitXMLParser	src/remotefocusd_init.c	/^SCODE RemoteFocusd_InitXMLParser(TRemoteFocusdInfo *pThis)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_InitZoomMotorThread	src/remotefocusd_init.c	/^SCODE RemoteFocusd_InitZoomMotorThread(TRemoteFocusdInfo *pThis)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_InterpretClientCommand	src/remotefocusd_process.c	/^SCODE RemoteFocusd_InterpretClientCommand(TRemoteFocusd_MotorCtrlInfo* ptMotorCtrlInfoOpt$/;"	f	language:C	signature:(TRemoteFocusd_MotorCtrlInfo* ptMotorCtrlInfoOpt , char* szName, char* szVal)
+RemoteFocusd_LoadCapabilityFile	src/remotefocusd_init.c	/^SCODE RemoteFocusd_LoadCapabilityFile(TRemoteFocusdInfo *ptInfo)$/;"	f	language:C	signature:(TRemoteFocusdInfo *ptInfo)
+RemoteFocusd_LoadConfigFile	src/remotefocusd_init.c	/^SCODE RemoteFocusd_LoadConfigFile(TRemoteFocusdInfo *pThis)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_LoadMappingTable	src/remotefocusd_init.c	/^SCODE RemoteFocusd_LoadMappingTable()$/;"	f	language:C
+RemoteFocusd_LoadResetDefault	src/remotefocusd_init.c	/^SCODE RemoteFocusd_LoadResetDefault()$/;"	f	language:C
+RemoteFocusd_MoveFocusMotor	src/remotefocusd_thread.c	/^SCODE RemoteFocusd_MoveFocusMotor(TRemoteFocusdInfo *pThis, int fdMotorDevice, DWORD dwPosition)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, int fdMotorDevice, DWORD dwPosition)
+RemoteFocusd_MoveZoomMotor	src/remotefocusd_thread.c	/^SCODE RemoteFocusd_MoveZoomMotor(TRemoteFocusdInfo *pThis, int fdMotorDevice, DWORD dwPosition)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, int fdMotorDevice, DWORD dwPosition)
+RemoteFocusd_OperateFocusMotor	src/remotefocusd_thread.c	/^void RemoteFocusd_OperateFocusMotor(TRemoteFocusdInfo *pThis, int fdMotorDevice)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, int fdMotorDevice)
+RemoteFocusd_OperateZoomMotor	src/remotefocusd_thread.c	/^void RemoteFocusd_OperateZoomMotor(TRemoteFocusdInfo *pThis, int fdMotorDevice)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, int fdMotorDevice)
+RemoteFocusd_ParseClientCommand	src/remotefocusd_process.c	/^SCODE RemoteFocusd_ParseClientCommand(TRemoteFocusdInfo *pThis, char* pcCommand$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, char* pcCommand , TRemoteFocusd_ClientInfo *ptClientInfo)
+RemoteFocusd_ParseFIFOCmd	src/remotefocusd_process.c	/^SCODE RemoteFocusd_ParseFIFOCmd(TRemoteFocusdInfo *pThis, char *pcBuffer, int iBuffLen, int iType)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, char *pcBuffer, int iBuffLen, int iType)
+RemoteFocusd_PerformAutoFocus	src/remotefocusd_thread.c	/^void RemoteFocusd_PerformAutoFocus(TRemoteFocusdInfo *pThis, int fdMotorDevice)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, int fdMotorDevice)
+RemoteFocusd_PerformFocusScan	src/remotefocusd_thread.c	/^void RemoteFocusd_PerformFocusScan(TRemoteFocusdInfo *pThis, int fdMotorDevice)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, int fdMotorDevice)
+RemoteFocusd_PerformNextFunction	src/remotefocusd_thread.c	/^void RemoteFocusd_PerformNextFunction(TRemoteFocusdInfo *pThis)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_PositioningAutoFocus	src/remotefocusd_thread.c	/^void RemoteFocusd_PositioningAutoFocus(TRemoteFocusdInfo *pThis)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_ProcessPostCommand	src/remotefocusd_process.c	/^void RemoteFocusd_ProcessPostCommand(char* pcCommand)$/;"	f	language:C	signature:(char* pcCommand)
+RemoteFocusd_Release	src/remotefocusd.h	/^SCODE RemoteFocusd_Release(TRemoteFocusdInfo *pThis);$/;"	p	language:C++	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_Release	src/remotefocusd_init.c	/^SCODE RemoteFocusd_Release(TRemoteFocusdInfo *pThis)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_ReplyBadRequestMsg	src/remotefocusd_process.c	/^void RemoteFocusd_ReplyBadRequestMsg(SOCKET sckClient)$/;"	f	language:C	signature:(SOCKET sckClient)
+RemoteFocusd_ReplyFocusDefault	src/remotefocusd_process.c	/^void RemoteFocusd_ReplyFocusDefault(TRemoteFocusdInfo *pThis, SOCKET sckClient)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, SOCKET sckClient)
+RemoteFocusd_ReplyOKMessage	src/remotefocusd_process.c	/^void RemoteFocusd_ReplyOKMessage(SOCKET sckClient)$/;"	f	language:C	signature:(SOCKET sckClient)
+RemoteFocusd_ReplyParam	src/remotefocusd_process.c	/^void RemoteFocusd_ReplyParam(TRemoteFocusdInfo *pThis, SOCKET sckClient, DWORD dwPosition)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, SOCKET sckClient, DWORD dwPosition)
+RemoteFocusd_ReplyStatus	src/remotefocusd_process.c	/^void RemoteFocusd_ReplyStatus(TRemoteFocusdInfo *pThis, SOCKET sckClient)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, SOCKET sckClient)
+RemoteFocusd_SaveConfigFile	src/remotefocusd_thread.c	/^SCODE RemoteFocusd_SaveConfigFile(TRemoteFocusdInfo *pThis)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_SaveFocusDefaultConfig	src/remotefocusd_thread.c	/^SCODE RemoteFocusd_SaveFocusDefaultConfig(TRemoteFocusdInfo *pThis)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis)
+RemoteFocusd_SelectHandler	src/remotefocusd_process.c	/^SCODE RemoteFocusd_SelectHandler(TRemoteFocusdInfo *pThis, fd_set fds_Read)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, fd_set fds_Read)
+RemoteFocusd_SetIris	src/remotefocusd_thread.c	/^void RemoteFocusd_SetIris(TRemoteFocusdInfo *pThis, BOOL bIrisStatus)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, BOOL bIrisStatus)
+RemoteFocusd_ShowVersion	src/remotefocusd.c	/^void RemoteFocusd_ShowVersion()$/;"	f	language:C
+RemoteFocusd_SignalHandler	src/remotefocusd.c	/^void RemoteFocusd_SignalHandler(int iSigNo)$/;"	f	language:C	signature:(int iSigNo)
+RemoteFocusd_StepByStepSearch	src/remotefocusd_thread.c	/^SCODE RemoteFocusd_StepByStepSearch(TRemoteFocusdInfo *pThis, int fdMotorDevice,$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, int fdMotorDevice, DWORD dwStart, DWORD dwSearchRange, DWORD dwStride)
+RemoteFocusd_UpdateMaxFd	src/remotefocusd_init.c	/^void RemoteFocusd_UpdateMaxFd(TRemoteFocusdInfo *pThis, SOCKET sckInput)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, SOCKET sckInput)
+RemoteFocusd_Usage	src/remotefocusd.c	/^void RemoteFocusd_Usage()$/;"	f	language:C
+RemoteFocusd_ZoomCreateLogFile	src/remotefocusd_thread.c	/^void RemoteFocusd_ZoomCreateLogFile(void)$/;"	f	language:C	signature:(void)
+RemoteFocusd_ZoomDeleteLogFile	src/remotefocusd_thread.c	/^void RemoteFocusd_ZoomDeleteLogFile(void)$/;"	f	language:C	signature:(void)
+RemoteFocusd_ZoomMissionDispatcher	src/remotefocusd_thread.c	/^void RemoteFocusd_ZoomMissionDispatcher(TRemoteFocusdInfo *pThis, int fdMotorDevice)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, int fdMotorDevice)
+RemoteFocusd_ZoomMotorPositioning	src/remotefocusd_thread.c	/^void RemoteFocusd_ZoomMotorPositioning(TRemoteFocusdInfo *pThis, int fdMotorDevice)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, int fdMotorDevice)
+RemoteFocusd_ZoomMotorThread	src/remotefocusd.h	/^DWORD THREADAPI RemoteFocusd_ZoomMotorThread(DWORD dwInstance);$/;"	p	language:C++	signature:(DWORD dwInstance)
+RemoteFocusd_ZoomMotorThread	src/remotefocusd_thread.c	/^DWORD THREADAPI RemoteFocusd_ZoomMotorThread(DWORD dwInstance)$/;"	f	language:C	signature:(DWORD dwInstance)
+RemoteFocusd_ZoomStepHandler	src/remotefocusd_thread.c	/^void RemoteFocusd_ZoomStepHandler(TRemoteFocusdInfo *pThis, int fdMotorDevice, DWORD dwWalkStep, BOOL bIsForward)$/;"	f	language:C	signature:(TRemoteFocusdInfo *pThis, int fdMotorDevice, DWORD dwWalkStep, BOOL bIsForward)
+SYSDEFS	config.mk	/^SYSDEFS  	= $(remotefocusd_sysdef)$/;"	m	language:Make
+TOOL_CONFIG	config.mk	/^TOOL_CONFIG = ARMLinux$/;"	m	language:Make
+TOOL_CONFIG	config.mk	/^TOOL_CONFIG = VCWin32$/;"	m	language:Make
+TRemoteFocusdInfo	src/remotefocusd.h	/^} TRemoteFocusdInfo;$/;"	t	language:C++	typeref:struct:_TRemoteFocusdInfo
+TRemoteFocusd_ClientInfo	src/remotefocusd.h	/^} TRemoteFocusd_ClientInfo;$/;"	t	language:C++	typeref:struct:_TRemoteFocusd_ClientInfo
+TRemoteFocusd_MotorCtrlInfo	src/remotefocusd.h	/^} TRemoteFocusd_MotorCtrlInfo;$/;"	t	language:C++	typeref:struct:_TRemoteFocusd_MotorCtrlInfo
+TRemoteFocusd_ShareMemInfo	src/remotefocusd.h	/^} TRemoteFocusd_ShareMemInfo;$/;"	t	language:C++	typeref:struct:_TRemoteFocusd_ShareMemInfo
+USLEEP_ONE_SEC	src/motorinfo_DF010NA0000.h	66;"	d	language:C++
+USRDEFS	config.mk	/^USRDEFS  	= $(remotefocusd_usrdef) $/;"	m	language:Make
+_ERemoteFocusd_Capability	src/remotefocusd.h	/^typedef enum _ERemoteFocusd_Capability$/;"	g	language:C++
+_ERemoteFocusd_FunctionType	src/remotefocusd.h	/^typedef enum _ERemoteFocusd_FunctionType$/;"	g	language:C++
+_ERemoteFocusd_MotorDirection	src/remotefocusd.h	/^typedef enum _ERemoteFocusd_MotorDirection$/;"	g	language:C++
+_FOCUSMOTOR_H_	src/focusmotor.h	44;"	d	language:C++
+_TRemoteFocusdInfo	src/remotefocusd.h	/^typedef struct _TRemoteFocusdInfo$/;"	s	language:C++
+_TRemoteFocusdInfo::bFocusOperationEnable	src/remotefocusd.h	/^	BOOL bFocusOperationEnable;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::bZoomOperationEnable	src/remotefocusd.h	/^	BOOL bZoomOperationEnable;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::dwButtonPressTime	src/remotefocusd.h	/^	DWORD dwButtonPressTime;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::dwFocusMotorPosition	src/remotefocusd.h	/^	DWORD dwFocusMotorPosition;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::dwFocusValue	src/remotefocusd.h	/^	DWORD dwFocusValue;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::dwMyPid	src/remotefocusd.h	/^	DWORD dwMyPid;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::dwPanFocusPosition	src/remotefocusd.h	/^	DWORD dwPanFocusPosition;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::dwZoomMotorPosition	src/remotefocusd.h	/^	DWORD dwZoomMotorPosition;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::eNextFuncType	src/remotefocusd.h	/^	ERemoteFocusd_FunctionType eNextFuncType;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::fdFocusMotorWakeup	src/remotefocusd.h	/^	int fdFocusMotorWakeup[2];$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::fdZoomMotorWakeup	src/remotefocusd.h	/^	int fdZoomMotorWakeup[2];$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::fds_ReadSet	src/remotefocusd.h	/^	fd_set fds_ReadSet;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::hFocusMotorThread	src/remotefocusd.h	/^	HANDLE hFocusMotorThread;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::hXMLParser	src/remotefocusd.h	/^	HANDLE hXMLParser;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::hZoomMotorThread	src/remotefocusd.h	/^	HANDLE hZoomMotorThread;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::iCGIFd	src/remotefocusd.h	/^	int iCGIFd;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::iFIFOFd	src/remotefocusd.h	/^	int iFIFOFd;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::iIsSupportFocus	src/remotefocusd.h	/^	int iIsSupportFocus;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::iIsSupportZoom	src/remotefocusd.h	/^	int iIsSupportZoom;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::iMaxFd	src/remotefocusd.h	/^	int iMaxFd;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::iShMemId	src/remotefocusd.h	/^	int iShMemId;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::ptFdCgi	src/remotefocusd.h	/^	fdcgi *ptFdCgi;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::ptShareMemInfo	src/remotefocusd.h	/^	TRemoteFocusd_ShareMemInfo* ptShareMemInfo;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::semFileMutex	src/remotefocusd.h	/^	sem_t semFileMutex;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::tFocusMotorCtrlInfo	src/remotefocusd.h	/^	TRemoteFocusd_MotorCtrlInfo tFocusMotorCtrlInfo;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusdInfo::tZoomMotorCtrlInfo	src/remotefocusd.h	/^	TRemoteFocusd_MotorCtrlInfo tZoomMotorCtrlInfo;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+_TRemoteFocusd_ClientInfo	src/remotefocusd.h	/^typedef struct _TRemoteFocusd_ClientInfo$/;"	s	language:C++
+_TRemoteFocusd_ClientInfo::sckClient	src/remotefocusd.h	/^	SOCKET sckClient;$/;"	m	language:C++	struct:_TRemoteFocusd_ClientInfo	access:public
+_TRemoteFocusd_ClientInfo::tMotorCtrlInfoOpt	src/remotefocusd.h	/^	TRemoteFocusd_MotorCtrlInfo tMotorCtrlInfoOpt;$/;"	m	language:C++	struct:_TRemoteFocusd_ClientInfo	access:public
+_TRemoteFocusd_MotorCtrlInfo	src/remotefocusd.h	/^typedef struct _TRemoteFocusd_MotorCtrlInfo$/;"	s	language:C++
+_TRemoteFocusd_MotorCtrlInfo::bFullyOpenedIris	src/remotefocusd.h	/^	BOOL bFullyOpenedIris;$/;"	m	language:C++	struct:_TRemoteFocusd_MotorCtrlInfo	access:public
+_TRemoteFocusd_MotorCtrlInfo::bKeepZooming	src/remotefocusd.h	/^	BOOL bKeepZooming;$/;"	m	language:C++	struct:_TRemoteFocusd_MotorCtrlInfo	access:public
+_TRemoteFocusd_MotorCtrlInfo::dwMotorEnd	src/remotefocusd.h	/^	DWORD dwMotorEnd;$/;"	m	language:C++	struct:_TRemoteFocusd_MotorCtrlInfo	access:public
+_TRemoteFocusd_MotorCtrlInfo::dwMotorFocusDefault	src/remotefocusd.h	/^	DWORD dwMotorFocusDefault;$/;"	m	language:C++	struct:_TRemoteFocusd_MotorCtrlInfo	access:public
+_TRemoteFocusd_MotorCtrlInfo::dwMotorPosition	src/remotefocusd.h	/^	DWORD dwMotorPosition;$/;"	m	language:C++	struct:_TRemoteFocusd_MotorCtrlInfo	access:public
+_TRemoteFocusd_MotorCtrlInfo::dwMotorStart	src/remotefocusd.h	/^	DWORD dwMotorStart;$/;"	m	language:C++	struct:_TRemoteFocusd_MotorCtrlInfo	access:public
+_TRemoteFocusd_MotorCtrlInfo::dwMotorSteps	src/remotefocusd.h	/^	DWORD dwMotorSteps;$/;"	m	language:C++	struct:_TRemoteFocusd_MotorCtrlInfo	access:public
+_TRemoteFocusd_MotorCtrlInfo::eFunctionType	src/remotefocusd.h	/^	ERemoteFocusd_FunctionType eFunctionType;$/;"	m	language:C++	struct:_TRemoteFocusd_MotorCtrlInfo	access:public
+_TRemoteFocusd_MotorCtrlInfo::eMotorDirection	src/remotefocusd.h	/^	ERemoteFocusd_MotorDirection eMotorDirection;$/;"	m	language:C++	struct:_TRemoteFocusd_MotorCtrlInfo	access:public
+_TRemoteFocusd_ShareMemInfo	src/remotefocusd.h	/^typedef struct _TRemoteFocusd_ShareMemInfo$/;"	s	language:C++
+_TRemoteFocusd_ShareMemInfo::bFetchEnable	src/remotefocusd.h	/^	BOOL bFetchEnable;$/;"	m	language:C++	struct:_TRemoteFocusd_ShareMemInfo	access:public
+_TRemoteFocusd_ShareMemInfo::bFullyOpenedIris	src/remotefocusd.h	/^	BOOL bFullyOpenedIris;$/;"	m	language:C++	struct:_TRemoteFocusd_ShareMemInfo	access:public
+_TRemoteFocusd_ShareMemInfo::bIrisEnable	src/remotefocusd.h	/^	BOOL bIrisEnable;$/;"	m	language:C++	struct:_TRemoteFocusd_ShareMemInfo	access:public
+_TRemoteFocusd_ShareMemInfo::dwFocusMode	src/remotefocusd.h	/^	DWORD dwFocusMode;					\/\/	0 : isp		1 : edge$/;"	m	language:C++	struct:_TRemoteFocusd_ShareMemInfo	access:public
+_TRemoteFocusd_ShareMemInfo::dwFocusValue	src/remotefocusd.h	/^	DWORD dwFocusValue;$/;"	m	language:C++	struct:_TRemoteFocusd_ShareMemInfo	access:public
+__REMOTEFOCUSD_H__	src/remotefocusd.h	44;"	d	language:C++
+bFetchEnable	src/remotefocusd.h	/^	BOOL bFetchEnable;$/;"	m	language:C++	struct:_TRemoteFocusd_ShareMemInfo	access:public
+bFocusOperationEnable	src/remotefocusd.h	/^	BOOL bFocusOperationEnable;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+bFullyOpenedIris	src/remotefocusd.h	/^	BOOL bFullyOpenedIris;$/;"	m	language:C++	struct:_TRemoteFocusd_MotorCtrlInfo	access:public
+bFullyOpenedIris	src/remotefocusd.h	/^	BOOL bFullyOpenedIris;$/;"	m	language:C++	struct:_TRemoteFocusd_ShareMemInfo	access:public
+bIrisEnable	src/remotefocusd.h	/^	BOOL bIrisEnable;$/;"	m	language:C++	struct:_TRemoteFocusd_ShareMemInfo	access:public
+bKeepZooming	src/remotefocusd.h	/^	BOOL bKeepZooming;$/;"	m	language:C++	struct:_TRemoteFocusd_MotorCtrlInfo	access:public
+bZoomOperationEnable	src/remotefocusd.h	/^	BOOL bZoomOperationEnable;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+dwButtonPressTime	src/remotefocusd.h	/^	DWORD dwButtonPressTime;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+dwFocusMode	src/remotefocusd.h	/^	DWORD dwFocusMode;					\/\/	0 : isp		1 : edge$/;"	m	language:C++	struct:_TRemoteFocusd_ShareMemInfo	access:public
+dwFocusMotorPosition	src/remotefocusd.h	/^	DWORD dwFocusMotorPosition;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+dwFocusValue	src/remotefocusd.h	/^	DWORD dwFocusValue;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+dwFocusValue	src/remotefocusd.h	/^	DWORD dwFocusValue;$/;"	m	language:C++	struct:_TRemoteFocusd_ShareMemInfo	access:public
+dwMotorEnd	src/remotefocusd.h	/^	DWORD dwMotorEnd;$/;"	m	language:C++	struct:_TRemoteFocusd_MotorCtrlInfo	access:public
+dwMotorFocusDefault	src/remotefocusd.h	/^	DWORD dwMotorFocusDefault;$/;"	m	language:C++	struct:_TRemoteFocusd_MotorCtrlInfo	access:public
+dwMotorPosition	src/remotefocusd.h	/^	DWORD dwMotorPosition;$/;"	m	language:C++	struct:_TRemoteFocusd_MotorCtrlInfo	access:public
+dwMotorStart	src/remotefocusd.h	/^	DWORD dwMotorStart;$/;"	m	language:C++	struct:_TRemoteFocusd_MotorCtrlInfo	access:public
+dwMotorSteps	src/remotefocusd.h	/^	DWORD dwMotorSteps;$/;"	m	language:C++	struct:_TRemoteFocusd_MotorCtrlInfo	access:public
+dwMyPid	src/remotefocusd.h	/^	DWORD dwMyPid;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+dwPanFocusPosition	src/remotefocusd.h	/^	DWORD dwPanFocusPosition;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+dwZoomMotorPosition	src/remotefocusd.h	/^	DWORD dwZoomMotorPosition;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+eFunctionType	src/remotefocusd.h	/^	ERemoteFocusd_FunctionType eFunctionType;$/;"	m	language:C++	struct:_TRemoteFocusd_MotorCtrlInfo	access:public
+eMotorDirection	src/remotefocusd.h	/^	ERemoteFocusd_MotorDirection eMotorDirection;$/;"	m	language:C++	struct:_TRemoteFocusd_MotorCtrlInfo	access:public
+eNextFuncType	src/remotefocusd.h	/^	ERemoteFocusd_FunctionType eNextFuncType;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+eftAutoFocus	src/remotefocusd.h	/^	eftAutoFocus,$/;"	e	language:C++	enum:_ERemoteFocusd_FunctionType
+eftFocus	src/remotefocusd.h	/^	eftFocus,$/;"	e	language:C++	enum:_ERemoteFocusd_FunctionType
+eftFocusScan	src/remotefocusd.h	/^	eftFocusScan,$/;"	e	language:C++	enum:_ERemoteFocusd_FunctionType
+eftGetFocusDefault	src/remotefocusd.h	/^	eftGetFocusDefault,$/;"	e	language:C++	enum:_ERemoteFocusd_FunctionType
+eftGetParam	src/remotefocusd.h	/^	eftGetParam,$/;"	e	language:C++	enum:_ERemoteFocusd_FunctionType
+eftGetStatus	src/remotefocusd.h	/^	eftGetStatus,$/;"	e	language:C++	enum:_ERemoteFocusd_FunctionType
+eftIrisEnable	src/remotefocusd.h	/^	eftIrisEnable,$/;"	e	language:C++	enum:_ERemoteFocusd_FunctionType
+eftIrisOpen	src/remotefocusd.h	/^	eftIrisOpen,$/;"	e	language:C++	enum:_ERemoteFocusd_FunctionType
+eftNoService	src/remotefocusd.h	/^	eftNoService = 0,$/;"	e	language:C++	enum:_ERemoteFocusd_FunctionType
+eftPositioning	src/remotefocusd.h	/^	eftPositioning,$/;"	e	language:C++	enum:_ERemoteFocusd_FunctionType
+eftResetFocus	src/remotefocusd.h	/^	eftResetFocus,$/;"	e	language:C++	enum:_ERemoteFocusd_FunctionType
+eftSetFocusDefault	src/remotefocusd.h	/^	eftSetFocusDefault$/;"	e	language:C++	enum:_ERemoteFocusd_FunctionType
+eftStop	src/remotefocusd.h	/^	eftStop,$/;"	e	language:C++	enum:_ERemoteFocusd_FunctionType
+eftZoom	src/remotefocusd.h	/^	eftZoom,$/;"	e	language:C++	enum:_ERemoteFocusd_FunctionType
+eftZooming	src/remotefocusd.h	/^	eftZooming,$/;"	e	language:C++	enum:_ERemoteFocusd_FunctionType
+emdBackward	src/remotefocusd.h	/^	emdBackward,$/;"	e	language:C++	enum:_ERemoteFocusd_MotorDirection
+emdDriect	src/remotefocusd.h	/^	emdDriect,$/;"	e	language:C++	enum:_ERemoteFocusd_MotorDirection
+emdForward	src/remotefocusd.h	/^	emdForward = 0,$/;"	e	language:C++	enum:_ERemoteFocusd_MotorDirection
+esupFocus	src/remotefocusd.h	/^	esupFocus = 4,			\/\/ support focus$/;"	e	language:C++	enum:_ERemoteFocusd_Capability
+esupNoSupport	src/remotefocusd.h	/^	esupNoSupport = 0, 		\/\/ no support remotefocus$/;"	e	language:C++	enum:_ERemoteFocusd_Capability
+esupZoom	src/remotefocusd.h	/^	esupZoom = 2,			\/\/ support zoom$/;"	e	language:C++	enum:_ERemoteFocusd_Capability
+esupZoomFocus	src/remotefocusd.h	/^	esupZoomFocus = 1,		\/\/ support zoom \/ focus$/;"	e	language:C++	enum:_ERemoteFocusd_Capability
+fdFocusMotorWakeup	src/remotefocusd.h	/^	int fdFocusMotorWakeup[2];$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+fdZoomMotorWakeup	src/remotefocusd.h	/^	int fdZoomMotorWakeup[2];$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+fds_ReadSet	src/remotefocusd.h	/^	fd_set fds_ReadSet;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+g_bIrisFullyOpenStatus	src/remotefocusd.c	/^BOOL g_bIrisFullyOpenStatus = TRUE;$/;"	v	language:C
+g_bRunThread	src/remotefocusd.c	/^BOOL g_bRunThread = TRUE;$/;"	v	language:C
+g_bTerminated	src/remotefocusd.c	/^BOOL g_bTerminated = FALSE;$/;"	v	language:C
+g_dwFocusDefault	src/remotefocusd.c	/^DWORD g_dwFocusDefault;$/;"	v	language:C
+g_dwtabFocusPanTable	src/remotefocusd.c	/^DWORD g_dwtabFocusPanTable[REMOTEFOCUSD_ZOOM_VIRTUAL_TOTALSTEP];$/;"	v	language:C
+g_dwtabFocusPositionTable	src/remotefocusd_Table.c	/^	const DWORD g_dwtabFocusPositionTable[REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE] = $/;"	v	language:C
+g_dwtabFocusPositionTable	src/remotefocusd_Table.c	/^	const DWORD g_dwtabFocusPositionTable[REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE] =$/;"	v	language:C
+g_dwtabFocusValueTable	src/remotefocusd.c	/^DWORD g_dwtabFocusValueTable[REMOTEFOCUSD_FOCUS_VALUE_TABLE_SIZE];$/;"	v	language:C
+g_dwtabFocusingStartTable	src/remotefocusd_Table.c	/^		const DWORD g_dwtabFocusingStartTable[REMOTEFOCUSD_FOCUS_POSITION_TABLE_SIZE] =$/;"	v	language:C
+hFocusMotorThread	src/remotefocusd.h	/^	HANDLE hFocusMotorThread;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+hXMLParser	src/remotefocusd.h	/^	HANDLE hXMLParser;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+hZoomMotorThread	src/remotefocusd.h	/^	HANDLE hZoomMotorThread;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+host_package_bin_dir	makefile	/^host_package_bin_dir=${ROOTFSDIR}$(package_sbin_dir)$/;"	m	language:Make
+host_package_init_dir	makefile	/^host_package_init_dir=${ROOTFSDIR}${package_init_dir}$/;"	m	language:Make
+iCGIFd	src/remotefocusd.h	/^	int iCGIFd;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+iFIFOFd	src/remotefocusd.h	/^	int iFIFOFd;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+iIsSupportFocus	src/remotefocusd.h	/^	int iIsSupportFocus;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+iIsSupportZoom	src/remotefocusd.h	/^	int iIsSupportZoom;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+iMaxFd	src/remotefocusd.h	/^	int iMaxFd;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+iShMemId	src/remotefocusd.h	/^	int iShMemId;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+main	src/remotefocusd.c	/^int main(int iArgc, char** pszArgv)$/;"	f	language:C	signature:(int iArgc, char** pszArgv)
+mdmGPIO	src/focusmotor.h	/^	mdmGPIO = 1,		\/\/ GPIO Mode$/;"	e	language:C++	enum:__anon1
+mdmIOEXPAND	src/focusmotor.h	/^	mdmIOEXPAND = 2		\/\/ I2C Expander Mode$/;"	e	language:C++	enum:__anon1
+package_init	makefile	/^package_init = init.d-remotefocusd$/;"	m	language:Make
+package_init_dir	makefile	/^package_init_dir = \/etc\/init.d$/;"	m	language:Make
+package_sbin_dir	makefile	/^package_sbin_dir = \/usr\/sbin$/;"	m	language:Make
+ptFdCgi	src/remotefocusd.h	/^	fdcgi *ptFdCgi;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+ptShareMemInfo	src/remotefocusd.h	/^	TRemoteFocusd_ShareMemInfo* ptShareMemInfo;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+rcsid_remotefocusd	src/remotefocusd.c	/^volatile static const char rcsid_remotefocusd[]$/;"	v	language:C	file:
+restoreCheck	src/init.d-remotefocusd	/^restoreCheck(){$/;"	f	language:Sh
+sckClient	src/remotefocusd.h	/^	SOCKET sckClient;$/;"	m	language:C++	struct:_TRemoteFocusd_ClientInfo	access:public
+semFileMutex	src/remotefocusd.h	/^	sem_t semFileMutex;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+start	src/init.d-remotefocusd	/^start(){$/;"	f	language:Sh
+stop	src/init.d-remotefocusd	/^stop(){$/;"	f	language:Sh
+tFocusMotorCtrlInfo	src/remotefocusd.h	/^	TRemoteFocusd_MotorCtrlInfo tFocusMotorCtrlInfo;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
+tMotorCtrlInfoOpt	src/remotefocusd.h	/^	TRemoteFocusd_MotorCtrlInfo tMotorCtrlInfoOpt;$/;"	m	language:C++	struct:_TRemoteFocusd_ClientInfo	access:public
+tZoomMotorCtrlInfo	src/remotefocusd.h	/^	TRemoteFocusd_MotorCtrlInfo tZoomMotorCtrlInfo;$/;"	m	language:C++	struct:_TRemoteFocusdInfo	access:public
